@@ -1,0 +1,10 @@
+/******************************************************************
+Stylesheet: Posts
+******************************************************************/
+.article-image {
+	display: block;
+	height: 300px;
+	background: url('../images/jb0056_Background.jpg') repeat; /* backup if someone forgets */
+	background-position: center center;
+	background-size: cover;
+}

@@ -1,22 +1,37 @@
-			<footer class="footer" role="contentinfo">
+<footer class="footer container" role="footer">
 
-				<div id="inner-footer" class="wrap clearfix">
+	<div class="row">
+		<div class="col-xs-12">
+			BOOK
+		</div>
+	</div>
 
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+	<div class="row">
+		<div class="col-xs-12">
+			MAP
+		</div>
+	</div>
 
-				</div>
+	<div class="row">
 
-			</footer>
-
+		<div class="col-xs-12">
+			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 		</div>
 
-		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
+		<!-- <nav role="navigation"> -->
+			<?php // bones_footer_links(); ?>
+		<!-- </nav> -->
 
-	</body>
+	</div>
+
+</footer>
+
+</div> <!-- /wrapper -->
+
+<!-- all js scripts are loaded in library/bones.php -->
+<?php wp_footer(); ?>
+
+</body>
 
 </html>
