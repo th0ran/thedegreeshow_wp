@@ -8,3 +8,21 @@ Stylesheet: Posts
 	background-position: center center;
 	background-size: cover;
 }
+
+.post- { width: 640px; max-width: 95%;}
+
+.byline { width: 640px; max-width: 95%; text-align: center; }
+
+.entry-content { width: 640px; max-width: 95%;}
+
+.single-title { width: 640px; max-width: 95%; text-align: center; }
+
+.article-footer { width: 640px; max-width: 95%; text-align: center; } 
+
+.post-image { display: block; position: relative; } 
+
+.article-header { position: absolute; width: 100%; top: 250px; left: 0;  color: #fff; }
+
+.single-title { font-size: 66px; }
+
+.entry-content { margin-top: 44px; }

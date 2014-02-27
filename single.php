@@ -7,18 +7,18 @@
 					<div id="main" class="eightcol first clearfix" role="main">
 						
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<div class="img-responsive">
+						
+
+							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" class="center-block" itemscope itemtype="http://schema.org/BlogPosting">
+							
+							<div class="img-responsive post-image">
 		<?php
 		if ( has_post_thumbnail() ) {
 			the_post_thumbnail('full', array( 'class' => "img-responsive"));
 		}
 		?>
-	</div>
-
-
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" class="center-block" itemscope itemtype="http://schema.org/BlogPosting">
-
-								<header class="article-header">
+		
+		<header class="article-header">
 									
 									<h1 class="center-block entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 									<p class="center-block byline vcard"><?php
@@ -27,6 +27,11 @@
 
 								</header>
 
+		
+	</div>
+
+
+								
 								<section class="center-block entry-content clearfix" itemprop="articleBody">									
 									<?php the_content(); ?>
 								</section>
