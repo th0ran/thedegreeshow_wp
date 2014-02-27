@@ -7,10 +7,10 @@
 					<div id="main" class="eightcol first clearfix" role="main">
 						
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<div class="featured-image">
+						<div class="img-responsive">
 		<?php
 		if ( has_post_thumbnail() ) {
-			the_post_thumbnail('full', array( 'class' => "featured-img"));
+			the_post_thumbnail('full', array( 'class' => "img-responsive"));
 		}
 		?>
 	</div>
