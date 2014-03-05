@@ -34,32 +34,4 @@
 
 <div id="wrapper">
 
-	<header class="header container" role="banner">
-
-		<div class="row">
-			
-			<div class="booking col-sm-3">
-				Booking Information
-			</div>
-
-			<div class="main col-sm-6">
-
-				<!-- <h1>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
-				</h1> -->
-
-				<?php // bloginfo('description'); ?>
-
-				<nav role="navigation">
-					<?php bones_main_nav(); ?>
-				</nav>
-
-			</div>
-
-			<div class="findus col-sm-3">
-				Find Us
-			</div>
-
-		</div>
-
-	</header>
+	

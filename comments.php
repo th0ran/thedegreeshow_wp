@@ -19,20 +19,20 @@ The comments page for Bones
 <?php // You can start editing here. ?>
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments" class="h2"><?php comments_number( __( '<span>No</span> Responses', 'bonestheme' ), __( '<span>One</span> Response', 'bonestheme' ), _n( '<span>%</span> Response', '<span>%</span> Responses', get_comments_number(), 'bonestheme' ) );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h2 center-block"><?php comments_number( __( '<span>No</span> Responses', 'bonestheme' ), __( '<span>One</span> Response', 'bonestheme' ), _n( '<span>%</span> Response', '<span>%</span> Responses', get_comments_number(), 'bonestheme' ) );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
-	<nav id="comment-nav">
+	<nav id="comment-nav" class="center-block">
 		<ul class="clearfix">
 				<li><?php previous_comments_link() ?></li>
 				<li><?php next_comments_link() ?></li>
 		</ul>
 	</nav>
 
-	<ol class="commentlist">
+	<ol class="commentlist center-block">
 		<?php wp_list_comments( 'type=comment&callback=bones_comments' ); ?>
 	</ol>
 
-	<nav id="comment-nav">
+	<nav id="comment-nav" class="center-block">
 		<ul class="clearfix">
 				<li><?php previous_comments_link() ?></li>
 				<li><?php next_comments_link() ?></li>
@@ -56,7 +56,7 @@ The comments page for Bones
 
 <?php if ( comments_open() ) : ?>
 
-<section id="respond" class="respond-form">
+<section id="respond" class="respond-form center-block">
 
 	<h3 id="comment-form-title" class="h2"><?php comment_form_title( __( 'Leave a Reply', 'bonestheme' ), __( 'Leave a Reply to %s', 'bonestheme' )); ?></h3>
 

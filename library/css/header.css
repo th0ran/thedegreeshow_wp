@@ -4,3 +4,9 @@ Stylesheet: Header
 .header {
 
 }
+
+.main {  height: 200px; background-color: #ccc; color: #FFF; }
+
+.booking { height: 200px; background-color: #333; color: #FFF; }
+
+.findus {  height: 200px; background-color: #333; color: #FFF; }

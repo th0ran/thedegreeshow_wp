@@ -1,14 +1,14 @@
 <footer class="footer container" role="footer">
 
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="ticketbook col-xs-12">
 			BOOK
 		</div>
 	</div>
 
 
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="bottom-map col-xs-12">
 			MAP
 		</div>
 	</div>
