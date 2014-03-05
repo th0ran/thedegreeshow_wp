@@ -1,5 +1,5 @@
 <!-- template for 4x4 posts with thumbnail images (home and archive pages) -->
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-sm-6' ); ?> role="article">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-sm-6 post-background' ); ?> role="article">
 
 	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><span class="article-image" <?php if(has_post_thumbnail()) : ?>style="background-image:url(<?php echo $image_url[0];?>);"<?php endif;?>></span></a>
 

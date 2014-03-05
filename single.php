@@ -18,7 +18,7 @@
 		}
 		?>
 		
-		<header class="article-header">
+		<header class="article-header single-header">
 									
 									<h1 class="center-block entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 									<p class="center-block byline vcard"><?php

@@ -1,4 +1,4 @@
-<footer class="footer container" role="footer">
+<footer class="footer" role="footer">
 
 	<div class="row">
 		<div class="ticketbook col-xs-12">

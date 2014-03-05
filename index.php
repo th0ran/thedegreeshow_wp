@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<header class="header container" role="banner">
+<header class="header" role="banner">
 
 		<div class="row">
 			
@@ -26,7 +26,7 @@
 
 			</div>
 
-			<div class="findus col-sm-3 pull-right">
+			<div class="findus col-sm-3">
 				Find Us
 			</div>
 
@@ -35,7 +35,7 @@
 	</header>
 
 
-<div id="main" class="container" role="main">
+<div id="main" class="container-post center-block" role="main">
 
 	<div class="row">
 
