@@ -1,14 +1,15 @@
 <footer class="footer" role="footer">
 
-	<div class="row">
-		<div class="ticketbook col-xs-12">
-			BOOK
+	<div class="row bottom-border">
+		<div class="book-your-ticket center-block">
+			<h3 class="book-your-ticket-title">BOOK YOUR TICKET</h3>
+			<button type="button" class="btn btn-book-your-ticket center-block">Large button</button>
 		</div>
 	</div>
 
 
-	<div class="row">
-		<div class="bottom-map col-xs-12">
+	<div class="row bottom-border">
+		<div class="bottom-map center-block">
 			MAP
 		</div>
 	</div>
@@ -28,6 +29,7 @@
 </footer>
 
 </div> <!-- /wrapper -->
+
 
 <!-- all js scripts are loaded in library/bones.php -->
 <?php wp_footer(); ?>

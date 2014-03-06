@@ -24,7 +24,7 @@
 	<meta name="msapplication-TileColor" content="#f01d4f"> <!-- IE10 windows -->
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">	
 
 	<?php wp_head(); ?>
 

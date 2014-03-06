@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<header class="header" role="banner">
+<header class="header main-background" role="banner">
 
 		<div class="row">
 			
-			<div class="booking col-sm-3">
+			<div class="booking col-sm-2">
 				Booking Information
 			</div>
 
-			<div class="main col-sm-6">
+			<div class="col-sm-6">
 
 				<!-- <h1>
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
@@ -26,7 +26,7 @@
 
 			</div>
 
-			<div class="findus col-sm-3">
+			<div class="findus col-sm-2">
 				Find Us
 			</div>
 

@@ -11,9 +11,14 @@ Stylesheet: Posts
 
 .post- { width: 640px; max-width: 95%;}
 
-.post-background { background-color: #FFF; }
+.post-background { background-color: #FFF; margin-bottom: 30px; padding-right: 0px; padding-left: 0px; max-width: 48%; }
 
-.byline { width: 640px; max-width: 95%; text-align: center; }
+.post-background:nth-child(odd) {
+    background-color: white; float: left;
+}
+.post-background:nth-child(even) {
+    float: right;
+}
 
 .entry-content { width: 640px; max-width: 95%;}
 
@@ -25,6 +30,12 @@ Stylesheet: Posts
 
 .single-header { position: absolute; width: 100%; top: 250px; left: 0;  color: #fff; }
 
+.single-byline { width: 640px; max-width: 95%; text-align: center; }
+
 .single-title { font-size: 66px; }
 
-.entry-content { margin-top: 44px; }
+.single-entry-content { margin-top: 44px; }
+
+.entry-content p { font-size: 15px; line-height: 1.5; color: #666666; margin-left: 22px; margin-right: 11px; }
+
+a.header-link { font-family: InterFace-Bold; color: #333; margin-left: 22px;}
