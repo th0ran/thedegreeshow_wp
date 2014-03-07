@@ -23,11 +23,13 @@ body {background-image: url('../images/gplaypattern.png'); font-family: 'InterFa
 
 .book-your-ticket { height: 200px; width: 750px; max-width: 100%; margin-top: 100px;}
 
-.bottom-map { height: 300px; width: 750px; max-width: 100%; background-color: #333;}
+.bottom-map { height: 200px; width: 750px; max-width: 100%; margin-top: 100px; }
 
 .container-post { width: 750px; height: auto; }
 
 .book-your-ticket-title { text-align: center; color: #333; font-weight: bold; }
+
+.adress { text-align: center; color: #333; font-weight: light; }
 
 .btn-book-your-ticket { border: 3px solid #666; background-color: transparent; font-weight: bold; color: #333; }
 

@@ -10,7 +10,11 @@
 
 	<div class="row bottom-border">
 		<div class="bottom-map center-block">
-			MAP
+			<h3 class="book-your-ticket-title">Ravensbourne</h3>
+<p class="adress">6 Penrose Way<br />
+Greenwich Peninsula<br />
+London SE10 0EW</p>
+
 		</div>
 	</div>
 
