@@ -9,6 +9,8 @@
 
 
 	<div class="row bottom-border">
+		<img class="img-responsive" src="http://localhost:8888/thedegreeshow_wp/wp-content/uploads/2014/03/ravensbourne_map.jpg" alt="ravensbourne_map" width="1440" height="181" />
+	
 		<div class="bottom-map center-block">
 			<h3 class="book-your-ticket-title">Ravensbourne</h3>
 <p class="adress">6 Penrose Way<br />

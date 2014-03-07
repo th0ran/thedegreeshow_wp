@@ -35,7 +35,7 @@ body {background-image: url('../images/gplaypattern.png'); font-family: 'InterFa
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 480px) {
-.post-background {max-width: 95%;}	
+.post-background {max-width: 100%;}	
 			}
 
 /* Small devices (tablets, 768px and up) */

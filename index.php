@@ -4,7 +4,7 @@
 
 		<div class="row">
 			
-			<div class="booking col-sm-2">
+			<div class="hidden-xs booking col-sm-2">
 				Booking Information
 			</div>
 
@@ -26,7 +26,7 @@
 
 			</div>
 
-			<div class="findus col-sm-2">
+			<div class="hidden-xs findus col-sm-2">
 				Find Us
 			</div>
 
