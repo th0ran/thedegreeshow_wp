@@ -1,30 +1,21 @@
-# Bones
-__A Lightweight Wordpress Development Theme__
+# The Degree Show 2014 wordpress theme
+__For the ravensbourne 2014 show - http://www.ravensbourne.ac.uk/__
 
-Bones is designed to make the life of developers easier. It's built
-using HTML5 & has a strong semantic foundation. It was updated recently
-using some of the HTML5 Boilerplate's recommended markup and setup.
-It's constantly growing so be sure to check back often if you are a
-frequent user. I'm always open to contribution. :)
+Soon to be made up of all sorts of cool stuff.
 
-Designed by **Eddie Machado**: http://themble.com/bones
+* Uses Bootstrap 3.0, see docs - http://getbootstrap.com/
+* Based on Bones - http://themble.com/bones
+* Uses LESS, see docs - http://lesscss.org/ . It's not scary, I promise. It is meant to make things easier!
 
-Special Thanks to:
-* Paul Irish & the HTML5 Boilerplate
-* Yoast for some WP functions & optimization ideas
-* Andrew Rogers for code optimization
-* David Dellanave for speed & code optimization
-* and several other developers. :)
-
-Submit Bugs & or Fixes:
-https://github.com/eddiemachado/bones/issues
+## Set up notes
+* Have your own wordpress set up and install this repositry as a theme.
+* Make sure you have a LESS compiler. I reccommend http://incident57.com/less/ or http://wearekiss.com/simpless
+* Under Appearance / Menu create a menu called 'main', add menu items and set the theme location to be 'The Main Menu'.
 
 
-## License
-__[WTFPL](http://sam.zoy.org/wtfpl/)__
+## Introduction to Bones
+Bones http://themble.com/bones is a simple wordpress theme designed to be changed by developers. Hopefully it will have already catered for most of our requirements, so be sure to look through the files thoroughly as there are a lot of good functions.
 
-	Are You Serious? Yes.
+library/bones.php - register stylesheets and scripts are here, functionality to handle thumbnails, register menus, ability to add 'related posts' to a page (organised by post tag), pagination handling.
 
-
-## Meta
-* [Changelog](../../blob/master/CHANGELOG.md)
+Bones theme also features custom post setup which can be treated as entirely different to normal posts.

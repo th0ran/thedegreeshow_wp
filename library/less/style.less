@@ -1,123 +1,16 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: The Degree Show 2014 wordpress theme
+Author: The Degree Show team
 
-Stylesheet: Main Stylesheet
+Stylesheet: Main stylesheet
 
-Here's where the magic happens. Here, you'll see we are calling in
-the separate media queries. The base mobile goes outside any query
-and is called at the beginning, after that we call the rest
-of the styles inside media queries.
+PLEASE DO NOT EDIT THE CSS FILE DIRECTLY. The Less files can be found in library/less.
+See README.md for more information.
 ******************************************************************/
 
+// WebFont
+@import url("http://fnt.webink.com/wfs/webink.css/?project=D0D5D8F6-AAEA-4A39-90D3-AF24444E1FCF&fonts=8749A8B6-5CBC-CD3F-0D15-D2854FAF6F76:f=InterFace-Italic,D966CD02-BD7F-6FC2-49D6-AEB64C86FE41:f=InterFace-BoldItalic,F053CF28-AC3D-675F-0F59-439B2A498BD8:f=InterFace-Bold,12A466A5-0B5B-214C-6B4F-5298692C6FE8:f=InterFaceLight-Regular,E3C2DF14-8822-F4F9-5189-8DB2C6F87ABE:f=InterFace-Regular,B987AEAF-D251-6DF0-AE79-D058EBCA2A1B:f=InterFace-LightItalic");
 
-//
-// IMPORTING STYLES
-//
-
-// import normalize
-@import "_normalize.less";
-
-// import mixins
-@import "_mixins.less";
-
-/*
-BASE (MOBILE) SIZE
-This are the mobile styles. It's what people see on their phones. If
-you set a great foundation, you won't need to add too many styles in
-the other stylesheets. Remember, keep it light: Speed is Important.
-*/
-
-// styles in base.less
-@import "_base.less";
-
-/*
-LARGER MOBILE DEVICES
-This is for devices like the Galaxy Note or something that's
-larger than an iPhone but smaller than a tablet. Let's call them
-tweeners.
-*/
-@media only screen and (min-width: 481px) {
-
-	// styles in 481up.less
-	@import "_481up.less";
-
-} // end of media query
-
-/*
-TABLET & SMALLER LAPTOPS
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 768px) {
-
-	// import grid
-	@import "_grid.less";
-
-	// styles in 768up.less
-	@import "_768up.less";
-
-} // end of media query
-
-/*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 1030px) {
-
-	// styles in 1030up.less
-	@import "_1030up.less";
-
-} // end of media query
-
-/*
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*/
-@media only screen and (min-width: 1240px) {
-
-	// styles in 1240up.less
-	@import "_1240up.less";
-
-} // end of media query
-
-/*
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution. You can also create a media
-query for retina AND a certain size if you want. Go Nuts.
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min--moz-device-pixel-ratio: 1.5),
-       only screen and (min-device-pixel-ratio: 1.5) {
-
-	// styles in 2x.less
-	@import "_2x.less";
-
-} // end of media query
-
-/*
-iPHONE 5 MEDIA QUERY
-Want to get fancy for no good reason? Knock yourself out.
-*/
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-
+body {
+	font-family: 'InterFace-Regular', sans-serif;
 }
-
-/*
-PRINT STYLESHEET
-Feel free to customize this. Remember to add things that won't make
-sense to print at the bottom. Things like nav, ads, and forms should
-be set to display none.
-*/
-@media print {
-
-	@import "_print.less";
-
-} // end of media query
-
