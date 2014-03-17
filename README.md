@@ -1,6 +1,8 @@
 # The Degree Show 2014 wordpress theme
 __For the ravensbourne 2014 show - http://www.ravensbourne.ac.uk/__
 
+## Please see the latest version in branch v2.
+
 Soon to be made up of all sorts of cool stuff.
 
 * Uses Bootstrap 3.0, see docs - http://getbootstrap.com/
