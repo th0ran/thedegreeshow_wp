@@ -1,45 +1,22 @@
-<footer class="footer" role="footer">
+			<footer class="footer" role="contentinfo">
 
-	<div class="row bottom-border">
-		<div class="book-your-ticket center-block">
-			<h3 class="book-your-ticket-title">BOOK YOUR TICKET</h3>
-			<button type="button" class="btn btn-book-your-ticket center-block">Large button</button>
-		</div>
-	</div>
+				<div id="inner-footer" class="wrap clearfix">
 
+					<nav role="navigation">
+							<?php bones_footer_links(); ?>
+					</nav>
 
-	<div class="row bottom-border">
-		<img class="img-responsive" src="http://localhost:8888/thedegreeshow_wp/wp-content/uploads/2014/03/ravensbourne_map.jpg" alt="ravensbourne_map" width="1440" height="181" />
-	
-		<div class="bottom-map center-block">
-			<h3 class="book-your-ticket-title">Ravensbourne</h3>
-<p class="adress">6 Penrose Way<br />
-Greenwich Peninsula<br />
-London SE10 0EW</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+
+				</div>
+
+			</footer>
 
 		</div>
-	</div>
 
-	<div class="row">
+		<?php // all js scripts are loaded in library/bones.php ?>
+		<?php wp_footer(); ?>
 
-		<div class="col-xs-12">
-			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-		</div>
-
-		<!-- <nav role="navigation"> -->
-			<?php // bones_footer_links(); ?>
-		<!-- </nav> -->
-
-	</div>
-
-</footer>
-
-</div> <!-- /wrapper -->
-
-
-<!-- all js scripts are loaded in library/bones.php -->
-<?php wp_footer(); ?>
-
-</body>
+	</body>
 
 </html>

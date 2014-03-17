@@ -19,20 +19,20 @@ The comments page for Bones
 <?php // You can start editing here. ?>
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments" class="h2 center-block"><?php comments_number( __( '<span>No</span> Responses', 'bonestheme' ), __( '<span>One</span> Response', 'bonestheme' ), _n( '<span>%</span> Response', '<span>%</span> Responses', get_comments_number(), 'bonestheme' ) );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h2"><?php comments_number( __( '<span>No</span> Responses', 'bonestheme' ), __( '<span>One</span> Response', 'bonestheme' ), _n( '<span>%</span> Response', '<span>%</span> Responses', get_comments_number(), 'bonestheme' ) );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
-	<nav id="comment-nav" class="center-block">
+	<nav id="comment-nav">
 		<ul class="clearfix">
 				<li><?php previous_comments_link() ?></li>
 				<li><?php next_comments_link() ?></li>
 		</ul>
 	</nav>
 
-	<ol class="commentlist center-block">
+	<ol class="commentlist">
 		<?php wp_list_comments( 'type=comment&callback=bones_comments' ); ?>
 	</ol>
 
-	<nav id="comment-nav" class="center-block">
+	<nav id="comment-nav">
 		<ul class="clearfix">
 				<li><?php previous_comments_link() ?></li>
 				<li><?php next_comments_link() ?></li>
@@ -56,7 +56,7 @@ The comments page for Bones
 
 <?php if ( comments_open() ) : ?>
 
-<section id="respond" class="respond-form center-block">
+<section id="respond" class="respond-form">
 
 	<h3 id="comment-form-title" class="h2"><?php comment_form_title( __( 'Leave a Reply', 'bonestheme' ), __( 'Leave a Reply to %s', 'bonestheme' )); ?></h3>
 
@@ -82,36 +82,34 @@ The comments page for Bones
 
 		<li>
 			<label for="author"><?php _e( 'Name', 'bonestheme' ); ?> <?php if ($req) _e( '(required)'); ?></label>
-			<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e( 'Your Name*', 'bonestheme' ); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+			<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e( 'Your Name*', 'bonestheme' ); ?>" <?php if ($req) echo "aria-required='true'"; ?> />
 		</li>
 
 		<li>
 			<label for="email"><?php _e( 'Mail', 'bonestheme' ); ?> <?php if ($req) _e( '(required)'); ?></label>
-			<input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e( 'Your E-Mail*', 'bonestheme' ); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+			<input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e( 'Your E-Mail*', 'bonestheme' ); ?>" <?php if ($req) echo "aria-required='true'"; ?> />
 			<small><?php _e("(will not be published)", 'bonestheme' ); ?></small>
 		</li>
 
 		<li>
 			<label for="url"><?php _e( 'Website', 'bonestheme' ); ?></label>
-			<input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e( 'Got a website?', 'bonestheme' ); ?>" tabindex="3" />
+			<input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e( 'Got a website?', 'bonestheme' ); ?>" />
 		</li>
 
 	</ul>
 
 	<?php endif; ?>
 
-	<p><textarea name="comment" id="comment" placeholder="<?php _e( 'Your Comment here...', 'bonestheme' ); ?>" tabindex="4"></textarea></p>
+	<p><textarea name="comment" id="comment" placeholder="<?php _e( 'Your Comment here...', 'bonestheme' ); ?>"></textarea></p>
 
 	<p>
-		<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e( 'Submit', 'bonestheme' ); ?>" />
+		<input name="submit" type="submit" id="submit" class="button" value="<?php _e( 'Submit', 'bonestheme' ); ?>" />
 		<?php comment_id_fields(); ?>
 	</p>
 
-	<!--
-<div class="alert alert-info">
+	<div class="alert alert-info">
 		<p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e( 'You can use these tags', 'bonestheme' ); ?>: <code><?php echo allowed_tags(); ?></code></p>
 	</div>
--->
 
 	<?php do_action( 'comment_form', $post->ID ); ?>
 
