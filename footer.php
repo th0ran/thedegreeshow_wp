@@ -1,22 +1,24 @@
-			<footer class="footer" role="contentinfo">
+<footer class="content container-fluid footer" role="contentinfo">
 
-				<div id="inner-footer" class="wrap clearfix">
+	<div class="row">
 
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
-				</div>
-
-			</footer>
-
+		<div class="col-md-6">
+			<p>&copy; <?php echo date('Y'); ?> | <?php bloginfo( 'name' ); ?>.</p>
+		</div>
+		<div class="col-md-6">
+			<p>Degree show team</p>
 		</div>
 
-		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
 
-	</body>
+	</div>
+
+</footer>
+
+</div> <!-- /wrapper -->
+
+<?php // all js scripts are loaded in library/bones.php ?>
+<?php wp_footer(); ?>
+
+</body>
 
 </html>

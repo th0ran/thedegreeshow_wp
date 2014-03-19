@@ -67,6 +67,33 @@ jQuery(document).ready(function($) {
 	
 	
 	// add all your scripts here
+
+	/*
+		NAVIGATION TOGGLE
+	*/
+	$('.navtoggle').click(function(){
+		var wrapper = $('#wrapper');
+		var view = wrapper.position();
+
+		if (view.left === 0) {
+
+			// navbar closed
+			wrapper.animate(
+				{ left:'-' + $('#side').width() + 'px' },
+				{ duration: 200, queue: false }
+			);
+
+		} else {
+
+			// navbar open
+			wrapper.animate(
+				{ left: '0px' },
+				{ duration: 200, queue: false }
+			);
+
+		}
+		
+	})
 	
  
 }); /* end of as page load scripts */

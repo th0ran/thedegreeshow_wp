@@ -6,11 +6,13 @@ Soon to be made up of all sorts of cool stuff.
 * Uses Bootstrap 3.0, see docs - http://getbootstrap.com/
 * Based on Bones - http://themble.com/bones
 * Uses LESS, see docs - http://lesscss.org/ . It's not scary, I promise. It is meant to make things easier!
+* vanilla.html is an overview of all set styles on base html elements
 
 ## Set up notes
 * Have your own wordpress set up and install this repositry as a theme.
 * Make sure you have a LESS compiler. I reccommend http://incident57.com/less/ or http://wearekiss.com/simpless
 * Under Appearance / Menu create a menu called 'main', add menu items and set the theme location to be 'The Main Menu'.
+* Featured posts: Create category 'featured', set some posts with that category.
 
 
 ## Introduction to Bones

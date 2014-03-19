@@ -14,14 +14,34 @@ See README.md for more information.
 // mixins
 @import url('mixins.less');
 
+// elements
+@import url('header.less');
+@import url('navbar.less');
+
+html, body {
+	.full; // needed for full width elements
+}
 body {
 	font-family: 'interfaceregular', sans-serif;
 	font-size: 18px;
 	color: @text;
-	.full;
 }
 img {
 	max-width: 100%;
+}
+
+#wrapper {
+	position: relative;
+	.full;
+	z-index: 2;
+}
+
+.content {
+	background-color: @white;
+}
+
+.featured {
+	background-color: @brand;
 }
 
 @media (max-width: @tablets) {  }
