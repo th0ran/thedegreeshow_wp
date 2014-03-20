@@ -1,19 +1,19 @@
 
-	<footer class="container-fluid footer" role="contentinfo">
+<footer class="container-fluid footer" role="contentinfo">
 
-		<div class="row">
+	<div class="row">
 
-			<div class="col-md-6">
-				<p>&copy; <?php echo date('Y'); ?> | <?php bloginfo( 'name' ); ?>.</p>
-			</div>
-			<div class="col-md-6">
-				<p>Degree show team</p>
-			</div>
-
-
+		<div class="col-md-6">
+			<p>&copy; <?php echo date('Y'); ?> | <?php bloginfo( 'name' ); ?>.</p>
+		</div>
+		<div class="col-md-6">
+			<p>Degree show team</p>
 		</div>
 
-	</footer>
+
+	</div>
+
+</footer>
 
 </div> <!-- /content -->
 

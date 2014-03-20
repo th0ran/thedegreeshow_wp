@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="booking container-fluid">
+<section class="booking pad container-fluid">
 
 	<div class="row">
 
@@ -12,11 +12,13 @@
 				Lorem ipsum dolor sit amet, in pro ludus aperiam insolens, novum simul et nam. His et odio suas unum. Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
 			</p>
 
+			<hr>
+
 		</div>
 
 	</div>
 
-	<div class="row">
+	<div class="row days">
 
 		<div class="col-md-4">
 			
@@ -59,7 +61,7 @@
 
 	</div>
 
-	<div class="row">
+	<div class="row days">
 
 		<div class="col-md-4">
 			
@@ -112,7 +114,7 @@
 
 </section><!--featured-->
 
-<section class="front-posts container-fluid">
+<section class="front-posts pad container-fluid">
 
 	<div class="row">
 

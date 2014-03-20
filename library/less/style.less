@@ -17,23 +17,16 @@ See README.md for more information.
 // globals & typography
 @import url('global.less');
 
-#wrapper {
-	position: relative;
-	.full;
-	z-index: 2;
-	background-color: @white;
-}
+// generic page styling
+@import url('pages.less');
 
-.content {
-	background-color: @white;
-}
+@import url('homepage.less');
 
-.featured {
-	background-color: @brand;
-}
-
-footer {
+.footer {
 	.clearfix;
+	background-color: @greydk;
+	padding: 40px 30px;
+	color: @grey;
 }
 
 
