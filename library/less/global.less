@@ -1,0 +1,47 @@
+/*
+-- Globals / Typography
+*/
+
+html, body {
+	.full; // needed for full width elements
+}
+
+body {
+	font-family: 'interfaceregular', sans-serif;
+	font-size: 18px;
+	color: @text;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.bold {
+	font-family: 'interfacebold', sans-serif;
+	font-weight: normal;
+}
+
+b, strong {
+	.bold; // avoid safari error on custom fonts
+}
+
+.cta {
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 1em;
+	padding: 7px 10px 5px 10px;
+	
+	border: 4px solid @brand;
+	color: @brand;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	.bold
+}

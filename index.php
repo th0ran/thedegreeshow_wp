@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="booking content container-fluid" role="main">
+<section class="booking container-fluid">
 
 	<div class="row">
 
@@ -91,7 +91,7 @@
 
 </section><!--booking-->
 
-<section class="featured content container-fluid">
+<section class="featured container-fluid">
 
 	<div class="row">
 
@@ -112,7 +112,7 @@
 
 </section><!--featured-->
 
-<section class="front-posts content container-fluid">
+<section class="front-posts container-fluid">
 
 	<div class="row">
 

@@ -1,17 +1,28 @@
-				<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
+<div id="side" role="complementary">
 
-					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+	<div class="inner">
+		
+		<img src="<?php echo get_template_directory_uri(); ?>/library/images/ico-cross.png" alt="close navigation" class="ico-close navtoggle">
 
-						<?php dynamic_sidebar( 'sidebar1' ); ?>
+		<nav role="navigation">
+			<?php bones_main_nav(); ?>
+		</nav>
 
-					<?php else : ?>
+		<ul class="social-buttons">
+			<li><a href="#" class="ico-fb" target="blank" title="Facebook">Facebook</a></li>
+			<li><a href="#" class="ico-tw" target="blank" title="Twitter">Twitter</a></li>
+			<li><a href="#" class="ico-in" target="blank" title="Instagram">Instagram</a></li>
+			<li><a href="#" class="ico-yt" target="blank" title="YouTube">YouTube</a></li>
+		</ul>
 
-						<?php // This content shows up if there are no widgets defined in the backend. ?>
+		<!-- If you want sidebar widgets to be visible, uncomment the below: -->
+		<?php 
+			// if ( is_active_sidebar( 'sidebar1' ) ) :
+			// 	dynamic_sidebar( 'sidebar1' );
+			// else : 
+			// 	// no widgets
+			// endif; 
+		?>
 
-						<div class="alert alert-help">
-							<p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-				</div>
+	</div>
+</div>

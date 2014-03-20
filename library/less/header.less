@@ -9,4 +9,81 @@ header.home {
 	background-size: cover;
 
 	.full;
+	position: relative;
+	
+	color: @white;
+	a {
+		color: @white;
+	}
+}
+
+.logo img {
+	margin-top: 3%;
+	margin-left: 4%;
+}
+
+.header-nav {
+	float: right;
+	margin-top: 3%;
+	margin-right: 5%;
+	text-align: right;
+
+	p {
+		cursor: pointer;
+		display: inline-block;
+
+		font-size: 1em;
+		text-transform: uppercase;
+
+		margin: 0px;
+
+		&.searchtoggle {
+			background: url('../images/ico-search.png') no-repeat 0px 4px;
+			padding: 0px 20px 0px 22px;
+		}
+		&.navtoggle {
+			background: url('../images/ico-nav.png') no-repeat 0px 5px;
+			padding: 0px 0px 0px 28px;
+		}
+	}
+}
+
+.header-intro {
+	.clearfix;
+	
+	text-align: center;
+	margin-top: 8%;
+
+	h1 {
+		font-size: 4em;
+		margin: 0px 0px 25px 0px;
+	}
+
+	.header-info {
+		margin-bottom: 4%;
+
+		p {
+			display: inline-block;
+			margin: 0px;
+			line-height: 30px;
+			font-size: 1.2em;
+
+			&.header-date {
+				background: url('../images/ico-cal.png') no-repeat 0px 0px;
+				padding: 0px 45px 0px 38px;
+			}
+			&.header-place {
+				background: url('../images/ico-location.png') no-repeat 0px 0px;
+				padding: 0px 0px 0px 28px;
+			}
+		}
+
+	}
+
+	.cta {
+		border: 4px solid @white;
+		font-size: 1.2em;
+		background: url('../images/opacity-10.png');
+	}
+	
 }

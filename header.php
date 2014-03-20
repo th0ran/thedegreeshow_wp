@@ -40,22 +40,30 @@
 
 <body <?php body_class(); ?>>
 
-<div id="side">
-
-	<p class="navtoggle">Close nav</p>
-
-	<nav role="navigation">
-		<?php bones_main_nav(); ?>
-	</nav>
-
-</div>
+<?php get_sidebar(); ?>
 
 <div id="wrapper">
 
 	<header class="home">
 
-		<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+		<div class="header-nav">
+			<p class="searchtoggle">Search</p>
+			<p class="navtoggle">Menu</p>
+		</div>
 
-		<h1 class="navtoggle" style="text-align:right;">Trigger Nav</h1>
+		<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>"></a>
+
+		<div class="header-intro">
+			<h1>
+				<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+			</h1>
+			<div class="header-info">
+				<p class="header-date">16 - 20 June 2014</p>
+				<p class="header-place">Ravensbourne</p>
+			</div>
+			<div><a href="#booking" class="cta">book your place</a></div>
+		</div>
 
 	</header>
+
+	<div class="content" role="main">
