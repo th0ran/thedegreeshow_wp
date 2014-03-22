@@ -10,6 +10,7 @@
 @white: #ffffff;
 @brand: #99cccc;
 @brandlt: #e0f0f0;
+@branddk: #384b4b;
 @grey: #b9b9b9;
 @greydk: #5b6363;
 
@@ -26,6 +27,11 @@
 .reset {
 	padding: 0px;
 	margin: 0px;
+}
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
 }
 
 // Responsive standpoints

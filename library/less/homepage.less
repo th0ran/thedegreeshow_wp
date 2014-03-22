@@ -3,6 +3,8 @@
 -- home specific
 */
 
+#map { height: 180px; }
+
 .booking {
 	text-align: center;
 	padding-top: 5%;
@@ -12,6 +14,71 @@
 		line-height: 1.8;
 		padding-bottom: 5%;
 	}
+}
+
+.featured {
+
+	text-align: center; // for button
+
+
+	.btn-news {
+		position: absolute;
+		z-index: 2;
+		margin: 190px auto;
+		margin-left: -60px;
+
+		.lg-cta;
+		color: @white;
+
+		.rounded(@radius: 50%);
+		width: 120px;
+		height: 120px;
+
+		span {
+			display: block;
+			margin-top: 40px;
+		}
+	}
+
+	.col-md-6 {
+		height: 500px;
+		position: relative;
+	}
+
+	.story {
+		width: 70%;
+		display: block;
+
+		position: absolute;
+		bottom: 40px;
+
+		color: @white;
+		h1 {
+			color: @white;
+			margin: 10px 0px;
+		}
+		p {
+			margin: 0px;
+		}
+		a {
+			color: @white;
+		}
+	}
+	.col-md-6:nth-child(1){
+		background:url('../images/bg-featured-left.png') no-repeat right @branddk;
+		background-size: cover;
+		text-align: left;
+	}
+	.col-md-6:nth-child(2) {
+		background:url('../images/bg-featured-right.png') no-repeat left @branddk;
+		background-size: cover;
+		text-align: right;
+		.story {
+			right:20px;
+		}
+	}
+
+
 }
 
 .front-posts {

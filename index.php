@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+ <!-- <div id="map"></div> -->
+
 <section class="booking pad container-fluid">
 
 	<div class="row">
@@ -95,17 +97,27 @@
 
 <section class="featured container-fluid">
 
+	<a href="#" class="cta btn-news">
+		<span>All news</span>
+	</a>
+
+
 	<div class="row">
 
 	<?php query_posts('posts_per_page=2&category_name=featured'); ?>
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 		<div class="col-md-6">
-			<a class="lg-cta" href="<?php the_permalink() ?>">
-				<h1><?php the_title(); ?></h1><br />
-				<p>Read about it here &raquo;</p>
-			</a>
-			
+			<div class="story">
+				<a href="<?php the_permalink() ?>">
+					<h1><?php the_title(); ?></h1>
+				</a>
+				<p><?php the_excerpt(); ?></p>
+				<p class="byline"><?php
+						printf( __( '<em>Posted by <span class="author">%3$s</span></em>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link());
+					?></p>
+
+			</div>
 		</div>
 
 	<?php endwhile; ?> <?php wp_reset_query(); ?>

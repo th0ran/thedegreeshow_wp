@@ -61,7 +61,7 @@
 				<p class="header-date">16 - 20 June 2014</p>
 				<p class="header-place">Ravensbourne</p>
 			</div>
-			<div><a href="#booking" class="cta">book your place</a></div>
+			<div><a href="#booking" class="cta lg-cta">book your place</a></div>
 		</div>
 
 	</header>
