@@ -40,22 +40,32 @@
 
 <body <?php body_class(); ?>>
 
+<?php $classes = get_body_class(); // handy to tell which page we're on ?>
+
 <!-- Side navigation must be outside the wrapper -->
 <?php get_sidebar(); ?>
 
 <!-- wrapper -->
 <div id="wrapper">
 
-	<header class="home">
+	<header class="hero <?php if (in_array('home',$classes)) { echo 'full'; } ?>">
 
-		<div class="header-nav">
-			<p class="searchtoggle">Search</p>
-			<p class="navtoggle">Menu</p>
-		</div>
+		<nav id="header-nav">
+		
+			<div class="header-nav">
+				<p class="searchtoggle">Search</p>
+				<p class="navtoggle">Menu</p>
+			</div>
 
-		<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>">
-		</a>
+			<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>">
+			</a>
+
+		</nav>
+
+
+		<?php // show only on homepage
+			if (in_array('home',$classes)) { ?>
 
 		<div class="header-intro">
 			<h1>
@@ -67,6 +77,29 @@
 			</div>
 			<a href="#booking" class="cta lg-cta">book your place</a>
 		</div>
+		<?php } else { ?>
+
+		<div class="header-intro">
+			<h1>
+				<a href="<?php echo home_url(); ?>" rel="nofollow"><?php wp_title(''); ?></a>
+			</h1>
+			<div class="header-info">
+				
+				<?php
+					echo '<p class="header-person">';
+					the_author_meta('display_name', $post->post_author);
+					echo '</p>';
+
+					printf( __( '<p class="header-clock"><time class="updated" datetime="%1$s" pubdate>%2$s</time></p><p class="header-info">%4$s</p>
+						
+
+						', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
+				?>
+
+			</div>
+		</div>
+
+		<?php }; ?>
 
 	</header>
 

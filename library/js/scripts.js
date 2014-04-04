@@ -96,6 +96,7 @@ jQuery(document).ready(function($) {
 	})
 
 
+
 	/*
 		HOMEPAGE MAP
 	*/
@@ -106,8 +107,37 @@ jQuery(document).ready(function($) {
 	// 	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
 	// }).addTo(map);
 
+	docknav();
+	$( window ).scroll(function() {
+		docknav();
+	});
+
 }); /* end of as page load scripts */
 
+
+// DOCKING NAV FUNCTION
+function docknav(){
+	if( isScrolledIntoView(jQuery('header.hero')) === true ){
+		console.log('true');
+		jQuery('#header-nav').removeClass('docked');
+	} else {
+		console.log('false');
+		jQuery('#header-nav').addClass('docked');
+
+	}
+};
+
+/* modified from : http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling */
+function isScrolledIntoView(elem)
+{
+    var docViewTop = jQuery(window).scrollTop();
+    var docViewBottom = docViewTop + jQuery(window).height();
+
+    var elemTop = jQuery(elem).offset().top;
+    var elemBottom = elemTop + jQuery(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (jQuery(elem).height() >= docViewTop));
+}
 
 /*! A fix for the iOS orientationchange zoom bug.
  Script by @scottjehl, rebound by @wilto.

@@ -2,14 +2,14 @@
 -- Header
 */
 
-header.home {
+header.hero {
+	.clearfix;
 	background-color: @brand;
 	background: url('../images/bg-top.jpg');
 	background-position: center center;
 	background-size: cover;
+	background-attachment: fixed;
 
-	.full;
-	position: relative;
 	
 	color: @white;
 	a {
@@ -17,34 +17,69 @@ header.home {
 	}
 }
 
-header .logo img {
-	margin-top: 3%;
-	margin-left: 4%;
+#header-nav {
+	position: fixed;
+	top:0;
+	width: 100%;
+
+	padding: 3% 5%;
+
+	&.docked {
+		width: 100%;
+		background: @brand;
+		z-index: 10;
+		padding: 10px 85px;
+
+		-webkit-transition: padding .2s linear;
+		-moz-transition: padding .2s linear;
+		-o-transition: padding .2s linear;
+		transition: padding .2s linear;
+
+
+		.logo img {
+			height: 80px;
+			margin: 0px;
+		}
+		.header-nav {
+			margin: 2% 0px;
+		}
+	}
+
+	.header-nav {
+		float: right;
+		text-align: right;
+
+		p {
+			cursor: pointer;
+			display: inline-block;
+
+			font-size: 1em;
+			text-transform: uppercase;
+
+			margin: 0px;
+
+			&.searchtoggle {
+				background: url('../images/ico-search.png') no-repeat 0px 4px;
+				padding: 0px 20px 0px 22px;
+			}
+			&.navtoggle {
+				background: url('../images/ico-nav.png') no-repeat 0px 5px;
+				padding: 0px 0px 0px 28px;
+			}
+		}
+	}
+
 }
 
-.header-nav {
-	float: right;
-	margin-top: 3%;
-	margin-right: 5%;
-	text-align: right;
 
-	p {
-		cursor: pointer;
-		display: inline-block;
 
-		font-size: 1em;
-		text-transform: uppercase;
 
-		margin: 0px;
-
-		&.searchtoggle {
-			background: url('../images/ico-search.png') no-repeat 0px 4px;
-			padding: 0px 20px 0px 22px;
-		}
-		&.navtoggle {
-			background: url('../images/ico-nav.png') no-repeat 0px 5px;
-			padding: 0px 0px 0px 28px;
-		}
+.full .header-intro { // full height header only shows on homepage
+	margin-top: 17%;
+	h1 {
+		font-size: 4em;
+		margin: 0px 0px 25px 0px;
+		.bold;
 	}
 }
 
@@ -52,11 +87,10 @@ header .logo img {
 	.clearfix;
 	
 	text-align: center;
-	margin-top: 8%;
 
 	h1 {
-		font-size: 4em;
-		margin: 0px 0px 25px 0px;
+		font-size: 2.5em;
+		margin: 25px 0px;
 		.bold;
 	}
 
@@ -76,6 +110,19 @@ header .logo img {
 			&.header-place {
 				background: url('../images/ico-location.png') no-repeat 0px 0px;
 				padding: 0px 0px 0px 28px;
+			}
+
+			&.header-person {
+				background: url('../images/ico-person.png') no-repeat 0px 0px;
+				padding: 0px 45px 0px 34px;
+			}
+			&.header-clock {
+				background: url('../images/ico-clock.png') no-repeat 0px 0px;
+				padding: 0px 45px 0px 38px;
+			}
+			&.header-info {
+				background: url('../images/ico-info.png') no-repeat 0px 0px;
+				padding: 0px 0px 0px 38px;
 			}
 		}
 	}
