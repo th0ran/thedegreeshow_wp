@@ -9,7 +9,6 @@
 	text-align: center;
 
 	.content-pad;
-	padding-top: 5%;
 	padding-bottom: 2%;
 
 	.days {
@@ -86,9 +85,6 @@
 .front-posts {
 	.content-pad;
 
-	padding-top: 5%;
-	padding-bottom: 5%;
-
 	.article {
 		border-left: 5px solid @brandlt;
 		padding-left: 14px;
@@ -155,6 +151,56 @@
 
 		article {
 			.article
+		}
+	}
+}
+
+
+.location {
+	background-color: @brand;
+	background: url('../images/bg-map.png');
+	background-position: center center;
+	background-size: cover;
+
+
+	.address {
+		background: url('../images/opacity-85.png');
+		margin-top: 180px;
+		.content-pad;
+		text-align: center;
+
+		p.intro {
+			font-size: 1.2em;
+			margin-bottom: 50px;
+		}
+
+		.logo {
+			float: right;
+		}
+		address {
+			float: left;
+		}
+	}
+}
+
+.sponsors {
+	background-color: @brand;
+	text-align: center;
+	padding: 5%;
+
+	h4 {
+		color: @white;
+		margin-bottom: 30px;
+	}
+
+	.sponsors-list {
+		margin: 0px -10px;
+		li {
+			display: inline-block;
+			margin: 10px;
+			background: @white;
+			width: 17%;
+			min-height: 150px;
 		}
 	}
 }

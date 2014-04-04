@@ -195,4 +195,63 @@
 
 </section><!--/front-posts-->
 
+<section class="location container-fluid">
+	<div class="row address">
+
+		<div class="col-md-12">
+			
+			<h1>Ravensbourne</h1>
+
+			<p class="intro">
+				Located on the Greenwich Digital Peninsula, London's newest digital community, just 20 minutes away from Tech City, the capital's fast-growing media and technology hub.
+			</p>
+
+			<div class="row">
+				<div class="col-md-6">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-rave.png" class="logo" alt="ravensbourne logo" />
+
+				</div>
+				<div class="col-md-6">
+
+					<address>
+						6 Penrose Way<br />
+						Greenwich Peninsula<br />
+						London<br />
+						SE10 0EW
+					</address>
+					
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section><!-- /location -->
+
+<section class="sponsors container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>Sponsored by</h4>
+
+			<ul class="sponsors-list">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>13</li>
+				<li>14</li>
+				<li>15</li>
+			</ul>
+		</div>
+	</div>
+</section><!-- /sponsors -->
 <?php get_footer(); ?>
