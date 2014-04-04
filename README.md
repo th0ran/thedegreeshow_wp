@@ -1,4 +1,4 @@
-# The Degree Show 2014 wordpress theme
+# The Degree Show 2014 wp theme
 __For the ravensbourne 2014 show - http://www.ravensbourne.ac.uk/__
 
 Soon to be made up of all sorts of cool stuff.
@@ -12,13 +12,13 @@ Soon to be made up of all sorts of cool stuff.
 * Have your own wordpress set up and install this repositry as a theme.
 * Make sure you have a LESS compiler if you are making style changes. I reccommend http://incident57.com/less/ or http://wearekiss.com/simpless . Do not change the css file directly.
 
-# Menu
+### Menu
 Under Appearance / Menu create a menu called 'main', add menu items and set the theme location to be 'The Main Menu'.
 
-# Homepage: featured posts
+### Homepage: featured posts
 Create category 'featured', set some posts with that category.
 
-# Homepage: Twitter feed
+### Homepage: Twitter feed
 This theme is set up with kebo : http://wordpress.org/plugins/kebo-twitter-feed/
 Follow their installation instructions up to #5, which is not required : http://wordpress.org/plugins/kebo-twitter-feed/installation/
 
