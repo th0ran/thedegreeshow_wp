@@ -207,12 +207,12 @@
 			</p>
 
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-sm-6">
 
 					<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-rave.png" class="logo" alt="ravensbourne logo" />
 
 				</div>
-				<div class="col-md-6">
+				<div class="col-sm-6">
 
 					<address>
 						6 Penrose Way<br />
