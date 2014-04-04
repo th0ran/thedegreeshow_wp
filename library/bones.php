@@ -127,7 +127,7 @@ function bones_scripts_and_styles() {
 
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
-		wp_register_script( 'bones-map-js', 'http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js', array(), '', false );
+		// wp_register_script( 'bones-map-js', 'http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js', array(), '', false );
 
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -136,7 +136,7 @@ function bones_scripts_and_styles() {
 		wp_register_style( 'bones-bootstrap', get_stylesheet_directory_uri() . '/library/css/libs/bootstrap.css', array(), '', 'all' );
 
 		// register main stylesheet
-		wp_register_style( 'bones-map', 'http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css', array(), '', 'all' );
+		// wp_register_style( 'bones-map', 'http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css', array(), '', 'all' );
 
 		// comment reply script for threaded comments
 		if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -150,7 +150,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-bootstrap' );
 		wp_enqueue_style( 'bones-stylesheet' );
-		wp_enqueue_style( 'bones-map' );
+		// wp_enqueue_style( 'bones-map' );
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
@@ -159,7 +159,7 @@ function bones_scripts_and_styles() {
 		using the google cdn. That way it stays cached
 		and your site will load faster.
 		*/
-		wp_enqueue_script( 'bones-map-js' );
+		// wp_enqueue_script( 'bones-map-js' );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 

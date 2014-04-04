@@ -40,8 +40,10 @@
 
 <body <?php body_class(); ?>>
 
+<!-- Side navigation must be outside the wrapper -->
 <?php get_sidebar(); ?>
 
+<!-- wrapper -->
 <div id="wrapper">
 
 	<header class="home">
@@ -51,7 +53,9 @@
 			<p class="navtoggle">Menu</p>
 		</div>
 
-		<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>"></a>
+		<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>">
+		</a>
 
 		<div class="header-intro">
 			<h1>
@@ -61,7 +65,7 @@
 				<p class="header-date">16 - 20 June 2014</p>
 				<p class="header-place">Ravensbourne</p>
 			</div>
-			<div><a href="#booking" class="cta lg-cta">book your place</a></div>
+			<a href="#booking" class="cta lg-cta">book your place</a>
 		</div>
 
 	</header>

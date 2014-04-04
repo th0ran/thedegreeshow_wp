@@ -2,7 +2,7 @@
 
  <!-- <div id="map"></div> -->
 
-<section class="booking pad container-fluid">
+<section class="booking container-fluid">
 
 	<div class="row">
 
@@ -93,7 +93,7 @@
 
 	</div>
 
-</section><!--booking-->
+</section><!--/booking-->
 
 <section class="featured container-fluid">
 
@@ -104,38 +104,49 @@
 
 	<div class="row">
 
+	<!-- posts here must be in category 'featured' caps sensitive -->
 	<?php query_posts('posts_per_page=2&category_name=featured'); ?>
+
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 		<div class="col-md-6">
+
 			<div class="story">
+
 				<a href="<?php the_permalink() ?>">
 					<h1><?php the_title(); ?></h1>
 				</a>
-				<p><?php the_excerpt(); ?></p>
-				<p class="byline"><?php
+				<p>
+					<?php the_excerpt(); ?>
+				</p>
+				<p class="byline">
+					<?php
 						printf( __( '<em>Posted by <span class="author">%3$s</span></em>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link());
-					?></p>
+					?>
+				</p>
 
 			</div>
+
 		</div>
 
 	<?php endwhile; ?> <?php wp_reset_query(); ?>
 
 	</div>
 
-</section><!--featured-->
+</section><!--/featured-->
 
-<section class="front-posts pad container-fluid">
+<section class="front-posts container-fluid">
 
 	<div class="row">
 
-		<div class="col-md-6">
+		<div class="col-md-5 tweets">
 			<h1>Latest Tweets</h1>
-			<p>Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.</p>
+
+			<?php echo do_shortcode('[kebo_tweets count="4"]'); ?>
+
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-6 col-md-push-1 news">
 			<h1>Latest News</h1>
 			
 			<?php query_posts('posts_per_page=3'); ?>
@@ -153,19 +164,22 @@
 					<?php the_excerpt(); ?>
 				</section>
 
-				<footer class="article-footer">
-
-					<p class="byline"><?php
-						printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-					?></p>
-
-					<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
-
-				</footer>
-
-				<?php // comments_template(); // uncomment if you want to use them ?>
-
 			</article>
+
+			<footer class="article-footer">
+
+				<p class="byline">
+					<?php
+						printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));
+					?>
+					<!-- tags, uncomment if you want to use them -->
+					<!-- <p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p> --> 
+				</p>
+
+
+			</footer>
+
+			<?php // comments_template(); // uncomment if you want to use them ?>
 
 			<?php endwhile; ?>
 
@@ -179,6 +193,6 @@
 
 	</div>
 
-</section><!--front-posts-->
+</section><!--/front-posts-->
 
 <?php get_footer(); ?>

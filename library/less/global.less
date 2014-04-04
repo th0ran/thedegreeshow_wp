@@ -23,7 +23,9 @@ hr {
 }
 
 a {
+	color: @brand;
 	&:hover {
+		color: darken(@brand, 10%);
 		text-decoration: none;
 	}
 }
@@ -31,10 +33,20 @@ a {
 .bold {
 	font-family: 'interfacebold', sans-serif;
 	font-weight: normal;
+	font-style: normal;
+}
+.italic {
+	font-family: 'interfaceitalic', sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
+// avoid safari error on custom fonts
 b, strong {
-	.bold; // avoid safari error on custom fonts
+	.bold;
+}
+i, em {
+	.italic; 
 }
 
 p.intro {
