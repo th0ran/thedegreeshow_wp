@@ -15,31 +15,36 @@ header.full {
 	float: none;
 	margin: 0px auto;
 	text-align: center;
-	background-color: @black;
 	padding: 5px 0px;
 }
 
-header .logo {
-	text-align: center;
-	display: block;
-	width: 100%;
-	margin: 10px 0px;
-	img {
-		margin: 0px;
-		height: 70px;
+#header-nav {
+	padding: 10px;
+	position: relative;
+
+	&.docked {
+		position: fixed;
+		padding: 10px;
 	}
+}
+
+header .logo img {
+	height: 70px;
 }
 
 .header-intro {
 	margin-top: 0px;
 	h1 {
-		font-size: 2.5em;
+		font-size: 2em;
 		margin-bottom: 10px;
 	}
 	.header-info p.header-date {
 		padding-right: 0px;
 		margin-bottom: 5px;
 	}
+}
+.full .header-intro {
+	margin-top: 0px;
 }
 
 
