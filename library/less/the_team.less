@@ -1,0 +1,46 @@
+/*
+-- The Team page
+*/
+.post-type-archive-the_team {
+
+	section[class*='team-']{
+		padding: 2% 5%;
+	}
+
+	.wp-post-image {
+		height: auto;
+	}
+
+	.article-header h2 span {
+		font-size: 0.8em;
+		color: @brand;
+	}
+
+}
+.social-buttons-sm {
+	padding: 0px;
+	li {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0px 5px 5px 0px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	a {
+		background: url('../images/socialspriteset-sm.png');
+		display: block;
+		width: 38px;
+		height: 37px;
+		text-indent: -10000px;
+		&.ico-li {
+			background-position: 0;
+		}
+		&.ico-tw {
+			background-position: -46px;
+		}
+		&.ico-in {
+			background-position: -92px;
+		}
+	}
+}

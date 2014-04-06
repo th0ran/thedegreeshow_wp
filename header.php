@@ -40,7 +40,16 @@
 
 <body <?php body_class(); ?>>
 
-<?php $classes = get_body_class(); // handy to tell which page we're on ?>
+<?php 
+	$classes = get_body_class(); // handy to tell which page we're on
+
+	// if we're on the 'meet the team' custom post type, treat it like a page
+	// foreach($classes as $key=>$value){
+	// 	if(strpos($value,'the_team') !== false){ $page = true; }
+	// 	if($page){ break; }
+	// }
+
+?>
 
 <!-- Side navigation must be outside the wrapper -->
 <?php get_sidebar(); ?>
@@ -63,43 +72,52 @@
 
 		</nav>
 
+		<!-- header-intro -->
+		<div class="header-intro">
 
-		<?php // show only on homepage
+		<?php //	SHOW THE FOLLOWING ONLY ON THE HOMEPAGE
 			if (in_array('home',$classes)) { ?>
 
-		<div class="header-intro">
-			<h1>
-				<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
-			</h1>
-			<div class="header-info">
-				<p class="header-date">16 - 20 June 2014</p>
-				<p class="header-place">Ravensbourne</p>
-			</div>
-			<a href="#booking" class="cta lg-cta">book your place</a>
-		</div>
-		<?php } else { ?>
+				<h1>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+				</h1>
+				<div class="header-info">
+					<p class="header-date">16 - 20 June 2014</p>
+					<p class="header-place">Ravensbourne</p>
+				</div>
+				<a href="#booking" class="cta lg-cta">book your place</a>
 
-		<div class="header-intro">
-			<h1>
-				<a href="<?php echo home_url(); ?>" rel="nofollow"><?php wp_title(''); ?></a>
-			</h1>
-			<div class="header-info">
-				
-				<?php
-					echo '<p class="header-person">';
-					the_author_meta('display_name', $post->post_author);
-					echo '</p>';
 
-					printf( __( '<p class="header-clock"><time class="updated" datetime="%1$s" pubdate>%2$s</time></p><p class="header-info">%4$s</p>
+		<?php // SHOW ON PAGES THAT AREN'T THE HOMEPAGE
+			} else { ?>
+
+				<h1>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php wp_title(''); ?></a>
+				</h1>
+
+				<?php //	SHOW THE FOLLOWING ONLY ON POSTS
+					if(in_array('single-post',$classes)) { ?>
+
+					<div class="header-info">
 						
+						<?php
+							echo '<p class="header-person">';
+							the_author_meta('display_name', $post->post_author);
+							echo '</p>';
 
-						', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-				?>
+							printf( __( '<p class="header-clock"><time class="updated" datetime="%1$s" pubdate>%2$s</time></p><p class="header-info">%4$s</p>
+								
 
-			</div>
-		</div>
+								', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
+						?>
+
+					</div>
+				<?php };?>
 
 		<?php }; ?>
+
+		</div>
+		<!-- /header-intro -->
 
 	</header>
 
