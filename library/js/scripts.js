@@ -122,10 +122,10 @@ jQuery(document).ready(function($) {
 // DOCKING NAV FUNCTION
 function docknav(){
 	if( isScrolledIntoView(jQuery('header.hero')) === true ){
-		console.log('true');
+		// console.log('true');
 		jQuery('#header-nav').removeClass('docked');
 	} else {
-		console.log('false');
+		// console.log('false');
 		jQuery('#header-nav').addClass('docked');
 
 	}
