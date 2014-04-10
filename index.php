@@ -208,17 +208,19 @@
 
 			<div class="row">
 				<div class="col-sm-6">
-
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-rave.png" class="logo" alt="ravensbourne logo" />
-
+					<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-rave.png" class="logo" alt="ravensbourne logo" />
+					</a>
 				</div>
 				<div class="col-sm-6">
 
 					<address>
-						6 Penrose Way<br />
-						Greenwich Peninsula<br />
-						London<br />
-						SE10 0EW
+						<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
+							6 Penrose Way<br />
+							Greenwich Peninsula<br />
+							London<br />
+							SE10 0EW
+						</a>
 					</address>
 					
 				</div>
