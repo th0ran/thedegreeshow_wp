@@ -91,9 +91,13 @@
 		<?php // SHOW ON PAGES THAT AREN'T THE HOMEPAGE
 			} else { ?>
 
+				<?php //	SHOW TITLE ON POST AND PAGES, but not the 404 page...
+					if (!in_array('error404',$classes)) { ?>
 				<h1>
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php wp_title(''); ?></a>
 				</h1>
+				<?php };?>
+
 
 				<?php //	SHOW THE FOLLOWING ONLY ON POSTS
 					if(in_array('single-post',$classes)) { ?>

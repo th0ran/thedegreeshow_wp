@@ -1,43 +1,19 @@
 <?php get_header(); ?>
 
-			<div id="content">
+<section class="article content-pad container-fluid">
 
-				<div id="inner-content" class="wrap clearfix">
+	<div class="row">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+		<div class="col-md-12 text-center">
 
-						<article id="post-not-found" class="hentry clearfix">
+			<h1 class="errorpage">404</h1>
 
-							<header class="article-header">
+			Oops, looks like you’ve taken a wrong turn. Sorry about that! Go <a href="http://thedegreeshow.com/" title="home">home</a>?
+			
+		</div>
 
-								<h1><?php _e( 'Epic 404 - Article Not Found', 'bonestheme' ); ?></h1>
+	</div>
 
-							</header>
-
-							<section class="entry-content">
-
-								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></p>
-
-							</section>
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section>
-
-							<footer class="article-footer">
-
-									<p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
-
-							</footer>
-
-						</article>
-
-					</div>
-
-				</div>
-
-			</div>
+</section><!-- article -->
 
 <?php get_footer(); ?>
