@@ -96,6 +96,9 @@ jQuery(document).ready(function($) {
 	})
 
 
+	jQuery('.backtotop').click(function(){
+		scrollTo('#wrapper');
+	});
 
 	/*
 		HOMEPAGE MAP
@@ -111,6 +114,7 @@ jQuery(document).ready(function($) {
 	$( window ).scroll(function() {
 		docknav();
 	});
+
 
 }); /* end of as page load scripts */
 
@@ -137,6 +141,12 @@ function isScrolledIntoView(elem)
     var elemBottom = elemTop + jQuery(elem).height();
 
     return ((elemBottom <= docViewBottom) && (jQuery(elem).height() >= docViewTop));
+}
+
+// Smooth scrollin
+function scrollTo(anchor){
+	jQuery('html, body').animate({ scrollTop: jQuery(anchor).offset().top }, 200);
+	return false;
 }
 
 /*! A fix for the iOS orientationchange zoom bug.
