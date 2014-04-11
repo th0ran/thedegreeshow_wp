@@ -11,7 +11,11 @@
 			<h1>Book Your Place</h1>
 
 			<p class="intro">
-				Lorem ipsum dolor sit amet, in pro ludus aperiam insolens, novum simul et nam. His et odio suas unum. Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
+				Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers.
+			</p>
+
+			<p>
+				So join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us.
 			</p>
 
 			<hr>
@@ -28,7 +32,7 @@
 			<h4>Day 1</h4>
 
 			<p>
-				Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
+				The 16th June is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with the our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.
 			</p>
 
 			<a href="#" class="cta">Book now</a>
@@ -41,7 +45,7 @@
 			<h4>Day 2</h4>
 
 			<p>
-				Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
+				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course. 
 			</p>
 
 			<a href="#" class="cta">Book now</a>
@@ -54,7 +58,7 @@
 			<h4>Day 3</h4>
 
 			<p>
-				Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
+				The 18th June is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.
 			</p>
 
 			<a href="#" class="cta">Book now</a>
@@ -71,7 +75,7 @@
 			<h4>Day 4</h4>
 
 			<p>
-				Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
+				The Degree Show transforms again on the 19th June into focusing more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.
 			</p>
 
 			<a href="#" class="cta">Book now</a>
@@ -84,7 +88,7 @@
 			<h4>Day 5</h4>
 
 			<p>
-				Eam cu ullum concludaturque, at quas ubique doctus eum. Ei choro legimus detraxit per. No novum omittam interesset has, quo ut magna.
+				The 20th sees the close of The Degree Show, and as well as being the wrap party for everyone that has helped with the show, there is also the Animation, Architecture, Digital Photography and IDEAs private views, and is your last chance to see all the students’ who are exhibiting this year.
 			</p>
 
 			<a href="#" class="cta">Book now</a>
@@ -205,7 +209,13 @@
 			<p class="intro">
 				Located on the Greenwich Digital Peninsula, London's newest digital community, just 20 minutes away from Tech City, the capital's fast-growing media and technology hub.
 			</p>
+			<p>
+				You can get to Ravensbourne via the Jubilee Line to North Greenwich, the Emirates Airline from Emirates Royal Docks or the Thames Clipper from London Bridge or Embankment. 
+			</p>
 
+			<p>
+				If you are travelling from abroad the nearest airport is London City Airport or we are half an hour away from St. Pancras International where the Eurostar terminates.
+			</p>
 			<div class="row">
 				<div class="col-sm-6">
 					<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
