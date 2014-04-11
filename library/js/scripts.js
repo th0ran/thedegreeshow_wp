@@ -77,16 +77,26 @@ jQuery(document).ready(function($) {
 
 		if (view.left === 0) {
 
-			// navbar closed
+			// navbar is closed, open it
 			wrapper.animate(
+				{ left:'-' + $('#side').width() + 'px' },
+				{ duration: 200, queue: false }
+			);
+			// sticky nav was glitching in chrome, so move it all by itself.
+			$('#header-nav').animate(
 				{ left:'-' + $('#side').width() + 'px' },
 				{ duration: 200, queue: false }
 			);
 
 		} else {
 
-			// navbar open
+			// navbar is open, close it
 			wrapper.animate(
+				{ left: '0px' },
+				{ duration: 200, queue: false }
+			);
+			// sticky nav was glitching in chrome, so move it all by itself.
+			$('#header-nav').animate(
 				{ left: '0px' },
 				{ duration: 200, queue: false }
 			);
