@@ -57,6 +57,11 @@
 <!-- wrapper -->
 <div id="wrapper">
 
+	<section id="search">
+		<?php get_search_form(); ?>
+		<img src="<?php echo get_template_directory_uri(); ?>/library/images/ico-cross-xl.png" alt="close search" class="ico-close searchtoggle">
+	</section>
+
 	<header class="hero <?php if (in_array('home',$classes)) { echo 'full'; } ?>">
 
 		<nav id="header-nav">

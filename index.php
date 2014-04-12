@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
- <!-- <div id="map"></div> -->
-
 <section class="booking container-fluid">
 
 	<div class="row">

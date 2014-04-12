@@ -106,6 +106,15 @@ jQuery(document).ready(function($) {
 	})
 
 
+	/*
+		SEARCH TOGGLE
+	*/
+	$('.searchtoggle').click(function(){
+		// $('#search').fadeToggle(500);
+		$('#search').slideToggle(500);
+	});
+
+
 	jQuery('.backtotop').click(function(){
 		scrollTo('#wrapper');
 	});

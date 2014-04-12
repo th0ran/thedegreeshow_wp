@@ -131,3 +131,43 @@ header.hero {
 		}
 	}
 }
+
+.searchtoggle {
+	cursor: pointer;
+}
+
+#search{
+	display: none;
+	.full;
+
+	background-color: @brand;
+	z-index: 20;
+	position: fixed;
+
+	label.screen-reader-text, input#s {
+		margin: 0 10%;
+	}
+	label.screen-reader-text {
+		margin-top: 10%;
+		font-size: 1.2em;
+		color: @white;
+		text-transform: uppercase;
+	}
+	input#s{
+		background-color: @brand;
+		border: 0px;
+		border-left: 5px solid @brandlt;
+		color: @brandlt;
+		font-size: 11.6em;
+		width: 80%;
+	}
+	.ico-close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 20;
+	}
+	#searchsubmit {
+		display: none;
+	}
+}
