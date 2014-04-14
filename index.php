@@ -13,7 +13,7 @@
 			</p>
 
 			<p>
-				So join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us.
+				Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us.
 			</p>
 
 			<hr>
