@@ -43,11 +43,11 @@
 <?php 
 	$classes = get_body_class(); // handy to tell which page we're on
 
-	// if we're on the 'meet the team' custom post type, treat it like a page
-	// foreach($classes as $key=>$value){
-	// 	if(strpos($value,'the_team') !== false){ $page = true; }
-	// 	if($page){ break; }
-	// }
+	// if we're on the 'meet the team' custom post type $team = true
+	foreach($classes as $key=>$value){
+		if(strpos($value,'the_team') !== false){ $team = true; }
+		if($team){ break; }
+	}
 
 ?>
 
@@ -62,7 +62,22 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/library/images/ico-cross-xl.png" alt="close search" class="ico-close searchtoggle">
 	</section>
 
-	<header class="hero <?php if (in_array('home',$classes)) { echo 'full'; } ?>">
+	<!-- getting thumbnail to display as background: -->
+	<?php $image_id = get_post_thumbnail_id();
+		$image_url = wp_get_attachment_image_src($image_id,'full', true);
+	?>
+
+	<!-- header --><header class="hero <?php if (in_array('home',$classes)) { echo 'full'; } ?>"
+
+	 <?php 
+		// thumbnail background if it has one set and is not the team page
+		if(has_post_thumbnail() && !$team){ 
+			echo 'style="background-image:url(\'' . $image_url[0] . '\') ;"' ; 
+		} else {
+			// no background, show default
+		};
+	 ?>
+	><!-- /header -->
 
 		<nav id="header-nav">
 		
