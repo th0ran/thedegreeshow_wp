@@ -12,7 +12,7 @@
 
 		echo '<h1 class="col-md-12 text-center">' . $team->name . '</h1>';
 
-		query_posts('posts_per_page=2&custom_cat=' . $team->slug);
+		query_posts('custom_cat=' . $team->slug);
 
 		if (have_posts()) : while (have_posts()) : the_post();
 
