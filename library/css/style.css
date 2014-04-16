@@ -727,6 +727,9 @@ header.hero a {
     padding-right: 0px;
     margin-bottom: 5px;
   }
+  #search input#s {
+    font-size: 2em;
+  }
   .pad {
     padding: 0px 10%;
   }
