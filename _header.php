@@ -45,7 +45,7 @@
 	} elseif($page == 'search') {
 
 		$bg_url = 'style="background-image:url(\'http://thedegreeshow.com/wp-content/uploads/2014/04/1009999_10202925685888235_996614186_n.jpg\') ;"';
-		
+
 	} else {
 		// no thumb;
 	};
@@ -97,7 +97,7 @@
 
 
 	<?php // show on pages, combate the SEO plugin
-		if ($page == 'page' || $page == 'team'){ 
+		if ($page == 'page' || $page == 'team' || $page == 'search'){ 
 	?>
 		<h1>
 			<a href="<?php echo home_url(); ?>" rel="nofollow"><?php wp_title(); ?></a>
