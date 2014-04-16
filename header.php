@@ -40,109 +40,12 @@
 
 <body <?php body_class(); ?>>
 
-<?php 
-	$classes = get_body_class(); // handy to tell which page we're on
-
-	// if we're on the 'meet the team' custom post type $team = true
-	foreach($classes as $key=>$value){
-		if(strpos($value,'the_team') !== false){ $team = true; }
-		if($team){ break; }
-	}
-
-?>
-
 <!-- Side navigation must be outside the wrapper -->
 <?php get_sidebar(); ?>
 
 <!-- wrapper -->
 <div id="wrapper">
 
-	<section id="search">
-		<?php get_search_form(); ?>
-		<img src="<?php echo get_template_directory_uri(); ?>/library/images/ico-cross-xl.png" alt="close search" class="ico-close searchtoggle">
-	</section>
-
-	<!-- getting thumbnail to display as background: -->
-	<?php $image_id = get_post_thumbnail_id();
-		$image_url = wp_get_attachment_image_src($image_id,'full', true);
-	?>
-
-	<!-- header --><header class="hero <?php if (in_array('home',$classes)) { echo 'full'; } ?>"
-
-	 <?php 
-		// thumbnail background if it has one set and is not the team page
-		if(has_post_thumbnail() && !$team){ 
-			echo 'style="background-image:url(\'' . $image_url[0] . '\') ;"' ; 
-		} else {
-			// no background, show default
-		};
-	 ?>
-	><!-- /header -->
-
-		<nav id="header-nav">
-		
-			<div class="header-nav">
-				<p class="searchtoggle">Search</p>
-				<p class="navtoggle">Menu</p>
-			</div>
-
-			<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>">
-			</a>
-
-		</nav>
-
-		<!-- header-intro -->
-		<div class="header-intro">
-
-		<?php //	SHOW THE FOLLOWING ONLY ON THE HOMEPAGE
-			if (in_array('home',$classes)) { ?>
-
-				<h1>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
-				</h1>
-				<div class="header-info">
-					<p class="header-date">16 - 20 June 2014</p>
-					<p class="header-place">Ravensbourne</p>
-				</div>
-				<a href="#booking" class="cta lg-cta">book your place</a>
-
-
-		<?php // SHOW ON PAGES THAT AREN'T THE HOMEPAGE
-			} else { ?>
-
-				<?php //	SHOW TITLE ON POST AND PAGES, but not the 404 page...
-					if (!in_array('error404',$classes)) { ?>
-				<h1>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php the_title(); ?></a>
-				</h1>
-				<?php };?>
-
-
-				<?php //	SHOW THE FOLLOWING ONLY ON POSTS
-					if(in_array('single-post',$classes)) { ?>
-
-					<div class="header-info">
-						
-						<?php
-							echo '<p class="header-person">';
-							the_author_meta('display_name', $post->post_author);
-							echo '</p>';
-
-							printf( __( '<p class="header-clock"><time class="updated" datetime="%1$s" pubdate>%2$s</time></p><p class="header-info">%4$s</p>
-								
-
-								', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-						?>
-
-					</div>
-				<?php };?>
-
-		<?php }; ?>
-
-		</div>
-		<!-- /header-intro -->
-
-	</header>
+	<?php include '_header.php'; ?>
 
 	<div class="content" role="main">
