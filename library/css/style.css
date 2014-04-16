@@ -69,7 +69,7 @@ body {
 }
 body {
   font-family: 'interfaceregular', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #7d7d7d;
 }
 img {
@@ -415,6 +415,7 @@ h4 {
   background-color: #5b6363;
   padding: 40px 30px;
   color: #b9b9b9;
+  font-size: 16px;
 }
 .footer:before,
 .footer:after {
@@ -455,6 +456,7 @@ header.hero a {
   position: fixed;
   top: 0;
   width: 100%;
+  font-size: 18px;
   padding: 3% 5%;
 }
 #header-nav.docked {
