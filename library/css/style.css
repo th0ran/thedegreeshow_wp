@@ -69,7 +69,7 @@ body {
 }
 body {
   font-family: 'interfaceregular', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #7d7d7d;
 }
 img {
@@ -127,7 +127,7 @@ p.intro {
 }
 .lg-cta {
   border: 4px solid #ffffff;
-  font-size: 1.2em;
+  font-size: 1em;
   background: url('../images/opacity-10.png');
 }
 h1 {
@@ -192,7 +192,7 @@ h4 {
   margin: 190px auto;
   margin-left: -60px;
   border: 4px solid #ffffff;
-  font-size: 1.2em;
+  font-size: 1em;
   background: url('../images/opacity-10.png');
   color: #ffffff;
   -webkit-border-radius: 50%;
