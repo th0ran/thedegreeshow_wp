@@ -1,10 +1,17 @@
 
+<?php
+	$graduate = get_post_meta($post->ID, "graduate-page", true);	
+?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'col-sm-4' ); ?> role="article">
 
 
-
-	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php echo get_the_post_thumbnail($page->ID, 'full'); ?></a>
+	<a href="<?php if(!$graduate){ the_permalink(); } else { echo $graduate; } ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="profile">
+		<?php echo get_the_post_thumbnail($page->ID, 'full'); ?>
+		<span class="over">
+			<span class="cta lg-cta">View profile</span>
+		</span>
+	</a>
 
 
 	<header class="article-header">
@@ -21,6 +28,8 @@
 	<section class="entry-content clearfix">
 		<?php the_content(); ?>
 	</section>
+
+	
 
 	<footer class="article-footer">
 		<ul class="social-buttons-sm">

@@ -37,17 +37,12 @@
 	$image_id = get_post_thumbnail_id();
 	$image_url = wp_get_attachment_image_src($image_id,'full', true);
 
-	// if has post, and is not certain pages, show.
+	// if has post thumbnail, and is not certain pages, show.
 	if(has_post_thumbnail() && $page != 'team' && $page != 'home'){ 
-
 		$bg_url = 'style="background-image:url(\'' . $image_url[0] . '\') ;"';
-
-	} elseif($page == 'search') {
-
+	};
+	if($page == 'search') {
 		$bg_url = 'style="background-image:url(\'http://thedegreeshow.com/wp-content/uploads/2014/04/1009999_10202925685888235_996614186_n.jpg\') ;"';
-
-	} else {
-		// no thumb;
 	};
 ?>
 

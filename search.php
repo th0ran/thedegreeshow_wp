@@ -10,7 +10,7 @@
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<div class="story">
+				<div class="story col-md-8">
 
 					<a href="<?php the_permalink() ?>">
 						<h3><?php the_title(); ?></h3>
@@ -25,6 +25,10 @@
 						<?php the_excerpt(); ?>
 					</p>
 
+				</div>
+
+				<div class="col-md-4">
+					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
 				</div>
 
 				<?php endwhile; ?>

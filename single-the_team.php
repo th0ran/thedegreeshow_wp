@@ -14,65 +14,69 @@ single-bookmarks.php
 ?>
 
 <?php get_header(); ?>
-<h1>Team singles</h1>
-			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+<section class="article content-pad container-fluid">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+	<div class="row">
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-								<header class="article-header">
+		<div class="col-md-4">
+			<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
+		</div>
 
-									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link(), get_the_term_list( $post->ID, 'custom_cat', ' ', ', ', '' ) );
-									?></p>
+		<div class="col-md-6">
 
-								</header>
+			<article id="post-<?php the_ID(); ?>">
 
-								<section class="entry-content clearfix">
+				<?php the_content(); ?>
 
-									<?php the_content(); ?>
+				<?php // comments_template(); ?>
 
-								</section>
+			</article>
 
-								<footer class="article-footer">
-									<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __( 'Custom Tags:', 'bonestheme' ) . '</span> ', ', ' ) ?></p>
+			<footer class="article-footer">
+				<ul class="social-buttons-sm">
 
-								</footer>
+				<?php 
+					$instagram = get_post_meta($post->ID, "instagram", true);
+					$twitter = get_post_meta($post->ID, "twitter", true);
+					$linkedin = get_post_meta($post->ID, "linkedin", true);
+				?>
 
-								<?php comments_template(); ?>
+				<?php if ($twitter != ""){ ?>
 
-							</article>
+					<li><a href="<?php echo $twitter; ?>" class="ico-tw" target="blank" title="<?php the_title(); ?>'s Twitter">Twitter</a></li>
 
-							<?php endwhile; ?>
+				<?php }; if ($instagram != ""){ ?>
 
-							<?php else : ?>
+					<li><a href="<?php echo $instagram; ?>" class="ico-in" target="blank" title="<?php the_title(); ?>'s Instagram">instagram</a></li>
 
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the single-custom_type.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
+				<?php }; if ($linkedin != ""){ ?>
 
-							<?php endif; ?>
+					<li><a href="<?php echo $linkedin; ?>" class="ico-li" target="blank" title="<?php the_title(); ?>'s LinkedIn">linkedin</a></li>
 
-						</div>
+				<?php }; ?>
 
-						<?php get_sidebar(); ?>
+				</ul>
+			</footer>
 
-				</div>
+		</div>
 
-			</div>
+		<?php endwhile; ?>
+
+		<?php else : ?>
+
+		<div class="col-md-12">
+			404 - Post not found
+		</div>
+
+		<?php endif; ?>
+			
+
+	</div>
+
+</section><!-- article -->
 
 <?php get_footer(); ?>

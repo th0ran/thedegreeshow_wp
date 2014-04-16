@@ -7,8 +7,41 @@
 		padding: 2% 5%;
 	}
 
+	.profile {
+		position: relative;
+		display: block;
+
+
+		.over {
+			transition: opacity .2s ease-in-out;
+			-moz-transition: opacity .2s ease-in-out;
+			-webkit-transition: opacity .2s ease-in-out;
+			opacity: 0;
+			z-index: 5;
+			background: url('../images/opacity-blu.png');
+
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0;
+			height: 100%;
+
+			text-align: center;
+			.cta {
+				margin: 40% 0;
+			}
+		}
+
+		&:hover, &:active {
+			.over {
+				opacity: 1;
+			}
+		}
+	}
+
 	.wp-post-image {
 		height: auto;
+		z-index: -1;
 	}
 
 	.article-header h2 span {
@@ -34,13 +67,22 @@
 		height: 37px;
 		text-indent: -10000px;
 		&.ico-li {
-			background-position: 0;
+			background-position: 0 0;
+			&:hover{
+				background-position: 0 -43px;
+			}
 		}
 		&.ico-tw {
-			background-position: -46px;
+			background-position: -46px 0;
+			&:hover{
+				background-position: -46px -43px;
+			}
 		}
 		&.ico-in {
-			background-position: -92px;
+			background-position: -92px 0;
+			&:hover{
+				background-position: -92px -43px;
+			}
 		}
 	}
 }
