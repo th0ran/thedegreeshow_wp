@@ -97,6 +97,11 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
+.light {
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 b,
 strong {
   font-family: 'interfacebold', sans-serif;
