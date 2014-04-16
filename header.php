@@ -114,7 +114,7 @@
 				<?php //	SHOW TITLE ON POST AND PAGES, but not the 404 page...
 					if (!in_array('error404',$classes)) { ?>
 				<h1>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php wp_title(''); ?></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php the_title(); ?></a>
 				</h1>
 				<?php };?>
 
