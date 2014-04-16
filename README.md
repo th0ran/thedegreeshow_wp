@@ -12,6 +12,15 @@ Soon to be made up of all sorts of cool stuff.
 * Have your own wordpress set up and install this repositry as a theme.
 * Make sure you have a LESS compiler if you are making style changes. I reccommend http://incident57.com/less/ or http://wearekiss.com/simpless . Do not change the css file directly.
 
+## LESS quick intro
+You can just code straight CSS into less files. The main difference is that you need to compile less files into a CSS file using a compiler. There are plenty of ways coding in LESS is more efficent, you can read about them on the docs here: http://lesscss.org/
+
+With your Less compiler, make sure you are ONLY compiling the main style.less file and no other file - you should just be able to uncheck them. The main style.less file references all the other files. Set the 'css output file location' to the correct /css folder so the compiler does not compile the css into the same folder as the less files.
+
+The less files should automatically compile when you save them. Try changing something, check the compiler log to check it goes through. The only exception may be if you are working with less files referenced in @media queries - mobile site stuff. In that case, you may have to save style.less to trigger the compiler.
+
+Less is supposed to be helpful. I've set repetitive colours in the mixins.less file and other variables - you may recognise this kind of feature from javascript. Yell if you need help.
+
 ### Menu
 Under Appearance / Menu create a menu called 'main', add menu items and set the theme location to be 'The Main Menu'.
 
