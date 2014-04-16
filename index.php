@@ -9,11 +9,7 @@
 			<h1>Book Your Place</h1>
 
 			<p class="intro light">
-				Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers.
-			</p>
-
-			<p class="light">
-				Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us.
+				Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers. Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us.
 			</p>
 
 			<hr>
@@ -26,40 +22,40 @@
 
 		<div class="col-md-4">
 			
-			<h2>Monday 16th June</h2>
+			<h2 class="light">Monday 16th June</h2>
 			<h4>Day 1</h4>
 
 			<p>
 				The 16th June is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with the our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.
 			</p>
 
-			<a href="#" class="cta">Book now</a>
+			<a href="#" class="cta bold">Book now</a>
 
 		</div>
 
 		<div class="col-md-4">
 			
-			<h2>Tuesday 17th June</h2>
+			<h2 class="light">Tuesday 17th June</h2>
 			<h4>Day 2</h4>
 
 			<p>
 				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course. 
 			</p>
 
-			<a href="#" class="cta">Book now</a>
+			<a href="#" class="cta bold">Book now</a>
 
 		</div>
 
 		<div class="col-md-4">
 			
-			<h2>Wednesday 18th June</h2>
+			<h2 class="light">Wednesday 18th June</h2>
 			<h4>Day 3</h4>
 
 			<p>
 				The 18th June is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.
 			</p>
 
-			<a href="#" class="cta">Book now</a>
+			<a href="#" class="cta bold">Book now</a>
 
 		</div>
 
@@ -69,27 +65,27 @@
 
 		<div class="col-md-4">
 			
-			<h2>Thursday 19th June</h2>
+			<h2 class="light">Thursday 19th June</h2>
 			<h4>Day 4</h4>
 
 			<p>
 				The Degree Show transforms again on the 19th June into focusing more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.
 			</p>
 
-			<a href="#" class="cta">Book now</a>
+			<a href="#" class="cta bold">Book now</a>
 
 		</div>
 
 		<div class="col-md-4">
 			
-			<h2>Friday 20th June</h2>
+			<h2 class="light">Friday 20th June</h2>
 			<h4>Day 5</h4>
 
 			<p>
 				The 20th sees the close of The Degree Show, and as well as being the wrap party for everyone that has helped with the show, there is also the Animation, Architecture, Digital Photography and IDEAs private views, and is your last chance to see all the students’ who are exhibiting this year.
 			</p>
 
-			<a href="#" class="cta">Book now</a>
+			<a href="#" class="cta bold">Book now</a>
 
 		</div>
 
