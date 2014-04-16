@@ -8,11 +8,11 @@
 			
 			<h1>Book Your Place</h1>
 
-			<p class="intro">
+			<p class="intro light">
 				Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers.
 			</p>
 
-			<p>
+			<p class="light">
 				Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us.
 			</p>
 
