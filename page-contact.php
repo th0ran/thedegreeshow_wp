@@ -10,7 +10,7 @@ Template Name: Contact Form Template
 
 	<div class="row intro">
 		<div class="col-md-12">
-			<p>The Degree Show 2014 will be hosted at <span class="rave">Ravensbourne</span></p>
+			<p>The Degree Show 2014 will be hosted at <a href="http://www.ravensbourne.ac.uk/" class="rave" target="_blank">Ravensbourne</span></a>
 
 			<p>Located on the Greenwich Digital Peninsula, London's newest digital community, just 20 minutes away from Tech City, the capital's fast-growing media and technology hub.</p>
 		</div>
@@ -45,7 +45,7 @@ Template Name: Contact Form Template
 		</div>
 
 	</div>
-	
+
 </section>
 
 
