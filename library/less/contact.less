@@ -1,0 +1,48 @@
+/*
+-- Contact form page
+*/
+.contact {
+	.intro {
+		font-size: 1.2em;
+		text-align: center;
+		.content-pad;
+		.rave {
+			.bold;
+			font-size: 1.5em;
+			color: @brand;
+			background: url('../images/logo-rave.png') no-repeat center 0px;
+			padding-top: 80px;
+			display: inline-block;
+		}
+	}
+}
+.contact-form {
+	font-size: 1.2em;
+	.address {
+		background: url('../images/opacity-85.png');
+		margin-top: 0px;
+		margin-bottom: 350px;
+	}
+	input, textarea {
+		background: @white;
+		border: none;
+		width: 100%;
+		color: @text;
+		padding: 15px 20px;
+	}
+	label {
+		text-indent: -10000px;
+		line-height: 0.5;
+	}
+	input[type="submit"] {
+		background: url('../images/arrow-down.png') no-repeat;
+		.transition (background-position .1s ease-in-out);
+		background-position: center 2.2em;
+		color: @brand;
+		padding-bottom: 1em;
+		&:hover {
+			background-position: center bottom;
+			color: darken(@brand, 10%);
+		}
+	}
+}

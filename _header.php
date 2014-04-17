@@ -59,9 +59,9 @@
 <!-- header -->
 <header class="hero <?php echo $header_class; ?>" <?php echo $bg_url; ?> >
 	
-	<?php if($thumb){?>
+<!-- 	<?php if($thumb){?>
 		<span class="over"></span>
-	<?php }?>
+	<?php }?> -->
 
 	<div class="header-content">
 		
