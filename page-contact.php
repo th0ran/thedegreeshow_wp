@@ -13,6 +13,8 @@ Template Name: Contact Form Template
 			<p>The Degree Show 2014 will be hosted at <a href="http://www.ravensbourne.ac.uk/" class="rave" target="_blank">Ravensbourne</span></a>
 
 			<p>Located on the Greenwich Digital Peninsula, London's newest digital community, just 20 minutes away from Tech City, the capital's fast-growing media and technology hub.</p>
+
+			<p>If you want to give us a call you can, for general questions dial 0203 040 3836 or for marketing purposes dail 0203 040 3637.</p>
 		</div>
 	</div>
 
