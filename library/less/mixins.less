@@ -34,6 +34,13 @@
   border-radius: @radius;
 }
 
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+
 // Responsive standpoints (from bootstrap)
 @tablets: 768px;
 @desktops: 992px;
