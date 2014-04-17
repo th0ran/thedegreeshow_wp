@@ -3,6 +3,11 @@
 	<img src="<?php echo get_template_directory_uri(); ?>/library/images/arrow-up.png" alt="Back to top">
 </a>
 
+<audio id="whee">
+	<source src="<?php echo get_template_directory_uri(); ?>/library/fonts/whee.mp3"></source>
+	<source src="<?php echo get_template_directory_uri(); ?>/library/fonts/whee.ogg"></source>
+</audio>
+
 <footer class="container-fluid footer" role="contentinfo">
 
 	<div class="row">

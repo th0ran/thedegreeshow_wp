@@ -114,9 +114,13 @@ jQuery(document).ready(function($) {
 		$('#search').slideToggle(500);
 	});
 
-
+	$count = 0;
 	jQuery('.backtotop').click(function(){
 		scrollTo('#wrapper');
+		$count++;
+		if ($count%2 == 0){
+			$("#whee")[0].play();
+		};
 	});
 
 	/*
