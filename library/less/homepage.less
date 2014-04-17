@@ -3,8 +3,6 @@
 -- home specific
 */
 
-#map { height: 180px; }
-
 .booking {
 	text-align: center;
 
@@ -158,15 +156,35 @@
 
 .location {
 	background-color: @brand;
-	background: url('../images/bg-map.png');
-	background-position: center center;
-	background-size: cover;
+	// background: url('../images/bg-map.png');
+	// background-position: center center;
+	// background-size: cover;
+	position: relative;
+	height: 750px;
 
 
+	#map {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+		
 	.address {
 		background: url('../images/opacity-85.png');
-		margin-top: 180px;
-		.content-pad;
+
+		overflow: hidden;
+
+		position: absolute;
+		top: 180px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		z-index: 2;
 		text-align: center;
 
 		a {
@@ -174,6 +192,23 @@
 			&:hover {
 				color: darken(@brand, 10%);
 			}
+		}
+
+		.map-toggle{
+			cursor: pointer;
+			&.arrow {
+				display: block;
+				height: 30px;
+				background: url('../images/arrow-down.png')no-repeat center center @branddk;
+				&.up {
+					background: url('../images/arrow-up.png')no-repeat center center @branddk;
+				}
+			}
+		}
+
+
+		.map-info {
+			.content-pad;
 		}
 
 		p.intro {

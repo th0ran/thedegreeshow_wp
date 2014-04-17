@@ -193,12 +193,16 @@
 
 </section><!--/front-posts-->
 
-<section class="location container-fluid">
-	<div class="row address">
 
-		<div class="col-md-12">
+<section class="location">
+	<div id="map"></div>
+	<div class="address">
+
+		<span class="map-toggle arrow"></span>
+
+		<div class="map-info">
 			
-			<h1>Ravensbourne</h1>
+			<h1 class="map-toggle">Ravensbourne</h1>
 
 			<p class="intro">
 				Located on the Greenwich Digital Peninsula, London's newest digital community, just 20 minutes away from Tech City, the capital's fast-growing media and technology hub.
@@ -212,14 +216,14 @@
 			</p>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
+					<a target="_blank" title="Find us" class="map-toggle">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-rave.png" class="logo" alt="ravensbourne logo" />
 					</a>
 				</div>
 				<div class="col-sm-6">
 
 					<address>
-						<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
+						<a target="_blank" title="Find us" class="map-toggle">
 							6 Penrose Way<br />
 							Greenwich Peninsula<br />
 							London<br />

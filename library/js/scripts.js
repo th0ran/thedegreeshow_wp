@@ -114,6 +114,9 @@ jQuery(document).ready(function($) {
 		$('#search').slideToggle(500);
 	});
 
+	/*
+		SCROLL TO TOP
+	*/
 	$count = 0;
 	jQuery('.backtotop').click(function(){
 		scrollTo('#wrapper');
@@ -124,23 +127,74 @@ jQuery(document).ready(function($) {
 	});
 
 	/*
-		HOMEPAGE MAP
+		DOCKING NAV
 	*/
-	// var map = L.map('map').setView([51.505, -0.09], 13);
-
-	// L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-	// 	maxZoom: 18,
-	// 	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
-	// }).addTo(map);
-
 	docknav();
 	$( window ).scroll(function() {
 		docknav();
 	});
 
+	/*
+		HOMEPAGE MAP
+	*/
+	// http://snazzymaps.com/
+	// When the window has finished loading create our google map below
+	google.maps.event.addDomListener(window, 'load', init);
+
+	jQuery('.map-toggle').click(function(){
+		var info = jQuery('.address');
+		var infotop = info.css('top');
+		var infomargin = '180px';
+
+		var docked = jQuery('.location').height() - jQuery('.map-toggle.arrow').height();
+
+		console.log(docked);
+
+		if(infotop <= infomargin){
+			jQuery(this).addClass('up');
+			jQuery(info).animate({
+				top: docked,
+			});
+		} else {
+			jQuery(this).removeClass('up');
+			jQuery(info).animate({
+				top: infomargin,
+			});
+		}
+
+		// jq.animate(jQuery('.address').css('top', '80%'));
+	});
+	
+
 
 }); /* end of as page load scripts */
 
+
+// HOMEPAGE MAP
+function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 16,
+
+		disableDefaultUI: true,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(51.501673,0.00575),
+
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{stylers:[{hue:'#99cccc'},{saturation:-30}]},{featureType:'all',elementType:'geometry',stylers:[{lightness:50},{visibility:'simplified'}]},{featureType:'road',elementType:'labels',stylers:[{visibility:'off'}]}]
+    };
+
+    // Get the HTML DOM element that will contain your map 
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using out element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+}
 
 // DOCKING NAV FUNCTION
 function docknav(){
