@@ -156,12 +156,8 @@
 
 .location {
 	background-color: @brand;
-	// background: url('../images/bg-map.png');
-	// background-position: center center;
-	// background-size: cover;
 	position: relative;
-	height: 750px;
-
+	overflow: hidden;
 
 	#map {
 		z-index: 1;
@@ -172,14 +168,13 @@
 		bottom: 0;
 	}
 
-		
 	.address {
 		background: url('../images/opacity-85.png');
 
 		overflow: hidden;
 
-		position: absolute;
-		top: 180px;
+		position: relative;
+		margin-top: 180px;
 		bottom: 0;
 		left: 0;
 		right: 0;

@@ -146,7 +146,7 @@ jQuery(document).ready(function($) {
 		var infotop = info.css('top');
 		var infomargin = '180px';
 
-		var docked = jQuery('.location').height() - jQuery('.map-toggle.arrow').height();
+		var docked = jQuery('.location').height() - jQuery('.map-toggle.arrow').height() - 180;
 
 		console.log(docked);
 
@@ -158,7 +158,7 @@ jQuery(document).ready(function($) {
 		} else {
 			jQuery(this).removeClass('up');
 			jQuery(info).animate({
-				top: infomargin,
+				top: '0px',
 			});
 		}
 
