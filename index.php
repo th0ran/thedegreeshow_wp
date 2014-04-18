@@ -257,7 +257,7 @@
 					</a>					
 				</li>
 				<li>
-					<a href="http://www.stage-electics.co.uk" target="_blank">
+					<a href="http://www.stage-electrics.co.uk" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
 					</a>					
 				</li>
