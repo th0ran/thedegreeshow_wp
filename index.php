@@ -107,7 +107,12 @@
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-		<div class="col-md-6">
+		<!-- getting thumbnail to display as background: -->
+		<?php $image_id = get_post_thumbnail_id();
+			$image_url = wp_get_attachment_image_src($image_id,'large', true);
+		?>
+
+		<div class="col-md-6" style="background-image:url(<?php echo $image_url[0];?>);">
 
 			<div class="story">
 
