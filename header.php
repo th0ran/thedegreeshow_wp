@@ -1,3 +1,12 @@
+<?php
+	// if searching for tickets
+	$search = strtolower(esc_attr(get_search_query()));
+	if($search === 'tickets'){
+		header("Location: http://tickets.thedegreeshow.com/");
+		exit;
+	} else {
+	};
+?>
 <!doctype html>
 
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
