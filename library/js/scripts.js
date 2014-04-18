@@ -126,6 +126,10 @@ jQuery(document).ready(function($) {
 		};
 	});
 
+	jQuery('#bookit').click(function(){
+		scrollTo('#booking');
+	});
+
 	/*
 		DOCKING NAV
 	*/

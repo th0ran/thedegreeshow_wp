@@ -95,7 +95,7 @@
 				<p class="header-date">16 - 20 June 2014</p>
 				<p class="header-place">Ravensbourne</p>
 			</div>
-			<a href="#booking" class="cta lg-cta bold">book your place</a>
+			<a id="bookit" class="cta lg-cta bold">book your place</a>
 
 		<?php }; // end homepage only ?>
 

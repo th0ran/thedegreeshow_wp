@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="booking container-fluid">
+<section id="booking" class="booking container-fluid">
 
 	<div class="row">
 
@@ -245,21 +245,36 @@
 			<h4>Sponsored by</h4>
 
 			<ul class="sponsors-list">
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-				<li>11</li>
-				<li>12</li>
-				<li>13</li>
-				<li>14</li>
-				<li>15</li>
+				<li>
+					<a href="#" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-arqiva.png" alt="arqiva">
+					</a>					
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
+					</a>					
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="moo">
+					</a>					
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-DaMa.png" alt="DaMa">
+					</a>					
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-gearhouse.png" alt="Gearhouse">
+					</a>					
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
