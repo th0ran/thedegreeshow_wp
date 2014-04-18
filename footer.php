@@ -13,7 +13,7 @@
 	<div class="row">
 
 		<div class="col-md-6 light">
-			<p>&copy; <?php echo date('Y'); ?> | <?php bloginfo( 'name' ); ?><br><a href="#">Cookie Policy</a></p>
+			<p>&copy; <?php echo date('Y'); ?> | <?php bloginfo( 'name' ); ?><br><a href="http://thedegreeshow.com/privacy-cookie-policy/" title="Cookie Policy">Cookie Policy</a></p>
 		</div>
 		<div class="col-md-6 text-right light">
 			<p>Site by <a href="#">Web Team</a></p>
