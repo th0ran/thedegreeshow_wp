@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<p id="weberror">Something has gone terribly wrong. <a>Please contact the Web Team immediately.</a></p>
 
 <?php 
 

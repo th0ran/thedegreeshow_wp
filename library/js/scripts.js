@@ -130,6 +130,33 @@ jQuery(document).ready(function($) {
 		scrollTo('#booking');
 	});
 
+
+	jQuery('.team-web-team h1').click(function(){
+		var myface = 'http://thedegreeshow.com/wp-content/uploads/2014/04/degreeshowselfie.png';
+		var alexface = 'http://thedegreeshow.com/wp-content/uploads/2014/04/Selfie_Alex.jpg';
+
+		scrollTo('.content');
+		jQuery('#wrapper').each(function(i) {
+			$(this).css({ "position": "relative" });
+			for (var x = 1; x <= 3; x++) {
+				$(this).animate({ left: -25 }, 10).animate({ left: 0 }, 50).animate({ left: 25 }, 10).animate({ left: 0 }, 50);
+			}
+		});
+		jQuery('footer').css('width', '50px');
+		jQuery('.row').css('margin-top', '-400px');
+		jQuery('#header-nav').css('width', '200px');
+		jQuery('.the_team').each(function(){this.style.webkitTransform = 'skew(5deg)';	});
+		jQuery('.the_team:nth-of-type(2)').each(function() { this.style.webkitTransform = 'skew(-10deg)'; });
+		jQuery('.the_team:nth-of-type(2) .wp-post-image').attr('src', myface);
+		jQuery('.the_team:nth-of-type(3) .wp-post-image').attr('src', alexface);
+
+		jQuery('#weberror').delay(200).slideDown();
+	});
+
+	jQuery('#weberror').click(function(){
+		location.reload(true);
+	});
+
 	/*
 		DOCKING NAV
 	*/
@@ -168,11 +195,9 @@ jQuery(document).ready(function($) {
 
 		// jq.animate(jQuery('.address').css('top', '80%'));
 	});
-	
 
 
 }); /* end of as page load scripts */
-
 
 // HOMEPAGE MAP
 function init() {
