@@ -20,7 +20,7 @@ Template Name: Contact Form Template
 
 </section><!-- article -->
 
-<section class="location contact-form container-fluid">
+<section class="bg-map contact-form container-fluid">
 
 	<div class="address row">
 
