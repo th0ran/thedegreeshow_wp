@@ -23,7 +23,7 @@ single-bookmarks.php
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div class="col-md-4">
-			<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
+			<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('full'); ?></a>
 		</div>
 
 		<div class="col-md-6">
