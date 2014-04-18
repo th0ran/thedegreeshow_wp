@@ -246,32 +246,32 @@
 
 			<ul class="sponsors-list">
 				<li>
-					<a href="#" target="_blank">
+					<a href="http://www.arqiva.co.uk" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-arqiva.png" alt="arqiva">
 					</a>					
 				</li>
 				<li>
-					<a href="#" target="_blank">
+					<a href="http://www.stage-electics.co.uk" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
 					</a>					
 				</li>
 				<li>
-					<a href="#" target="_blank">
+					<a href="http://www.moo.com" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="moo">
 					</a>					
 				</li>
 				<li>
-					<a href="#" target="_blank">
+					<a href="https://www.daltonmaag.com" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-DaMa.png" alt="DaMa">
 					</a>					
 				</li>
 				<li>
-					<a href="#" target="_blank">
+					<a href="http://www.gearhousebroadcast.com" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-gearhouse.png" alt="Gearhouse">
 					</a>					
 				</li>
 				<li>
-					<a href="#" target="_blank">
+					<a href="http://www.axon.tv" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
 					</a>
 				</li>
