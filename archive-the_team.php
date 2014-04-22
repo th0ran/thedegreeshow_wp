@@ -15,10 +15,18 @@
 
 		query_posts('custom_cat=' . $team->slug);
 
+		// split into rows
+		$post_counter = 0;
+
 		if (have_posts()) : while (have_posts()) : the_post();
+
+		if($post_counter%3 == 0){ // after 2 posts start a new row
+			echo "</div><div class='row'>";
+		}
 
 			include 'the_team-person.php';
 
+		$post_counter ++;
 		endwhile;
 
 		echo '</div></section>';
