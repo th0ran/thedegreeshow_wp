@@ -29,7 +29,7 @@
 				The 16th June is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with the our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.
 			</p>
 
-			<a href="http://tickets.thedegreeshow.com/?utm_day=monday&utm_source=website" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=monday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -42,7 +42,7 @@
 				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course. 
 			</p>
 
-			<a href="http://tickets.thedegreeshow.com/?utm_day=tuesday&utm_source=website" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=tuesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -55,7 +55,7 @@
 				The 18th June is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.
 			</p>
 
-			<a href="http://tickets.thedegreeshow.com/?utm_day=wednesday&utm_source=website" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=wednesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -72,7 +72,7 @@
 				The Degree Show transforms again on the 19th June into focusing more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.
 			</p>
 
-			<a href="http://tickets.thedegreeshow.com/?utm_day=thursday&utm_source=website" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=thursday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -85,7 +85,7 @@
 				The 20th sees the close of The Degree Show, and as well as being the wrap party for everyone that has helped with the show, there is also the Animation, Architecture, Digital Photography and IDEAs private views, and is your last chance to see all the students’ who are exhibiting this year.
 			</p>
 
-			<a href="http://tickets.thedegreeshow.com/?utm_day=friday&utm_source=website" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=friday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
