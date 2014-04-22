@@ -160,10 +160,10 @@ jQuery(document).ready(function($) {
 	/*
 		DOCKING NAV
 	*/
-	docknav();
-	$( window ).scroll(function() {
-		docknav();
-	});
+	// docknav();
+	// $( window ).scroll(function() {
+	// 	docknav();
+	// });
 
 	/*
 		HOMEPAGE MAP
