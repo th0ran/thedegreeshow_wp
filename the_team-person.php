@@ -7,7 +7,10 @@
 
 
 	<a href="<?php if(!$graduate){ the_permalink(); } else { echo $graduate; } ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="profile">
-		<?php var_dump(get_the_post_thumbnail($page->ID, 'full')); ?>
+		<?php if (!has_post_thumbnail()): ?>
+			<img width="640" height="640" src="http://thedegreeshow.com/wp-content/uploads/2014/04/Selfie_Jon.jpg" class="attachment-full wp-post-image" alt="Selfie_Jon">
+		<?php endif;?>
+		<?php echo get_the_post_thumbnail($page->ID, 'full'); ?>
 		<span class="over">
 			<span class="cta lg-cta">View profile</span>
 		</span>
