@@ -7,7 +7,7 @@
 
 
 	<a href="<?php if(!$graduate){ the_permalink(); } else { echo $graduate; } ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="profile">
-		<?php echo get_the_post_thumbnail($page->ID, 'full'); ?>
+		<?php var_dump(get_the_post_thumbnail($page->ID, 'full')); ?>
 		<span class="over">
 			<span class="cta lg-cta">View profile</span>
 		</span>
