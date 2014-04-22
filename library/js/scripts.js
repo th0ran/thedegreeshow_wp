@@ -30,6 +30,16 @@ if (!window.getComputedStyle) {
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
+
+	window.onscroll = function(){
+		if (window.pageYOffset > 526) {
+			jQuery('#header-nav').addClass('docked');
+		} else {
+			jQuery('#header-nav').removeClass('docked');
+		}
+		
+	}
+
 	/*
 	Responsive jQuery is a tricky thing.
 	There's a bunch of different ways to handle
@@ -195,6 +205,9 @@ jQuery(document).ready(function($) {
 
 		// jq.animate(jQuery('.address').css('top', '80%'));
 	});
+
+
+
 
 
 }); /* end of as page load scripts */
