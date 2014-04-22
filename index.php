@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="booking container-fluid">
+<section id="booking" class="booking container-fluid">
 
 	<div class="row">
 
@@ -29,7 +29,7 @@
 				The 16th June is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with the our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.
 			</p>
 
-			<a href="#" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=monday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -42,7 +42,7 @@
 				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course. 
 			</p>
 
-			<a href="#" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=tuesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -55,7 +55,7 @@
 				The 18th June is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.
 			</p>
 
-			<a href="#" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=wednesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -72,7 +72,7 @@
 				The Degree Show transforms again on the 19th June into focusing more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.
 			</p>
 
-			<a href="#" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=thursday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -85,7 +85,7 @@
 				The 20th sees the close of The Degree Show, and as well as being the wrap party for everyone that has helped with the show, there is also the Animation, Architecture, Digital Photography and IDEAs private views, and is your last chance to see all the students’ who are exhibiting this year.
 			</p>
 
-			<a href="#" class="cta bold">Book now</a>
+			<a href="http://tickets.thedegreeshow.com/?utm_day=friday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -107,7 +107,13 @@
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-		<div class="col-md-6">
+		<?php
+			// getting thumbnail to display as background:
+			$image_id = get_post_thumbnail_id();
+			$image_url = wp_get_attachment_image_src($image_id,'large', true);
+		?>
+
+		<div class="col-md-6" <?php if(has_post_thumbnail()){ echo 'style="background-image:url(' . $image_url[0] . ');"' ; };?>>
 
 			<div class="story">
 
@@ -193,12 +199,16 @@
 
 </section><!--/front-posts-->
 
-<section class="location container-fluid">
-	<div class="row address">
 
-		<div class="col-md-12">
+<section class="location">
+	<div id="map"></div>
+	<div class="address">
+
+		<span class="map-toggle arrow"></span>
+
+		<div class="map-info">
 			
-			<h1>Ravensbourne</h1>
+			<h1 class="map-toggle">Ravensbourne</h1>
 
 			<p class="intro">
 				Located on the Greenwich Digital Peninsula, London's newest digital community, just 20 minutes away from Tech City, the capital's fast-growing media and technology hub.
@@ -212,14 +222,14 @@
 			</p>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
+					<a target="_blank" title="Find us" class="map-toggle">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-rave.png" class="logo" alt="ravensbourne logo" />
 					</a>
 				</div>
 				<div class="col-sm-6">
 
 					<address>
-						<a href="https://www.google.co.uk/maps/place/Ravensbourne/@51.501673,0.00575,17z/data=!3m1!4b1!4m2!3m1!1s0x47d8a81c7b6dfe23:0xc31e4c0ca6a4ace2" target="_blank" title="Find us">
+						<a target="_blank" title="Find us" class="map-toggle">
 							6 Penrose Way<br />
 							Greenwich Peninsula<br />
 							London<br />
@@ -241,21 +251,36 @@
 			<h4>Sponsored by</h4>
 
 			<ul class="sponsors-list">
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-				<li>11</li>
-				<li>12</li>
-				<li>13</li>
-				<li>14</li>
-				<li>15</li>
+				<li>
+					<a href="http://www.arqiva.co.uk" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-arqiva.png" alt="arqiva">
+					</a>					
+				</li>
+				<li>
+					<a href="http://www.stage-electrics.co.uk" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
+					</a>					
+				</li>
+				<li>
+					<a href="http://www.moo.com" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="moo">
+					</a>					
+				</li>
+				<li>
+					<a href="https://www.daltonmaag.com" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-DaMa.png" alt="DaMa">
+					</a>					
+				</li>
+				<li>
+					<a href="http://www.gearhousebroadcast.com" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-gearhouse.png" alt="Gearhouse">
+					</a>					
+				</li>
+				<li>
+					<a href="http://www.axon.tv" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>

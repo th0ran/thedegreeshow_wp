@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-			<div id="content">
+<section class="search-results content-pad container-fluid">
 
-				<div id="inner-content" class="wrap clearfix">
+	<div class="row">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+		<div class="col-md-12">
 
+<!-- 
 							<?php if (is_category()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
@@ -41,68 +42,60 @@
 									</h1>
 							<?php } ?>
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+-->
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
+				<div class="story col-md-8">
 
-								<header class="article-header">
+					<a href="<?php the_permalink() ?>">
+						<h3><?php the_title(); ?></h3>
+					</a>
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline vcard"><?php
-										printf(__( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(__( 'F jS, Y', 'bonestheme' )), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
+					<p class="byline vcard">
+					<?php
+						printf( __( 'Posted by <span class="author">%3$s</span> | %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link(), get_the_category_list(', ') );
+						?>
+					</p>
+					<p>
+						<?php the_excerpt(); ?>
+					</p>
 
-								</header>
+				</div>
 
-								<section class="entry-content clearfix">
+				<div class="col-md-4">
+					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
+				</div>
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 
-									<?php the_excerpt(); ?>
+				<?php endwhile; ?>
 
-								</section>
+				<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
+				<div class="story col-md-12">
+					<?php bones_page_navi(); ?>
+				</div>
+				<?php } else { ?>
+				<div class="story col-md-12">
+					<nav class="wp-prev-next">
+						<ul>
+							<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
+							<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
+						</ul>
+					</nav>
+				</div>
+				<?php } ?>
 
-								<footer class="article-footer">
+			<?php else : ?>
 
-								</footer>
+				404 No posts found
 
-							</article>
+				
+			<?php endif; ?>
 
-							<?php endwhile; ?>
+		</div>
 
-									<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
-										<?php bones_page_navi(); ?>
-									<?php } else { ?>
-										<nav class="wp-prev-next">
-											<ul class="clearfix">
-												<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-												<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-											</ul>
-										</nav>
-									<?php } ?>
+	</div>
 
-							<?php else : ?>
+</section><!-- article -->
 
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
-
-						</div>
-
-						<?php get_sidebar(); ?>
-
-								</div>
-
-			</div>
 
 <?php get_footer(); ?>

@@ -14,6 +14,7 @@ body {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 hr {
@@ -23,6 +24,8 @@ hr {
 }
 
 a {
+	cursor: pointer;
+	.transition (color .1s ease-in-out);
 	color: @brand;
 	&:hover {
 		color: darken(@brand, 10%);
@@ -66,11 +69,23 @@ p.intro {
 	
 	border: 4px solid @brand;
 	color: @brand;
+
+	.transition (border .1s ease-in-out);
+
+	&:hover {
+		border: 4px solid darken(@brand, 10%);
+	}
 }
 .lg-cta {
 	border: 4px solid @white;
+	color: @white;
 	font-size: 1em;
+	.transition (background .1s ease-in-out);
 	background: url('../images/opacity-10.png');
+	&:hover {
+		border: 4px solid @white;
+		background: url('../images/opacity-40.png');
+	}
 }
 
 h1 {

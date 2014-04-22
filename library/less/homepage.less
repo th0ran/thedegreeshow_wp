@@ -3,13 +3,12 @@
 -- home specific
 */
 
-#map { height: 180px; }
-
 .booking {
 	text-align: center;
 
 	.content-pad;
-	padding-bottom: 2%;
+	padding-bottom: 45px;
+	padding-top: 90px;
 
 	.days {
 		line-height: 1.8;
@@ -158,15 +157,30 @@
 
 .location {
 	background-color: @brand;
-	background: url('../images/bg-map.png');
-	background-position: center center;
-	background-size: cover;
+	position: relative;
+	overflow: hidden;
 
+	#map {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 
 	.address {
 		background: url('../images/opacity-85.png');
+
+		overflow: hidden;
+
+		position: relative;
 		margin-top: 180px;
-		.content-pad;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		z-index: 2;
 		text-align: center;
 
 		a {
@@ -174,6 +188,23 @@
 			&:hover {
 				color: darken(@brand, 10%);
 			}
+		}
+
+		.map-toggle{
+			cursor: pointer;
+			&.arrow {
+				display: block;
+				height: 30px;
+				background: url('../images/arrow-down.png')no-repeat center center @branddk;
+				&.up {
+					background: url('../images/arrow-up.png')no-repeat center center @branddk;
+				}
+			}
+		}
+
+
+		.map-info {
+			.content-pad;
 		}
 
 		p.intro {
@@ -209,9 +240,17 @@
 		li {
 			display: inline-block;
 			margin: 10px;
-			background: @white;
-			width: 17%;
-			min-height: 150px;
+			background: url('../images/opacity-8.png');
+			width: 31%;
+			height: 220px;
+			position: relative;
+
+			img {
+				margin: auto;
+				position: absolute;
+				top: 0; left: 0; bottom: 0; right: 0;
+			}
+
 		}
 	}
 }

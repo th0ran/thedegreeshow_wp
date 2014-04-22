@@ -12,6 +12,7 @@
 @brandlt: #e0f0f0;
 @branddk: #384b4b;
 @grey: #b9b9b9;
+@greklt: #f6f6f6;
 @greydk: #5b6363;
 
 // UTILITIES
@@ -32,6 +33,13 @@
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   border-radius: @radius;
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
 }
 
 // Responsive standpoints (from bootstrap)

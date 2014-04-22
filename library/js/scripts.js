@@ -114,29 +114,116 @@ jQuery(document).ready(function($) {
 		$('#search').slideToggle(500);
 	});
 
-
+	/*
+		SCROLL TO TOP
+	*/
+	$count = 0;
 	jQuery('.backtotop').click(function(){
 		scrollTo('#wrapper');
+		$count++;
+		if ($count%2 == 0){
+			$("#whee")[0].play();
+		};
 	});
+
+	jQuery('#bookit').click(function(){
+		scrollTo('#booking');
+	});
+
+
+	jQuery('.team-web-team h1').click(function(){
+		var myface = 'http://thedegreeshow.com/wp-content/uploads/2014/04/degreeshowselfie.png';
+		var alexface = 'http://thedegreeshow.com/wp-content/uploads/2014/04/Selfie_Alex.jpg';
+
+		scrollTo('.content');
+		jQuery('#wrapper').each(function(i) {
+			$(this).css({ "position": "relative" });
+			for (var x = 1; x <= 3; x++) {
+				$(this).animate({ left: -25 }, 10).animate({ left: 0 }, 50).animate({ left: 25 }, 10).animate({ left: 0 }, 50);
+			}
+		});
+		jQuery('footer').css('width', '50px');
+		jQuery('.row').css('margin-top', '-400px');
+		jQuery('#header-nav').css('width', '200px');
+		jQuery('.the_team').each(function(){this.style.webkitTransform = 'skew(5deg)';	});
+		jQuery('.the_team:nth-of-type(2)').each(function() { this.style.webkitTransform = 'skew(-10deg)'; });
+		jQuery('.the_team:nth-of-type(2) .wp-post-image').attr('src', myface);
+		jQuery('.the_team:nth-of-type(3) .wp-post-image').attr('src', alexface);
+
+		jQuery('#weberror').delay(200).slideDown();
+	});
+
+	jQuery('#weberror').click(function(){
+		location.reload(true);
+	});
+
+	/*
+		DOCKING NAV
+	*/
+	// docknav();
+	// $( window ).scroll(function() {
+	// 	docknav();
+	// });
 
 	/*
 		HOMEPAGE MAP
 	*/
-	// var map = L.map('map').setView([51.505, -0.09], 13);
+	// http://snazzymaps.com/
+	// When the window has finished loading create our google map below
+	google.maps.event.addDomListener(window, 'load', init);
 
-	// L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-	// 	maxZoom: 18,
-	// 	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
-	// }).addTo(map);
+	jQuery('.map-toggle').click(function(){
+		var info = jQuery('.address');
+		var infotop = info.css('top');
+		var infomargin = '180px';
 
-	docknav();
-	$( window ).scroll(function() {
-		docknav();
+		var docked = jQuery('.location').height() - jQuery('.map-toggle.arrow').height() - 180;
+
+		console.log(docked);
+
+		if(infotop <= infomargin){
+			jQuery(this).addClass('up');
+			jQuery(info).animate({
+				top: docked,
+			});
+		} else {
+			jQuery(this).removeClass('up');
+			jQuery(info).animate({
+				top: '0px',
+			});
+		}
+
+		// jq.animate(jQuery('.address').css('top', '80%'));
 	});
 
 
 }); /* end of as page load scripts */
 
+// HOMEPAGE MAP
+function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 16,
+
+		disableDefaultUI: true,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(51.501673,0.00575),
+
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{stylers:[{hue:'#99cccc'},{saturation:-30}]},{featureType:'all',elementType:'geometry',stylers:[{lightness:50},{visibility:'simplified'}]},{featureType:'road',elementType:'labels',stylers:[{visibility:'off'}]}]
+    };
+
+    // Get the HTML DOM element that will contain your map 
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using out element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+}
 
 // DOCKING NAV FUNCTION
 function docknav(){

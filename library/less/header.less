@@ -18,6 +18,21 @@ header.hero {
 	}
 }
 
+.over {
+	background: url('../images/opacity-blu-lg.png');
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0;
+	height: 100%;
+	z-index: 1;
+}
+.header-content {
+	position: relative;
+	
+	z-index: 3;
+}
+
 .error404 header.hero {
 	padding-bottom: 0px;
 }
@@ -36,11 +51,7 @@ header.hero {
 		z-index: 10;
 		padding: 10px 85px;
 
-		-webkit-transition: padding .2s linear;
-		-moz-transition: padding .2s linear;
-		-o-transition: padding .2s linear;
-		transition: padding .2s linear;
-
+		.transition (padding .2s linear);
 
 		.logo img {
 			height: 80px;
