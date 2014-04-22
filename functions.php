@@ -174,7 +174,7 @@ function bones_comments( $comment, $args, $depth ) {
 function bones_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
 	<label class="screen-reader-text" for="s">' . __( 'Search', 'bonestheme' ) . '</label>
-	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search for?', 'bonestheme' ) . '" />
+	<input type="text" autofocus value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search for?', 'bonestheme' ) . '" />
 	<input type="submit" id="searchsubmit" value="' . esc_attr__( 'Search' ) .'" />
 	</form>';
 	return $form;
