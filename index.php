@@ -215,9 +215,6 @@
 			</p>
 			<p>
 				You can get to Ravensbourne via the Jubilee Line to North Greenwich, the Emirates Airline from Emirates Royal Docks or the Thames Clipper from London Bridge or Embankment. 
-			</p>
-
-			<p>
 				If you are travelling from abroad the nearest airport is London City Airport or we are half an hour away from St. Pancras International where the Eurostar terminates.
 			</p>
 			<div class="row">

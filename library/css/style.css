@@ -280,6 +280,11 @@ h4 {
   border-left: 5px solid #e0f0f0;
   padding-left: 14px;
 }
+.front-posts .article-header h2 {
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 .front-posts .byline {
   color: #99cccc;
   text-align: right;
@@ -294,6 +299,9 @@ h4 {
   margin-left: -80px;
   padding-left: 80px;
   line-height: 49px;
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 .front-posts .tweets .kebo-tweets .ktweet {
   border-bottom: none;
@@ -328,6 +336,9 @@ h4 {
 }
 .front-posts .news h1 {
   padding-left: 19px;
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 .front-posts .news article:first-of-type {
   font-size: 1.1em;
@@ -380,8 +391,21 @@ h4 {
 .location .address .map-info {
   padding: 5% 15%;
 }
+.location .address .map-info h1 {
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.location .address .map-info p {
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 .location .address p.intro {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 .location .address .logo {
   margin-top: 50px;
@@ -390,6 +414,9 @@ h4 {
 .location .address address {
   margin-top: 40px;
   float: left;
+  font-family: 'interfacelight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 .sponsors {
   background-color: #99cccc;
@@ -717,7 +744,7 @@ header.hero a {
 .header-intro h1 {
   font-size: 2.5em;
   margin: 0px 0px 25px 0px;
-  font-family: 'interfacebold', sans-serif;
+  font-family: 'interfacelight', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
