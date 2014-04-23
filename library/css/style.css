@@ -666,6 +666,7 @@ h4 {
 }
 .day-nav .day-note {
   text-align: center;
+  margin-bottom: 30px;
 }
 .event-page-spacer {
   background: url(http://thedegreeshow.com/wp-content/themes/thedegreeshow_wp/library/images/eventpageheader.jpg);
