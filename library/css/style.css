@@ -936,8 +936,8 @@ header.hero a {
 }
 @media (max-width: 768px) {
   /*
--- MOBILE VERSION
-*/
+  -- MOBILE VERSION
+  */
   header.hero {
     padding-bottom: 40px;
   }
@@ -987,9 +987,9 @@ header.hero a {
 }
 @media (max-width: 992px) {
   /*
--- PORTRAIT TABLET VERSION
--- col-sm , before col-md kicks in
-*/
+  -- PORTRAIT TABLET VERSION
+  -- col-sm , before col-md kicks in
+  */
   .featured .btn-news {
     margin: 500px -50%;
     width: 100%;
@@ -998,4 +998,7 @@ header.hero a {
     border-radius: 0%;
     font-size: 1.7em;
   }
+}
+@media (max-width: 1200px) {
+  
 }
