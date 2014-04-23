@@ -655,6 +655,9 @@ h4 {
 .italic {
   font-family: "interfaceitalic";
 }
+.day-nav {
+  text-align: center;
+}
 .day-nav a {
   font-size: 35px;
   display: inline-block;
@@ -663,6 +666,11 @@ h4 {
 }
 .day-nav .day-note {
   text-align: center;
+}
+.event-page-spacer {
+  background: url(http://thedegreeshow.com/wp-content/themes/thedegreeshow_wp/library/images/eventpageheader.jpg);
+  height: 396px;
+  margin: 60px 0 60px 0;
 }
 /*
 -- Header
