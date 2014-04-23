@@ -893,6 +893,7 @@ header.hero a {
 }
 .top-nav .menu-item a {
   padding: 7px 0px 5px 0px;
+  font-family: "interfacebold";
   text-transform: uppercase;
   font-size: 1.1;
   color: #b9b9b9;
