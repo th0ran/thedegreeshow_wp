@@ -655,6 +655,15 @@ h4 {
 .italic {
   font-family: "interfaceitalic";
 }
+.day-nav a {
+  font-size: 35px;
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  font-weight: 100;
+}
+.day-nav .day-note {
+  text-align: center;
+}
 /*
 -- Header
 */
