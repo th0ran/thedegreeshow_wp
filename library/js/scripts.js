@@ -9,6 +9,32 @@ slow the page load.
 
 */
 
+var navManager = new function () {
+	this.height = 900;
+	var t = this;
+
+	this.calculateHeight = function() {
+
+		// Calculage the height
+		t.height = jQuery('.hero').height() + 38;
+		console.log(t.height + 'Who am I? ');
+	}
+
+	this.onScroll = function() {
+		var currentScroll = window.pageYOffset;
+
+		if (currentScroll < t.height) {
+			// apply class
+			jQuery('#header-nav').removeClass('docked');
+		} else {
+			// remove class
+			jQuery('#header-nav').addClass('docked');
+		}
+	}
+
+	
+}
+
 // IE8 ployfill for GetComputed Style (for Responsive Script below)
 if (!window.getComputedStyle) {
 	window.getComputedStyle = function(el, pseudo) {
@@ -30,15 +56,18 @@ if (!window.getComputedStyle) {
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
+	navManager.calculateHeight();
 
-	window.onscroll = function(){
-		if (window.pageYOffset > 526) {
-			jQuery('#header-nav').addClass('docked');
-		} else {
-			jQuery('#header-nav').removeClass('docked');
-		}
+	window.onscroll = navManager.onScroll;
+	// 
+	// function(){
+	// 	if (window.pageYOffset > 526) {
+	// 		jQuery('#header-nav').addClass('docked');
+	// 	} else {
+	// 		jQuery('#header-nav').removeClass('docked');
+	// 	}
 		
-	}
+	// }
 
 	/*
 	Responsive jQuery is a tricky thing.
@@ -205,11 +234,6 @@ jQuery(document).ready(function($) {
 
 		// jq.animate(jQuery('.address').css('top', '80%'));
 	});
-
-
-
-
-
 }); /* end of as page load scripts */
 
 // HOMEPAGE MAP
