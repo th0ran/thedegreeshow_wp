@@ -113,7 +113,6 @@ strong {
   font-family: 'interfacebold', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-family: "interfaceregular";
 }
 i,
 em {
@@ -579,7 +578,6 @@ img.aligncenter {
   font-family: 'interfacebold', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-family: "interfaceregular";
   font-size: 1.5em;
   margin-left: 0.2em;
   background: url('../images/logo-rave.png') no-repeat center 0px;
@@ -634,7 +632,6 @@ img.aligncenter {
   font-family: 'interfacebold', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-family: "interfaceregular";
   font-size: 18.3em;
   line-height: 1;
 }
@@ -669,9 +666,6 @@ img.aligncenter {
 }
 .footer:after {
   clear: both;
-}
-.bold {
-  font-family: "interfaceregular";
 }
 .italic {
   font-family: "interfaceitalic";
@@ -796,7 +790,6 @@ header.hero a {
   font-family: 'interfacebold', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-family: "interfaceregular";
 }
 .header-intro {
   zoom: 1;
@@ -932,7 +925,6 @@ header.hero a {
   font-family: 'interfacebold', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-family: "interfaceregular";
 }
 .top-nav .menu-item a:hover {
   color: #99cccc;
