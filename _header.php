@@ -76,6 +76,8 @@
 			<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-header.png" alt="<?php bloginfo('name'); ?>">
 			</a>
+			
+			<a href="http://tickets.thedegreeshow.com/?utm_source=website" id="navbutton" class="cta lg-cta bold">book your place</a>
 
 		</nav>
 		<!-- /mini-mav -->
