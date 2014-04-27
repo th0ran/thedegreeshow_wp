@@ -26,7 +26,7 @@
 		<div class="col-md-4">
 			
 			<h2 class="light">Thursday 12th June  </h2>
-			<h4>Register Interest</h4>
+			<h4>Pre-Show</h4>
 
 			<p>  
 				The 12th June is Ravensbourne&rsquo;s graduate fashion show. We&rsquo;re not exhibiting at Graduate Fashion Week this year, so instead our internal show is even bigger. The catwalk to separately tickets, use the button below to register your interest.   There are two viewing of the show:
