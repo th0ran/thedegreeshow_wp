@@ -25,11 +25,36 @@
 
 		<div class="col-md-4">
 			
+			<h2 class="light">Thursday 12th June  </h2>
+			<h4>Register Interest</h4>
+
+			<p>  
+				The 12th June is Ravensbourne&rsquo;s graduate fashion show. We&rsquo;re not exhibiting at Graduate Fashion Week this year, so instead our internal show is even bigger. The catwalk to separately tickets, use the button below to register your interest.   There are two viewing of the show:
+				<ul>
+					<li>Friends and Family - 4PM</li>
+					<li>Invited Industry - 7PM</li>
+				</ul>
+			</p>
+
+			<a href="mailto:fashion@thedegreeshow.com?Subject=I%27m%20interested%20in%20the%20Graduate%20Fashion%20show" class="cta">Register interest</a>
+
+		</div>
+
+		<div class="col-md-4">
+			
 			<h2 class="light">Monday 16th June</h2>
 			<h4>Day 1</h4>
 
 			<p>
-				The 16th June is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with the our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.
+				The 16th June is the first day of our live broadcast on digital terrestrial and online, with live programming taking place around the building.   You can see the private views for:
+			</p>
+			<ul>
+				<li>Editing and Post Production</li>
+				<li>Music Production for Media</li>
+				<li>Web Media</li>
+			</ul>
+			<p>
+				Monday is also our annual awards ceremony, which is a privately ticketed event to celebrate the best of our graduates&rsquo; work.
 			</p>
 
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=monday&utm_source=website" class="cta">Book now</a>
@@ -42,23 +67,18 @@
 			<h4>Day 2</h4>
 
 			<p>
-				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course. 
+				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building.  You can see the private views for:
+			</p>
+			<ul>
+				<li>Broadcast Technology</li>
+				<li>Broadcast Operations and Production</li>
+				<li>Sound Design</li>
+			</ul>
+			<p>
+				Tuesday is also the day you can see private screenings of shorts made by Digital Film Production.
 			</p>
 
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=tuesday&utm_source=website" class="cta">Book now</a>
-
-		</div>
-
-		<div class="col-md-4">
-			
-			<h2 class="light">Wednesday 18th June</h2>
-			<h4>Day 3</h4>
-
-			<p>
-				The 18th June is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.
-			</p>
-
-			<a href="http://tickets.thedegreeshow.com/?utm_campaign=wednesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -68,12 +88,39 @@
 
 		<div class="col-md-4">
 			
+			<h2 class="light">Wednesday 18th June</h2>
+			<h4>Day 3</h4>
+
+			<p>
+				The 18th June is a little different we have 3 private views which are all individually ticketed. 
+			</p>
+			<ul>
+				<li>Schools Private Views</li>
+				<li>Foundation Private View</li>
+				<li>Fashion Private View </li>
+			</ul>
+			<p>
+				Friends and Family of foundation students are welcome to their private view, however the schools and fashion private view are ticketed separately. 
+			</p>
+
+			<a href="http://tickets.thedegreeshow.com/?utm_campaign=wednesday&utm_source=website" class="cta">Book now</a>
+
+		</div>
+
+		<div class="col-md-4">
+			
 			<h2 class="light">Thursday 19th June</h2>
 			<h4>Day 4</h4>
 
 			<p>
-				The Degree Show transforms again on the 19th June into focusing more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.
+				The 19th June sees The Degree Show transform again to focus more on the design courses. There will be installations around the building to see as well as private views for:
 			</p>
+			<ul>
+				<li>Graphic Design</li>
+				<li>Motion Graphics </li>
+				<li>Design Product</li>
+				<li>Design Interaction</li>
+			</ul>
 
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=thursday&utm_source=website" class="cta">Book now</a>
 
@@ -85,8 +132,14 @@
 			<h4>Day 5</h4>
 
 			<p>
-				The 20th sees the close of The Degree Show, and as well as being the wrap party for everyone that has helped with the show, there is also the Animation, Architecture, Digital Photography and IDEAs private views, and is your last chance to see all the students’ who are exhibiting this year.
+				The 20th June sees the close of The Degree Show, as well as being the wrap party for everyone involved we also have the private views for:
 			</p>
+			<ul>
+				<li>Animation</li>
+				<li>Architecture</li>
+				<li>Digital Photography</li>
+				<li>Interior Design Environment Architectures </li>
+			</ul>
 
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=friday&utm_source=website" class="cta">Book now</a>
 

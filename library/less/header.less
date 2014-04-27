@@ -27,6 +27,7 @@ header.hero {
 	height: 100%;
 	z-index: 1;
 }
+
 .header-content {
 	position: relative;
 	
@@ -45,6 +46,11 @@ header.hero {
 
 	padding: 3% 5%;
 
+
+	#navbutton {
+		display: none;
+	}
+
 	&.docked {
 		width: 100%;
 		background: @brand;
@@ -52,15 +58,25 @@ header.hero {
 		padding: 10px 85px;
 		font-family: "interfacelight";
 
+		text-align: center;
+
 		// .transition (padding .2s linear);
 
-		.logo img {
-			height: 60px;
-			margin: 0px;
-
+		.logo {
+			float: left;
+			img {
+				height: 60px;
+				margin: 0px;
+			}
 		}
 		.header-nav {
 			margin: 18px 0 0 0;
+		}
+
+		#navbutton {
+			display: inline-block;
+			// margin: 0px auto;
+			margin: 10px 0 0 100px;
 		}
 	}
 
@@ -88,8 +104,8 @@ header.hero {
 		}
 	}
 
-}
 
+}
 
 .full .header-intro { // full height header only shows on homepage
 	margin-top: 20%;

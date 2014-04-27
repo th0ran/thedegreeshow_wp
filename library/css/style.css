@@ -191,6 +191,25 @@ h4 {
   font-size: 1.1em;
   color: #424b42;
 }
+.alignleft,
+img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+.alignright,
+img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+.aligncenter,
+img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
 .search img.attachment-bones-thumb-400,
 .archive img.attachment-bones-thumb-400 {
   margin: 5px 0px;
@@ -208,6 +227,9 @@ h4 {
 .booking .days {
   line-height: 1.8;
   padding-bottom: 5%;
+}
+.booking .days ul {
+  text-align: left;
 }
 .featured {
   text-align: center;
@@ -721,12 +743,19 @@ header.hero a {
   font-size: 18px;
   padding: 3% 5%;
 }
+#header-nav #navbutton {
+  display: none;
+}
 #header-nav.docked {
   width: 100%;
   background: #99cccc;
   z-index: 10;
   padding: 10px 85px;
   font-family: "interfacelight";
+  text-align: center;
+}
+#header-nav.docked .logo {
+  float: left;
 }
 #header-nav.docked .logo img {
   height: 60px;
@@ -734,6 +763,10 @@ header.hero a {
 }
 #header-nav.docked .header-nav {
   margin: 18px 0 0 0;
+}
+#header-nav.docked #navbutton {
+  display: inline-block;
+  margin: 10px 0 0 100px;
 }
 #header-nav .header-nav {
   float: right;
