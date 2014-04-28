@@ -49,6 +49,10 @@ a {
 	font-style: normal;
 }
 
+.purple {
+	color: #cc6699;
+}
+
 // avoid safari error on custom fonts
 b, strong {
 	.bold;
@@ -62,6 +66,22 @@ p.intro {
 }
 
 .cta {
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 1em;
+	padding: 7px 10px 5px 10px;
+	
+	border: 4px solid #cc6699;
+	color: @brandp;
+
+	.transition (border .1s ease-in-out);
+
+	&:hover {
+		border: 4px solid darken(@brandp, 10%);
+		color: @brandp;
+	}
+}
+.mi_cta {
 	display: inline-block;
 	text-transform: uppercase;
 	line-height: 1em;
