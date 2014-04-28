@@ -72,7 +72,7 @@
 			<h4>Day 3</h4>
 
 			<p>
-				The 18th June we have 3 private views which are all individually ticketed: <span class="purple">Schools Private View</span>, <span class="purple">Foundation Private View</span> and <span class="purple">Fashion Private View </span>. Friends and Family of foundation students are welcome to their private view. Schools and fashion private view are ticketed separately. 
+				On the 18th June we have 3 private views which are all individually ticketed: <span class="purple">Schools Private View</span>, <span class="purple">Foundation Private View</span> and <span class="purple">Fashion Private View </span>. Friends and Family of foundation students are welcome to their private view. Schools and fashion private view are ticketed separately. 
 			</p>
 
 			<a href="http://thedegreeshow.com/wednesday/" class="mi_cta">More info</a>
