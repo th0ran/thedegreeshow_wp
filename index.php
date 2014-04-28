@@ -10,11 +10,8 @@
 
 			<p class="intro light">
 				<!-- Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers. Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us. -->
-				The Degree Show is <span class="italic">the</span> student showcase to be at this summer. Ravensbourne's immense talent gathers for one week to celebrate the class of 2014 in an action packed event, with courses from Animation to Web Media exhibiting their very best work. 
-			</p>
-			
-			<p class="intro light">
-				The Degree Show has been a starting block for many of our students’ careers - Our alumni is extensive, which includes various producers and directors such as academy award winners Gareth Unwin and Simon Egan, producers of ‘The Kings Speech’, to the likes of Stella McCartney, fashion designer. Join us from the 16th - 20th June 2014 from 4pm until 10pm each day, and celebrate our work with us.
+				The Degree Show is <span class="italic">the</span> student showcase to be at this summer. Ravensbourne's immense talent gathers for one week to celebrate the class of 2014 in an action packed event, with courses from Animation to Web Media exhibiting their very best work.
+				TDS has been a starting block for many of our students’ careers - Our alumni is extensive, which includes various producers and directors such as academy award winners Gareth Unwin and Simon Egan, producers of ‘The Kings Speech’, to the likes of Stella McCartney, fashion designer. Join us from the 16th - 20th June 2014 from 4pm until 10pm each day, and celebrate our work with us.
 			</p>
 
 			<hr>
