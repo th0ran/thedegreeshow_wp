@@ -650,6 +650,57 @@ img.aligncenter {
   background-position: center center;
   background-size: cover;
 }
+/*
+-- Event page
+*/
+.day-nav {
+  text-align: center;
+}
+.day-nav a {
+  font-size: 35px;
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  font-weight: 100;
+}
+.day-nav .day-note {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.day-overview {
+  margin: 1em auto;
+  text-align: center;
+  padding: 0px;
+}
+.day-overview li {
+  display: inline-block;
+}
+.day-overview li a {
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding: 7px 10px 5px 10px;
+  border: 4px solid #cc6699;
+  color: #cc6699;
+  -webkit-transition: border 0.1s ease-in-out;
+  -moz-transition: border 0.1s ease-in-out;
+  -ms-transition: border 0.1s ease-in-out;
+  -o-transition: border 0.1s ease-in-out;
+  padding: 5px 0px 1px 0px;
+  width: 35px;
+  text-align: center;
+}
+.day-overview li a:hover {
+  border: 4px solid #bf4080;
+  color: #cc6699;
+}
+.center {
+  text-align: center;
+}
+.event-page-spacer {
+  background: url(http://thedegreeshow.com/wp-content/themes/thedegreeshow_wp/library/images/eventpageheader.jpg);
+  height: 396px;
+  margin: 60px 0 60px 0;
+}
 .errorpage {
   font-family: 'interfacebold', sans-serif;
   font-weight: normal;
@@ -691,27 +742,6 @@ img.aligncenter {
 }
 .italic {
   font-family: "interfaceitalic";
-}
-.day-nav {
-  text-align: center;
-}
-.day-nav a {
-  font-size: 35px;
-  display: inline-block;
-  margin: 0 20px 0 20px;
-  font-weight: 100;
-}
-.day-nav .day-note {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.center {
-  text-align: center;
-}
-.event-page-spacer {
-  background: url(http://thedegreeshow.com/wp-content/themes/thedegreeshow_wp/library/images/eventpageheader.jpg);
-  height: 396px;
-  margin: 60px 0 60px 0;
 }
 /*
 -- Header

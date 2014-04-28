@@ -27,7 +27,7 @@
 		<div class="col-md-4">
 			
 			<h2 class="light">Thursday 12th June  </h2>
-			<h4>Register Interest</h4>
+			<h4>Pre-Show</h4>
 
 			<p>  
 				The 12th June is Ravensbourne's fashion show. We're not exhibiting at GFW, so this is your only chance to see our fashion students work. Tickets are not publicly available but you can register your interest below. There are two shows: <span class="purple">Friends and Family at 4PM</span> and <span class="purple">Industry at 7PM</span>.

@@ -10,6 +10,14 @@ Template Name: Events Page
 
 	<div class="row">
 
+		<ul class="day-overview">
+			<li><a href="http://thedegreeshow.com/monday/" title="monday">M</a></li>
+			<li><a href="http://thedegreeshow.com/tuesday/" title="tuesday">T</a></li>
+			<li><a href="http://thedegreeshow.com/wednesday/" title="wednesday">W</a></li>
+			<li><a href="http://thedegreeshow.com/thursday/" title="thursday">T</a></li>
+			<li><a href="http://thedegreeshow.com/friday/" title="friday">F</a></li>
+		</ul>
+
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -60,6 +68,14 @@ Template Name: Events Page
 		</div>
 
 		<?php endif; ?>
+
+		<ul class="day-overview">
+			<li><a href="http://thedegreeshow.com/monday/" title="monday">M</a></li>
+			<li><a href="http://thedegreeshow.com/tuesday/" title="tuesday">T</a></li>
+			<li><a href="http://thedegreeshow.com/wednesday/" title="wednesday">W</a></li>
+			<li><a href="http://thedegreeshow.com/thursday/" title="thursday">T</a></li>
+			<li><a href="http://thedegreeshow.com/friday/" title="friday">F</a></li>
+		</ul>
 			
 
 	</div>
