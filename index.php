@@ -46,7 +46,7 @@
 				The 16th June is the first day of our live broadcast on digital terrestrial and online, with live programming taking place around the building.   You can see the private views for: <span class="purple">Editing and Post Production</span>, <span class="purple">Music Production for Media</span> and <span class="purple">Web Media</span>.
 			</p>
 
-			<a href="#" class="mi_cta">More info</a>
+			<a href="http://thedegreeshow.com/monday/" class="mi_cta">More info</a>
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=monday&utm_source=website" class="cta">Book now</a>
 
 		</div>
@@ -60,7 +60,7 @@
 				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building.   You can see the private views for: <span class="purple">Broadcast Technology</span>, <span class="purple">Broadcast Operations &amp; Production</span> and <span class="purple">Sound Design</span>.
 			</p>
 
-			<a href="#" class="mi_cta">More info</a>
+			<a href="http://thedegreeshow.com/tuesday/" class="mi_cta">More info</a>
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=tuesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
@@ -78,7 +78,7 @@
 				The 18th June we have 3 private views which are all individually ticketed: <span class="purple">Schools Private View</span>, <span class="purple">Foundation Private View</span> and <span class="purple">Fashion Private View </span>. Friends and Family of foundation students are welcome to their private view. Schools and fashion private view are ticketed separately. 
 			</p>
 
-			<a href="#" class="mi_cta">More info</a>
+			<a href="http://thedegreeshow.com/wednesday/" class="mi_cta">More info</a>
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=wednesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
@@ -92,7 +92,7 @@
 				The 19th June sees The Degree Show transform again to focus more on the design courses. There will be installations around the building to see as well as private views for: <span class="purple">Graphic Design</span>, <span class="purple">Motion Graphics</span>, <span class="purple">Design Product</span> and <span class="purple">Design Interaction</span>.
 			</p>
 
-			<a href="#" class="mi_cta">More info</a>
+			<a href="http://thedegreeshow.com/thursday" class="mi_cta">More info</a>
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=thursday&utm_source=website" class="cta">Book now</a>
 
 		</div>
@@ -106,7 +106,7 @@
 				The 20th June sees the close of The Degree Show, as well as being the wrap party for everyone involved we also have the private views for: <span class="purple">Animation</span>, <span class="purple">Architecture</span>, <span class="purple">Digital Photography</span> and <span class="purple">Interior Design Environment Architectures </span>.
 			</p>
 
-			<a href="#" class="mi_cta">More info</a>
+			<a href="http://thedegreeshow.com/friday/" class="mi_cta">More info</a>
 			<a href="http://tickets.thedegreeshow.com/?utm_campaign=friday&utm_source=website" class="cta">Book now</a>
 
 		</div>
