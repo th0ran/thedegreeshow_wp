@@ -157,7 +157,7 @@ function bones_scripts_and_styles() {
 		using the google cdn. That way it stays cached
 		and your site will load faster.
 		*/
-		if(is_home()){
+		if(is_home() || is_page_template('page-contact.php')){
 			wp_enqueue_script( 'bones-map-js' );
 		} else {};
 		wp_enqueue_script( 'jquery' );

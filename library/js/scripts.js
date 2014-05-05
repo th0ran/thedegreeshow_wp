@@ -17,7 +17,7 @@ var navManager = new function () {
 
 		// Calculage the height
 		t.height = jQuery('.hero').height() + 38;
-		console.log(t.height + 'Who am I? ');
+		// console.log(t.height + 'Who am I? ');
 	}
 
 	this.onScroll = function() {
