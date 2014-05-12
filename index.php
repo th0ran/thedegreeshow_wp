@@ -44,7 +44,6 @@
 			</p>
 
 			<a href="http://thedegreeshow.com/monday/" class="mi_cta">More info</a>
-			<a href="http://tickets.thedegreeshow.com/?utm_campaign=monday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -58,7 +57,6 @@
 			</p>
 
 			<a href="http://thedegreeshow.com/tuesday/" class="mi_cta">More info</a>
-			<a href="http://tickets.thedegreeshow.com/?utm_campaign=tuesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -76,7 +74,6 @@
 			</p>
 
 			<a href="http://thedegreeshow.com/wednesday/" class="mi_cta">More info</a>
-			<a href="http://tickets.thedegreeshow.com/?utm_campaign=wednesday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -90,7 +87,6 @@
 			</p>
 
 			<a href="http://thedegreeshow.com/thursday" class="mi_cta">More info</a>
-			<a href="http://tickets.thedegreeshow.com/?utm_campaign=thursday&utm_source=website" class="cta">Book now</a>
 
 		</div>
 
@@ -104,8 +100,6 @@
 			</p>
 
 			<a href="http://thedegreeshow.com/friday/" class="mi_cta">More info</a>
-			<a href="http://tickets.thedegreeshow.com/?utm_campaign=friday&utm_source=website" class="cta">Book now</a>
-
 		</div>
 
 	</div>

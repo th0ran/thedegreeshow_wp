@@ -97,7 +97,7 @@
 				<p class="header-date">16 - 20 June 2014</p>
 				<p class="header-place">Ravensbourne</p>
 			</div>
-			<a id="bookit" class="cta lg-cta bold">book your place</a>
+			<a id="bookit" href="http://tickets.thedegreeshow.com/?utm_source=website&utm_campaign=navbar" class="cta lg-cta bold">book your place</a>
 
 		<?php }; // end homepage only ?>
 
