@@ -153,6 +153,11 @@ jQuery(document).ready(function($) {
 		$('#search').slideToggle(500);
 	});
 
+	$('.cat-nav-toggle').click(function(){
+		// $('#search').fadeToggle(500);
+		$('.cat-nav-container').slideToggle(500);
+	});
+
 	/*
 		SCROLL TO TOP
 	*/

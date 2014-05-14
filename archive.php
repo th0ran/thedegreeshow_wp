@@ -1,5 +1,17 @@
 <?php get_header(); ?>
 
+
+<?php
+	// category, not search results, show category menu
+	if(is_category( $category ) ) {
+		$args = 'title_li=';
+		echo '<div class="cat-nav-container"><ul class="cat-nav">';
+		wp_list_categories( $args );
+		echo '</ul></div>';
+		echo '<span class="cat-nav-toggle arrow">Select a Category <img src="'.  get_template_directory_uri() .'/library/images/arrow-up.png" alt="arrow"></span>';
+	};
+?>
+
 <section class="search-results content-pad container-fluid">
 
 	<div class="row">
@@ -96,6 +108,5 @@
 	</div>
 
 </section><!-- article -->
-
 
 <?php get_footer(); ?>
