@@ -108,7 +108,7 @@
 
 <section class="featured container-fluid">
 
-	<a href="#" class="cta btn-news">
+	<a href="http://thedegreeshow.com/category/news/" class="cta btn-news">
 		<span>All news</span>
 	</a>
 
