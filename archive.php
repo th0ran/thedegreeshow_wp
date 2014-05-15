@@ -77,7 +77,7 @@
 				</a>
 
 				<p>
-					<?php the_excerpt(); ?>
+					<?php echo excerpt('80'); ?>
 				</p>
 
 			</div>

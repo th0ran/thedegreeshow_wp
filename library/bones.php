@@ -361,9 +361,35 @@ function bones_filter_ptags_on_images($content){
 
 // EXCERPT LENGTH CHANGED
 function custom_excerpt_length( $length ) {
-	return 20;
+	return 100;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Custom except lengths http://stackoverflow.com/questions/4082662/multiple-excerpt-lengths-in-wordpress
+function excerpt($limit) {
+	$excerpt = explode(' ', get_the_excerpt(), $limit);
+	if (count($excerpt)>=$limit) {
+		array_pop($excerpt);
+		$excerpt = implode(" ",$excerpt).'...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more', 'bonestheme' ) .'</a>';
+	} else {
+		$excerpt = implode(" ",$excerpt);
+	} 
+	$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+	return $excerpt;
+}
+function content($limit) {
+      $content = explode(' ', get_the_content(), $limit);
+      if (count($content)>=$limit) {
+        array_pop($content);
+        $content = implode(" ",$content).'...';
+      } else {
+        $content = implode(" ",$content);
+      } 
+      $content = preg_replace('/\[.+\]/','', $content);
+      $content = apply_filters('the_content', $content); 
+      $content = str_replace(']]>', ']]&gt;', $content);
+      return $content;
+    }
 
 // This removes the annoying […] to a Read More link
 function bones_excerpt_more($more) {

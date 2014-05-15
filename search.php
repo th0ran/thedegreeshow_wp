@@ -24,7 +24,7 @@
 							?>
 						</p>
 						<p>
-							<?php the_excerpt(); ?>
+							<?php echo excerpt('40'); ?>
 						</p>
 
 					</div>

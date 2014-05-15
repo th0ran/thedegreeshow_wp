@@ -134,7 +134,7 @@
 					<h1><?php the_title(); ?></h1>
 				</a>
 				<p>
-					<?php the_excerpt(); ?>
+					<?php echo excerpt('30'); ?>
 				</p>
 				<p class="byline">
 					<?php
@@ -178,7 +178,7 @@
 				</header>
 
 				<section class="article-content">
-					<?php the_excerpt(); ?>
+					<?php echo excerpt('40'); ?>
 				</section>
 
 			</article>
