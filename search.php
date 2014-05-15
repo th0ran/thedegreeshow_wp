@@ -10,25 +10,29 @@
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<div class="story col-md-8">
+				<div class="row">
 
-					<a href="<?php the_permalink() ?>">
-						<h3><?php the_title(); ?></h3>
-					</a>
+					<div class="story col-md-8">
 
-					<p class="byline vcard">
-					<?php
-						printf( __( 'Posted by <span class="author">%3$s</span> | %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-						?>
-					</p>
-					<p>
-						<?php the_excerpt(); ?>
-					</p>
+						<a href="<?php the_permalink() ?>">
+							<h3><?php the_title(); ?></h3>
+						</a>
 
-				</div>
+						<p class="byline vcard">
+						<?php
+							printf( __( 'Posted by <span class="author">%3$s</span> | %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link(), get_the_category_list(', ') );
+							?>
+						</p>
+						<p>
+							<?php the_excerpt(); ?>
+						</p>
 
-				<div class="col-md-4">
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
+					</div>
+
 				</div>
 
 				<?php endwhile; ?>
@@ -49,6 +53,8 @@
 				No results found. <a class="searchtoggle">Search again?</a>
 
 			<?php endif; ?>
+
+
 			
 		</div>
 

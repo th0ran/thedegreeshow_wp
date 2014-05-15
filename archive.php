@@ -2,111 +2,156 @@
 
 
 <?php
-	// category, not search results, show category menu
-	if(is_category( $category ) ) {
-		$args = 'title_li=';
-		echo '<div class="cat-nav-container"><ul class="cat-nav">';
-		wp_list_categories( $args );
-		echo '</ul></div>';
-		echo '<span class="cat-nav-toggle arrow">Select a Category <img src="'.  get_template_directory_uri() .'/library/images/arrow-up.png" alt="arrow"></span>';
-	};
+	// Grab the categories
+	$get_cats = wp_list_categories( 'echo=0&title_li=&depth=1' );
+	$cat_array = explode('</li>',$get_cats);
+	$results_total = count($cat_array);
+	$cats_per_list = 3;
+	$list_number = 1;
+	$result_number = 0;
 ?>
+<div class="cat-nav-container">
 
-<section class="search-results content-pad container-fluid">
+	<ul class="cat-col-<?php echo $list_number; ?>">
+
+		<?php
+		foreach($cat_array as $category) {
+
+			$result_number++;
+
+			if($result_number == $results_total){
+				break;
+			}
+
+			if($result_number % $cats_per_list == 0) {
+				$list_number++;
+				echo $category.'</li>
+			</ul>
+
+			<ul class="cat-col-'.$list_number.'">';
+
+			}
+
+			else {
+
+				echo $category.'</li>';
+
+			}
+
+		} ?>
+
+	</ul>
+
+</div>
+
+<span class="cat-nav-toggle">Select a Category <img src="<?php echo get_template_directory_uri(); ?>/library/images/arrow-sm.png" alt="^" class="arrow"></span>
+	
+
+<section class="content-pad container-fluid">
 
 	<div class="row">
 
 		<div class="col-md-12">
 
-<!-- 
-							<?php if (is_category()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
-								</h1>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<?php } elseif (is_tag()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
-								</h1>
+			<?php
 
-							<?php } elseif (is_author()) {
-								global $post;
-								$author_id = $post->post_author;
-							?>
-								<h1 class="archive-title h2">
+				// wp functions
+				$image_id = get_post_thumbnail_id();
+				$image_url = wp_get_attachment_image_src($image_id,'full', true);
 
-									<span><?php _e( 'Posts By:', 'bonestheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
+				// thumbnails
+				if(has_post_thumbnail()){ 
+					$bg_url = 'style="background-image:url(\'' . $image_url[0] . '\') ;"';
+				};
+			?>
 
-								</h1>
-							<?php } elseif (is_day()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Daily Archives:', 'bonestheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
-								</h1>
+			<a href="<?php the_permalink() ?>"><span class="cat-thumb" <?php echo $bg_url ?>>
+			</span></a>
 
-							<?php } elseif (is_month()) { ?>
-									<h1 class="archive-title h2">
-										<span><?php _e( 'Monthly Archives:', 'bonestheme' ); ?></span> <?php the_time('F Y'); ?>
-									</h1>
+			<div class="story">
 
-							<?php } elseif (is_year()) { ?>
-									<h1 class="archive-title h2">
-										<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
-									</h1>
-							<?php } ?>
+				<a href="<?php the_permalink() ?>">
+					<h2><?php the_title(); ?></h2>
+				</a>
 
--->
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<p>
+					<?php the_excerpt(); ?>
+				</p>
 
-				<div class="story col-md-8">
+			</div>
 
-					<a href="<?php the_permalink() ?>">
-						<h3><?php the_title(); ?></h3>
-					</a>
+			<hr>
 
-					<p class="byline vcard">
-					<?php
-						printf( __( 'Posted by <span class="author">%3$s</span> | %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-						?>
-					</p>
-					<p>
-						<?php the_excerpt(); ?>
-					</p>
+			<?php endwhile; ?>
 
-				</div>
+			<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
+			<div class="story col-md-12">
+				<?php bones_page_navi(); ?>
+			</div>
+			<?php } else { ?>
+			<div class="story col-md-12">
+				<nav class="wp-prev-next">
+					<ul>
+						<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
+						<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
+					</ul>
+				</nav>
+			</div>
+			<?php } ?>
 
-				<div class="col-md-4">
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-400' ); ?></a>
-				</div>
+		<?php else : ?>
 
+			404 No posts found
 
-				<?php endwhile; ?>
-
-				<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
-				<div class="story col-md-12">
-					<?php bones_page_navi(); ?>
-				</div>
-				<?php } else { ?>
-				<div class="story col-md-12">
-					<nav class="wp-prev-next">
-						<ul>
-							<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-							<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-						</ul>
-					</nav>
-				</div>
-				<?php } ?>
-
-			<?php else : ?>
-
-				404 No posts found
-
-				
-			<?php endif; ?>
+			
+		<?php endif; ?>
 
 		</div>
 
 	</div>
 
 </section><!-- article -->
+
+
+
+<!-- 
+	<?php if (is_category()) { ?>
+		<h1 class="archive-title h2">
+			<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
+		</h1>
+
+	<?php } elseif (is_tag()) { ?>
+		<h1 class="archive-title h2">
+			<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
+		</h1>
+
+	<?php } elseif (is_author()) {
+		global $post;
+		$author_id = $post->post_author;
+	?>
+		<h1 class="archive-title h2">
+
+			<span><?php _e( 'Posts By:', 'bonestheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
+
+		</h1>
+	<?php } elseif (is_day()) { ?>
+		<h1 class="archive-title h2">
+			<span><?php _e( 'Daily Archives:', 'bonestheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
+		</h1>
+
+	<?php } elseif (is_month()) { ?>
+			<h1 class="archive-title h2">
+				<span><?php _e( 'Monthly Archives:', 'bonestheme' ); ?></span> <?php the_time('F Y'); ?>
+			</h1>
+
+	<?php } elseif (is_year()) { ?>
+			<h1 class="archive-title h2">
+				<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
+			</h1>
+	<?php } ?>
+
+-->
 
 <?php get_footer(); ?>

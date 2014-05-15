@@ -3,17 +3,19 @@
 */
 .cat-nav-container {
 	background-color: #3f4747;
-	padding: 40px 15%;
-	ul.cat-nav {
+	padding: 40px 10%;
+	display: none;
+	.clearfix;
+
+	ul[class*='cat-col-'] {
 		padding: 0px;
 		margin: 0px;
-		// columns: 3;
-		// -webkit-columns: 3;
-		// -moz-columns: 3;
+
+		float: left;
 
 		li {
 			list-style-type: none;
-			margin: 0.5em 0;
+			margin: 0.5em 5em 0.5em 0;
 			display: block;
 
 			a {
@@ -27,7 +29,6 @@
 	}
 }
 
-
 .cat-nav-toggle{
 	cursor: pointer;
 	background-color: #5b6363;
@@ -36,4 +37,85 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: @white;
+
+	&.rotate {
+		.arrow {
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+		}
+	}
+}
+
+
+.search {
+	img.attachment-bones-thumb-400 {
+		margin: 5px 0px;
+	}
+}
+
+.archive {
+
+	.cat-thumb {
+		display: block;
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.story {
+		text-align: center;
+		h2 {
+			color: @brand;
+		}
+	}
+
+	.excerpt-read-more {
+		display: block;
+		width: 100%;
+		text-align: center;
+
+		margin-top: 1em;
+
+		background: url('../images/arrow-down.png') no-repeat;
+		.transition (background-position .1s ease-in-out);
+		background-position: center 1.5em;
+		color: @brand;
+		padding-bottom: 1em;
+
+		text-transform: uppercase;
+		&:hover {
+			background-position: center bottom;
+			color: darken(@brand, 10%);
+		}
+	}
+}
+
+.pagination {
+	margin: 0px;
+	width: 100%;
+	text-align:center;
+
+	.page-numbers {
+		margin: 1em auto;
+		text-align: center;
+		padding: 0px;
+		li {
+			display: inline-block;
+			list-style-type: none;
+
+			.page-numbers {
+				.cta;
+				padding: 5px 0px 1px 0px;
+				width: 35px;
+				text-align: center;
+				color: #cc6699;
+				border-color: #cc6699;
+				&.current {
+					border-color: @text;
+					color: @text;
+				}
+			}
+		}
+	}
 }

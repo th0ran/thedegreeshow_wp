@@ -156,6 +156,7 @@ jQuery(document).ready(function($) {
 	$('.cat-nav-toggle').click(function(){
 		// $('#search').fadeToggle(500);
 		$('.cat-nav-container').slideToggle(500);
+		$(this).toggleClass('rotate');
 	});
 
 	/*
