@@ -271,22 +271,43 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
 					</a>					
 				</li>
-				<li>
+				<li class="small_sponsor">
 					<a href="http://www.moo.com" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="moo">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo-high.png" alt="moo">
 					</a>					
 				</li>
-				<li>
+				<li class="small_sponsor">
 					<a href="https://www.daltonmaag.com" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-DaMa.png" alt="DaMa">
 					</a>					
 				</li>
-				<li>
+				<li class="small_sponsor">
 					<a href="http://www.gearhousebroadcast.com" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-gearhouse.png" alt="Gearhouse">
 					</a>					
 				</li>
-				<li>
+				<li class="small_sponsor">
+					<a href="http://www.axon.tv" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
+				<!-- Small Logos -->
+				<li class="small_sponsor">
+					<a href="http://www.axon.tv" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
+				<li class="small_sponsor">
+					<a href="http://www.axon.tv" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
+				<li class="small_sponsor">
+					<a href="http://www.axon.tv" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
+				<li class="small_sponsor">
 					<a href="http://www.axon.tv" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
 					</a>
