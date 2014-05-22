@@ -237,6 +237,9 @@ img.aligncenter {
 #post-358 .row {
   padding: 40px 0;
 }
+#post-358 .row .col-md-12 {
+  padding: 10px 0;
+}
 /*
 -- Homepage
 -- home specific
