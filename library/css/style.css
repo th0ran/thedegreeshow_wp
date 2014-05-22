@@ -231,8 +231,12 @@ img.aligncenter {
   display: block;
   clear: both;
 }
-#post-358 row {
+#post-358 .row {
   padding: 30px 0;
+}
+#post-358 .row .col-md-3 img {
+  margin: 0 auto;
+  display: block;
 }
 /*
 -- Homepage
