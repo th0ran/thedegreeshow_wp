@@ -480,6 +480,7 @@ img.aligncenter {
 }
 .sponsors .sponsors-list li img {
   margin: auto;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
