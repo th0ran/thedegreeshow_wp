@@ -261,34 +261,69 @@
 			<h4>Sponsored by</h4>
 
 			<ul class="sponsors-list">
-				<li>
+				<li class="featured">
 					<a href="http://www.arqiva.co.uk" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-arqiva.png" alt="arqiva">
 					</a>					
 				</li>
-				<li>
+				<li class="featured">
 					<a href="http://www.stage-electrics.co.uk" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
 					</a>					
 				</li>
 				<li>
-					<a href="http://www.moo.com" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="moo">
-					</a>					
-				</li>
-				<li>
-					<a href="https://www.daltonmaag.com" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-DaMa.png" alt="DaMa">
-					</a>					
-				</li>
-				<li>
-					<a href="http://www.gearhousebroadcast.com" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-gearhouse.png" alt="Gearhouse">
-					</a>					
+					<a href="http://www.vitecgroup.com/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/viteclogo.png" alt="Vitec Group">
+					</a>
 				</li>
 				<li>
 					<a href="http://www.axon.tv" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-axon.png" alt="Axon">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.aspectpress.co.uk/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/Aspect-Logo-White.png" alt="Aspect Press">
+					</a>
+				</li>
+				<li>
+					<a href="http://ravesu.co.uk/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/rsu.png" alt="RSU">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.gearhousebroadcast.com" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-gearhouse.png" alt="Gear House">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.sony.co.uk/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sony.png" alt="Sony">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.gfsmith.com/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/gfsmithlogo2014.png" alt="GFSmith">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.daltonmaag.com" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-DaMa.png" alt="Dalton Maag">
+					</a>
+				</li>
+				<li>
+					<a href="" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-procam.png" alt="ProCam">
+					</a>
+				</li>
+				<li>
+					<a href="http://broadcastrf.com/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/broadcastRF.jpg" alt="BroadcastRF">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.moo.com" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="Moo">
 					</a>
 				</li>
 			</ul>
