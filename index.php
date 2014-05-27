@@ -326,6 +326,11 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="Moo">
 					</a>
 				</li>
+				<li>
+					<a href="http://www.evs.com/emea/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/EVS_LOGO_COLOUR_RGB.png" alt="Moo">
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
