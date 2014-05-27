@@ -271,6 +271,11 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-stageelectrics.png" alt="Stage Electrics">
 					</a>					
 				</li>
+				<li class="featured">
+					<a href="http://www.evs.com/emea/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/EVS_LOGO_COLOUR_RGB.png" alt="Moo">
+					</a>
+				</li>
 				<li>
 					<a href="http://www.vitecgroup.com/" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/viteclogo.png" alt="Vitec Group">
@@ -284,11 +289,6 @@
 				<li>
 					<a href="http://www.aspectpress.co.uk/" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/Aspect-Logo-White.png" alt="Aspect Press">
-					</a>
-				</li>
-				<li>
-					<a href="http://ravesu.co.uk/" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/rsu.png" alt="RSU">
 					</a>
 				</li>
 				<li>
@@ -327,8 +327,8 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://www.evs.com/emea/" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/EVS_LOGO_COLOUR_RGB.png" alt="Moo">
+					<a href="http://ravesu.co.uk/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/rsu.png" alt="RSU">
 					</a>
 				</li>
 			</ul>
