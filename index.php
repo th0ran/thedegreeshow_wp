@@ -53,7 +53,7 @@
 			<h4>Day 2</h4>
 
 			<p>
-				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building.   You can see the private views for: <span class="purple">Broadcast Technology</span>, <span class="purple">Broadcast Operations &amp; Production</span> and <span class="purple">Sound Design</span>.
+				On the 17th June is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building.   You can see the private views for: <span class="purple">Digital Film Production</span>, <span class="purple">Broadcast Technology</span>, <span class="purple">Broadcast Operations &amp; Production</span> and <span class="purple">Sound Design</span>.
 			</p>
 
 			<a href="http://thedegreeshow.com/tuesday/" class="mi_cta">More info</a>
