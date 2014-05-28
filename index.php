@@ -312,8 +312,8 @@
 					</a>
 				</li>
 				<li>
-					<a href="" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-procam.png" alt="ProCam">
+					<a href="http://www.procam.tv/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/procam.png" alt="ProCam">
 					</a>
 				</li>
 				<li>
