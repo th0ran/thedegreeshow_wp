@@ -30,7 +30,7 @@
 				The 12th June is Ravensbourne's fashion show. We're not exhibiting at GFW, so this is your only chance to see our fashion students work. Tickets are not publicly available but you can register your interest below. There are two shows: <span class="purple">Friends and Family at 4PM</span> and <span class="purple">Industry at 7PM</span>.
 			</p>
 
-			<a href="mailto:fashion@thedegreeshow.com?Subject=I%27m%20interested%20in%20the%20Graduate%20Fashion%20show" class="cta">Register Interest</a>
+			<a href="mailto:fashion@thedegreeshow.com?Subject=I%27m%20interested%20in%20the%20Graduate%20Fashion%20show" class="p_cta">Register Interest</a>
 
 		</div>
 
