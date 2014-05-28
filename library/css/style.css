@@ -900,7 +900,7 @@ header.hero {
   zoom: 1;
   background-color: #99cccc;
   background: url('../images/bg-top.jpg');
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   padding-bottom: 120px;
   color: #ffffff;
