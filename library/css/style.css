@@ -210,6 +210,50 @@ h4 {
   font-size: 1.1 em;
   color: #99cccc;
 }
+.footer-social-buttons {
+  margin-top: 10px;
+  padding: 0px;
+}
+.footer-social-buttons li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 5px 15px 0px;
+}
+.footer-social-buttons li:last-child {
+  margin-right: 0px;
+}
+.footer-social-buttons a {
+  background: url('../images/socialspriteset.png');
+  background-size: 103px 52.5px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-indent: -10000px;
+}
+.footer-social-buttons a.ico-fb {
+  background-position: 0px 0px;
+}
+.footer-social-buttons a.ico-fb:hover {
+  background-position: 0px -28px;
+}
+.footer-social-buttons a.ico-tw {
+  background-position: -26px 0px;
+}
+.footer-social-buttons a.ico-tw:hover {
+  background-position: -26px -28px;
+}
+.footer-social-buttons a.ico-in {
+  background-position: -52px 0px;
+}
+.footer-social-buttons a.ico-in:hover {
+  background-position: -52px -28px;
+}
+.footer-social-buttons a.ico-yt {
+  background-position: -77px 0px;
+}
+.footer-social-buttons a.ico-yt:hover {
+  background-position: -77px -28px;
+}
 /*
 -- Page
 -- generic page layouts

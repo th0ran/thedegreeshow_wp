@@ -144,3 +144,49 @@ h4 {
 	font-size: 1.1 em;
 	color: @brand;
 }
+
+.footer-social-buttons {
+	margin-top: 10px;
+	padding: 0px;
+
+	li {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0px 5px 15px 0px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	a {
+		background: url('../images/socialspriteset.png');
+		background-size: 103px 52.5px;
+		display: block;
+		width: 26px;
+		height: 26px;
+		text-indent: -10000px;		
+		&.ico-fb {
+			background-position: 0px 0px;
+			&:hover {
+				background-position: 0px -28px;
+			}
+		}
+		&.ico-tw {
+			background-position: -26px 0px;
+			&:hover {
+				background-position: -26px -28px;
+			}
+		}
+		&.ico-in {
+			background-position: -52px 0px;
+			&:hover {
+				background-position: -52px -28px;
+			}
+		}
+		&.ico-yt {
+			background-position: -77px 0px;
+			&:hover {
+				background-position: -77px -28px;
+			}
+		}
+	}
+}

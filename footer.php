@@ -17,6 +17,12 @@
 		</div>
 		<div class="col-md-6 text-right light">
 			<p>Site by the <a href="http://thedegreeshow.com/the_team">Web Team</a></p>
+			<ul class="footer-social-buttons">
+				<li><a href="https://www.facebook.com/thedegreeshow" class="ico-fb" target="blank" title="Facebook"></a></li>
+				<li><a href="https://twitter.com/thedegreeshow" class="ico-tw" target="blank" title="Twitter"></a></li>
+				<li><a href="http://instagram.com/thedegreeshow" class="ico-in" target="blank" title="Instagram"></a></li>
+				<li><a href="https://www.youtube.com/user/thedegreeshow14" class="ico-yt" target="blank" title="YouTube"></a></li>
+			</ul>
 		</div>
 
 	</div>
