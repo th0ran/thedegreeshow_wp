@@ -35,7 +35,7 @@
 
 	// wp functions
 	$image_id = get_post_thumbnail_id();
-	$image_url = wp_get_attachment_image_src($image_id,'full', true);
+	$image_url = wp_get_attachment_image_src($image_id,'hero', true);
 	$thumb = false;
 
 	// if has post thumbnail, and is not certain pages, show.
