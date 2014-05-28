@@ -323,7 +323,7 @@
 				</li>
 				<li>
 					<a href="http://www.moo.com" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" alt="Moo">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/sponsor-moo.png" class="moo" alt="Moo">
 					</a>
 				</li>
 				<li>

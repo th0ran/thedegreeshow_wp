@@ -502,6 +502,9 @@ img.aligncenter {
   bottom: 0;
   right: 0;
 }
+.sponsors .sponsors-list li img.moo {
+  width: 40%;
+}
 /*
 -- The Team page
 */
