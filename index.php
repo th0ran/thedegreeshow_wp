@@ -213,7 +213,7 @@
 </section><!--/front-posts-->
 
 
-<section class="location">
+<section class="location" id="location">
 	<div id="map"></div>
 	<div class="address">
 

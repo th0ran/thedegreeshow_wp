@@ -171,8 +171,8 @@ jQuery(document).ready(function($) {
 		};
 	});
 
-	jQuery('#bookit').click(function(){
-		scrollTo('#booking');
+	jQuery('#rave').click(function(){
+		scrollTo('#location');
 	});
 
 
