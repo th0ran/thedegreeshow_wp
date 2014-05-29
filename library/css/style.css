@@ -1171,6 +1171,19 @@ header.hero a {
   margin-right: -15px;
   position: relative;
   z-index: 2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#side .ico-close:hover {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+
+  transform: rotate(180deg);
 }
 .ico-close {
   cursor: pointer;
