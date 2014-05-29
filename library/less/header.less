@@ -197,9 +197,17 @@ header.hero {
 	input#s::-webkit-input-placeholder { color:rgba(255, 255, 255, 0.3); }
 	.ico-close {
 		position: absolute;
+		width: 20px;
+		height: 20px;
 		right: 20px;
 		top: 20px;
 		z-index: 20;
+		.transition (all .2s ease-in-out);
+		&:hover {
+			-ms-transform: rotate(180deg); /* IE 9 */
+            -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+           	transform: rotate(180deg);
+		}
 	}
 	#searchsubmit {
 		display: none;

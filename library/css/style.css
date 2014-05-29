@@ -1126,9 +1126,24 @@ header.hero a {
 }
 #search .ico-close {
   position: absolute;
+  width: 20px;
+  height: 20px;
   right: 20px;
   top: 20px;
   z-index: 20;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#search .ico-close:hover {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+
+  transform: rotate(180deg);
 }
 #search #searchsubmit {
   display: none;
