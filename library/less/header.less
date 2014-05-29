@@ -94,12 +94,50 @@ header.hero {
 			margin: 0px;
 
 			&.searchtoggle {
-				background: url('../images/ico-search.png') no-repeat 0px 4px;
-				padding: 0px 20px 0px 22px;
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					width: 15px;
+					height: 15px;
+					background: url('../images/ico-search.png') no-repeat;
+					margin-right: 5px;
+				}
+
+				span {
+					visibility: hidden;
+					opacity: 0;
+					.transition (all .3s);
+					margin: 0 0 0 -65px;
+				}
+				&:hover>span {
+					visibility: visible;
+					opacity: 1;
+					margin: 0;
+				}
 			}
 			&.navtoggle {
-				background: url('../images/ico-nav.png') no-repeat 0px 5px;
-				padding: 0px 0px 0px 28px;
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					width: 15px;
+					height: 15px;
+					background: url('../images/ico-nav.png') no-repeat;
+					margin-right: 5px;
+				}
+
+				span {
+					visibility: hidden;
+					opacity: 0;
+					.transition (all .3s);
+					margin: 0 0 0 -50px;
+				}
+				&:hover>span {
+					visibility: visible;
+					opacity: 1;
+					margin: 0;
+				}
 			}
 		}
 	}

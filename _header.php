@@ -69,8 +69,8 @@
 		<nav id="header-nav">
 
 			<div class="header-nav">
-				<p class="searchtoggle">Search</p>
-				<p class="navtoggle">Menu</p>
+				<p class="searchtoggle"><span>Search</span></p>
+				<p class="navtoggle"><span>Menu</span></p>
 			</div>
 
 			<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo">

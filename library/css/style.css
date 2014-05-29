@@ -1023,13 +1023,51 @@ header.hero a {
   text-transform: uppercase;
   margin: 0px;
 }
-#header-nav .header-nav p.searchtoggle {
-  background: url('../images/ico-search.png') no-repeat 0px 4px;
-  padding: 0px 20px 0px 22px;
+#header-nav .header-nav p.searchtoggle:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background: url('../images/ico-search.png') no-repeat;
+  margin-right: 5px;
 }
-#header-nav .header-nav p.navtoggle {
-  background: url('../images/ico-nav.png') no-repeat 0px 5px;
-  padding: 0px 0px 0px 28px;
+#header-nav .header-nav p.searchtoggle span {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  margin: 0 0 0 -65px;
+}
+#header-nav .header-nav p.searchtoggle:hover > span {
+  visibility: visible;
+  opacity: 1;
+  margin: 0;
+}
+#header-nav .header-nav p.navtoggle:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background: url('../images/ico-nav.png') no-repeat;
+  margin-right: 5px;
+}
+#header-nav .header-nav p.navtoggle span {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  margin: 0 0 0 -50px;
+}
+#header-nav .header-nav p.navtoggle:hover > span {
+  visibility: visible;
+  opacity: 1;
+  margin: 0;
 }
 .full .header-intro {
   margin-top: 12%;
