@@ -1,0 +1,198 @@
+322c930,Alex Fuller,14 hours ago,Nav Icons Update
+1bbd8f1,Alex Fuller,14 hours ago,Spin
+201d43b,Alex Fuller,15 hours ago,Close Spin
+a3ded0f,Alex Fuller,2 days ago,Footer Social Links
+da70e73,Alex Fuller,2 days ago,DFP
+38d2580,Alex Fuller,2 days ago,Article Paragraph Update
+d6f2b22,Alex Fuller,2 days ago,Hero Image Function
+b4e6759,Alex Fuller,2 days ago,Hero Update
+4b7fed7,Alex Fuller,2 days ago,Page Scroll
+e86ca5c,Alex Fuller,2 days ago,cat Update
+61c3055,Alex Fuller,2 days ago,Stage Electric Logo
+b2e0396,Alex Fuller,2 days ago,Stage Electrics Logo Update
+1e114d0,Alex Fuller,2 days ago,Moo Logo Update
+94671bd,Alex Fuller,2 days ago,Aspect Logo Update
+2f93621,Alex Fuller,2 days ago,Procam Logo Update
+d1e32f0,Alex Fuller,3 days ago,Sponsors
+a305be2,Alex Fuller,3 days ago,Sponsor
+89617c1,Alex Fuller,3 days ago,Sponsors
+9e40406,Alex Fuller,3 days ago,Sponsor Update
+4597e71,Alex Fuller,3 days ago,EVS Logo
+a84898a,Alex Fuller,3 days ago,EVS Logo
+49fbd4d,Alex Fuller,3 days ago,Update
+8fb4f0f,Zoe Bryant,7 days ago,sponsors list tweaks
+ba6de44,Zoe Bryant,7 days ago,Sponsors List
+a095228,Alex Fuller,8 days ago,Partners Page
+7069514,Alex Fuller,8 days ago,Partners Page
+0db7d4c,Alex Fuller,8 days ago,Partners Page
+8c59f47,Alex Fuller,8 days ago,Partners Page
+511779b,Alex Fuller,8 days ago,Sponsors Style
+d4a094f,Alex Fuller,8 days ago,Partners Page
+6aed398,Alex Fuller,8 days ago,Team Update
+8b79173,Alex Fuller,8 days ago,Team Update
+7338a5e,Alex Fuller,8 days ago,Sponsor Logos
+98bbb09,Alex Fuller,8 days ago,Sponsors
+76a372f,Alex Fuller,8 days ago,Sponsors
+230ffe5,Alex Fuller,8 days ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+c229b21,Alex Fuller,8 days ago,Style Update
+41cc5e7,Alex Fuller,8 days ago,Team
+9983e4b,Zoe Bryant,8 days ago,disabling graduate hover over
+5c64a30,Zoe Bryant,2 weeks ago,Map no longer hijacks the scrolling
+705907f,Zoe Bryant,2 weeks ago,Fixing all news button on mobile
+7b5a853,Zoe Bryant,2 weeks ago,Changing up the excerpexcerpt lengths
+916e35a,Zoe Bryant,2 weeks ago,final tweaks, link
+33443cd,Zoe Bryant,2 weeks ago,Archive page styling. Misc tidying up
+bd5bdac,Zoe Bryant,2 weeks ago,Starting work on the archive page nav styling - just a few bits to do' . ;
+c6df1d6,Alex Fuller,3 weeks ago,Homepage Changes
+18b3eba,Zoe Bryant,4 weeks ago,contact page map
+0dff5bd,Zoe Bryant,4 weeks ago,contact page map
+d823e13,Alex Fuller,5 weeks ago,Wednesday Update
+eba66e3,Alex Fuller,5 weeks ago,Logo Opacity Background Removed
+2853a8b,Alex Fuller,5 weeks ago,Angel Delight
+1026ef9,Alex Fuller,5 weeks ago,More Info Links
+36c2627,Alex Fuller,5 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+5edc19c,Alex Fuller,5 weeks ago,Who We are Update
+7da5c5a,Zoe Bryant,5 weeks ago,2 day overview navs
+7e3ca93,Zoe Bryant,5 weeks ago,Event page tweaks, copy change homepage
+00a4a18,Zoe Bryant,5 weeks ago,Events page day overview nav
+54bd238,Zoe Bryant,5 weeks ago,Events page day overview nav
+6ccdb79,Alex Fuller,5 weeks ago,Hero Image
+da6b8c9,Alex Fuller,5 weeks ago,Bringing Sexy Back
+5019463,Alex Fuller,5 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+19ad0bb,Alex Fuller,5 weeks ago,Sponsors
+64e3867,Zoe Bryant,5 weeks ago,align images
+236ae9f,Zoe Bryant,5 weeks ago,New homepage copy .
+a7f8305,Zoe Bryant,5 weeks ago,book your place button link update
+1f6a876,Zoe Bryant,5 weeks ago,GLOBAL: A Book Your Place button, like on the hero image needs to be centred on the bar across the top of every page, including the home page.
+1fb76af,Zoe Bryant,5 weeks ago,Merge resolutions
+341d69e,Zoe Bryant,5 weeks ago,Commit to overwrite
+9cb6b9f,Alex Fuller,5 weeks ago,Autocomplete
+b02e333,Jon Lambert,5 weeks ago,added event page spacer
+a5a6f4c,Jon Lambert,5 weeks ago,added event page spacer
+6fbc0f6,Jon Lambert,5 weeks ago,added event page spacer
+1388e6d,Jon Lambert,5 weeks ago,added event page spacer
+9b06436,Jon Lambert,5 weeks ago,added event page spacer
+91b53a3,Jon Lambert,5 weeks ago,added event page spacer
+d76d688,Jon Lambert,5 weeks ago,added bold, italic styles. Home copy modified
+517ec37,Jon Lambert,5 weeks ago,added bold, italic styles. Home copy modified
+196e64c,Jon Lambert,5 weeks ago,added bold, italic styles. Home copy modified
+f44e0b1,Jon Lambert,5 weeks ago,changed homepage copy
+fcd1b64,Jon Lambert,5 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+037c8ba,Jon Lambert,5 weeks ago,added the scrolling, made it calculate the header height
+c63601c,Alex Fuller,5 weeks ago,Luncheon
+5ef1ab2,Alex Fuller,5 weeks ago,FLAN
+08f851d,Alex Fuller,5 weeks ago,Meet the Team style
+d77ce45,Jon Lambert,5 weeks ago,changed the nav docking, plus some modifications to search
+a734f73,Jon Lambert,5 weeks ago,added tracking code
+e605f43,Jon Lambert,5 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+42855c7,Jon Lambert,5 weeks ago,changed utm_campaign
+66f1490,Zoe Bryant,5 weeks ago,Backup image
+1f1fa5e,Zoe Bryant,5 weeks ago,Meet the team rows
+1438cf9,Zoe Bryant,5 weeks ago,Header fix
+c17ed3b,Jon Lambert,5 weeks ago,added post image fallback
+94a1e6a,Jon Lambert,5 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+ffd64e6,Jon Lambert,5 weeks ago,temporary mess
+95868c7,Alex Fuller,5 weeks ago,Style Update
+c74f796,Alex Fuller,5 weeks ago,Updated Link Title
+7953362,Alex Fuller,5 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+0a76246,Alex Fuller,5 weeks ago,Search Styling
+ecd58a5,Jon Lambert,5 weeks ago,lightened the buttons
+8727535,Jon Lambert,5 weeks ago,temporarily disabled docking nav
+9913090,Jon Lambert,5 weeks ago,added urls to book tickets
+b56e3be,Zoe Bryant,6 weeks ago,adding google webmaster tool file
+3277457,Zoe Bryant,6 weeks ago,Meet the team mobile version
+9596bf9,Zoe Bryant,6 weeks ago,wrong link.
+32ce10d,Zoe Bryant,6 weeks ago,if featured post does not have thumbnail
+33a245a,Zoe Bryant,6 weeks ago,Post images on the featured section of the homepage, footer link update
+3fe4331,Zoe Bryant,6 weeks ago,Web team easter egg
+833e7fe,Zoe Bryant,6 weeks ago,Web team easter egg
+3cadb90,Zoe Bryant,6 weeks ago,Web team easter egg
+75cc92c,Zoe Bryant,6 weeks ago,sponsor section links
+4432f69,Zoe Bryant,6 weeks ago,Sponsors section and Smooth Scrollin' to the book your place section.
+e35c530,Zoe Bryant,6 weeks ago,Improving the homepage map so it's actually responsive.
+3365ea2,Zoe Bryant,6 weeks ago,Fixing the contact page post map
+f8a2b57,Zoe Bryant,6 weeks ago,Fixing skewed images on team profiles
+2aecd0c,Zoe Bryant,6 weeks ago,If someone searches for tickets, send them to the right place
+0cce888,Zoe Bryant,6 weeks ago,Cookie policy link
+a381bd7,Zoe Bryant,6 weeks ago,Homepage map - start
+302b80b,Zoe Bryant,6 weeks ago,Tel details on contact form page
+0c2ca31,Zoe Bryant,6 weeks ago,Adding rave link to contact form page
+46a116a,Zoe Bryant,6 weeks ago,Contact form styling
+d587988,Zoe Bryant,6 weeks ago,Contact page
+d795230,Zoe Bryant,6 weeks ago,overlay on search pic...
+4a6e89d,Zoe Bryant,6 weeks ago,Blue overlay on photos whee
+a4d7bcf,Zoe Bryant,6 weeks ago,Forgot to double check my work...
+cbf341a,Zoe Bryant,6 weeks ago,I got a little excited about nice hover over effects
+09e7acf,Zoe Bryant,6 weeks ago,tidying up archive posts. Adding hover over effects to social media buttons. Tidying up individual team pages. Added functionality for 'gradutate links' if someone has a graduate profile rather than a regular profile. Hoverover effect on meet the team page. Probably some other stuff I need sleep.' . . ; '. :wq .
+43f810a,Zoe Bryant,6 weeks ago,commit please
+eb9b2a6,Zoe Bryant,6 weeks ago,Search page whoops forgot the header
+2b7a910,Alex Fuller,6 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+33f7bf2,Alex Fuller,6 weeks ago,Wednesday Steak Night
+8ced979,Zoe Bryant,6 weeks ago,Search header
+a28fcf5,Zoe Bryant,6 weeks ago,style.css mergin
+ad2af4c,Zoe Bryant,6 weeks ago,style.css merging...
+a4af11d,Alex Fuller,6 weeks ago,Style modifications
+7012781,Alex Fuller,6 weeks ago,Light test
+4a5dbfc,Alex Fuller,6 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+6e13fb7,Alex Fuller,6 weeks ago,Flannel
+18f831a,Alex Fuller,6 weeks ago,Late night burger party
+2fd9a70,Alex Fuller,6 weeks ago,Light class added
+d82ab9e,Alex Fuller,6 weeks ago,Added the "Light" font.
+c710b48,Zoe Bryant,6 weeks ago,Updating the README to be clear about LESS.
+bc4d247,Zoe Bryant,6 weeks ago,Search bar mobile version
+49bb31b,Zoe Bryant,6 weeks ago,Tidying up the header file,and trying to combate the SEO plugin putting in weird names
+39bfda5,Alex Fuller,6 weeks ago,Fix for Browser Title
+219c54d,Jon Lambert,6 weeks ago,added increment.txt
+5d1c202,Jon Lambert,6 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+e61c78f,Jon Lambert,6 weeks ago,added increment.txt
+39d6392,Alex Fuller,6 weeks ago,Fix for Title on Posts & Pages
+0795238,Alex Fuller,6 weeks ago,Title Fix
+56c8165,Zoe Bryant,6 weeks ago, post thumbnails in the header
+af8c859,Zoe Bryant,6 weeks ago,Sidebar social media links
+d49ce68,Zoe Bryant,6 weeks ago,Meet the team: show more than 2 people, show full profile not tiny extract
+7c97e74,Jon Lambert,7 weeks ago,Hey #web! Adding increment file for push testing.
+6334775,Alex Fuller,7 weeks ago,Copy Change
+82f47a2,Zoe Bryant,7 weeks ago,Search section
+a133a8a,Zoe Bryant,7 weeks ago,Fixing glitch in chrome: Sticky nav and sliding nav not co-operating
+e3fe859,Zoe Bryant,7 weeks ago,Homepage content
+b64933a,Zoe Bryant,7 weeks ago,jon replaced bg-top.jpg with a more compressed version
+155ae0e,Zoe Bryant,7 weeks ago,favicons and app icons
+ee65d46,Zoe Bryant,7 weeks ago,404 page
+ed4170c,Zoe Bryant,7 weeks ago,Google maps link on homepage
+e564976,Zoe Bryant,7 weeks ago,Single page design
+dad93b3,Jon Lambert,7 weeks ago,Merge branch 'v2' of https://github.com/th0ran/thedegreeshow_wp into v2
+727dced,Jon Lambert,7 weeks ago,replaced bg-top.jpg with a more compressed version
+03beccd,Zoe Bryant,7 weeks ago,Console.log disabled
+bbf73bd,Zoe Bryant,7 weeks ago,Favicons
+9163b87,Zoe Bryant,7 weeks ago,Footer back to top link.
+e548b4a,Jon Lambert,7 weeks ago,extracted inline css to holding.css
+3a306ef,Jon Lambert,7 weeks ago,hotfix for css and js holding
+0cbb8ef,Jon Lambert,7 weeks ago,added 503.php to v2
+8a9e129,Zoe Bryant,8 weeks ago,Meet the team page.
+fbe8ceb,Zoe Bryant,8 weeks ago,Sticky nav mobile version.
+26d96f1,Zoe Bryant,8 weeks ago,header tidying after stickafter sticky nav
+6ea9939,Zoe Bryant,8 weeks ago,Single page styling. Header navigation bar making docked version
+ec0fe23,Zoe Bryant,8 weeks ago,homepage, mobile and tablet basic styles
+3df6a16,Zoe Bryant,8 weeks ago,Homepage location sectioion and sponsors section initial styling
+ce52c87,Zoe Bryant,8 weeks ago,Readme format
+0a4e5c3,Zoe Bryant,8 weeks ago,Misc tidying. Homepage Latest news section and twitter feed. Read the Readmegit status
+be5504f,Zoe Bryant,10 weeks ago,working way down the homepage, attempting to install leafmaps
+86e52f3,Zoe Bryant,2 months ago,continuing down the page.
+36019e1,Zoe Bryant,2 months ago,Styling out the heading panel, menu bar and checking the responsiveness of all of that
+7bc43d2,Zoe Bryant,2 months ago,Began basic styling, navigation bar functionality, general markup.
+e98267f,Zoe Bryant,2 months ago,Installing webfonts
+1ceeabb,Zoe Bryant,2 months ago,Installing Bootstrap, Updating the README
+bfa5850,Zoe Bryant,2 months ago,Restting to basic bones for Degree show layout V2
+d63d5bf,th0ran,3 months ago,Changeing post style
+8c08928,th0ran,3 months ago,Added adress
+d19bf59,th0ran,3 months ago,Styling booking box
+14aa345,th0ran,3 months ago,Fixing sticky top
+b107f15,th0ran,3 months ago,Changing the post style
+928ce6b,th0ran,3 months ago,Template work
+1abe26a,th0ran,3 months ago,Added more styles to single post
+40fe589,th0ran,3 months ago,Made top picture responsive
+687c0e7,th0ran,3 months ago,Adding styles for the single page
+8852d22,th0ran,3 months ago,Added some CSS - working on single page
+c52d64f,Zoe Bryant,3 months ago,Basic structure implimented on homepage and general tidying up. Post structure is put in _post.php in case it is repeated- possibly on archive / category pages later on. ReadMe contains information about how to set up wordpress install to work with the theme. So y'know. Actually read it. Lets do this thing yay!
+edccc79,Zoe Bryant,3 months ago,Tidying up, removing LESS/SASS files, installing Bootstrap 3.0, adding vanilla.html and README information
+dda37e2,th0ran,3 months ago,Added BONES wordpress theme

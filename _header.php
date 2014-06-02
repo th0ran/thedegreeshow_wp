@@ -95,6 +95,7 @@
 
 			<div class="header-info">
 				<p class="header-date">16 - 20 June 2014</p>
+				<p class="header-clock">4pm - 10pm</p>
 				<p class="header-place"><a id="rave">Ravensbourne</a></p>
 			</div>
 			<a id="bookit" href="http://tickets.thedegreeshow.com/?utm_source=website&utm_campaign=navbar" class="cta lg-cta bold">book your place</a>
