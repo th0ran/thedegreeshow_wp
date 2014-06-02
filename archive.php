@@ -55,11 +55,6 @@
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			
-
-			<a href="<?php the_permalink() ?>"><span class="cat-thumb" <?php echo $bg_url ?>>
-			</span></a>
-
 			<div class="story">
 
 				<a href="<?php the_permalink() ?>">
