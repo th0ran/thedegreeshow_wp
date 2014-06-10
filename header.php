@@ -42,6 +42,9 @@
 	<?php wp_head(); ?>
 	<!-- end of wordpress head -->
 
+	<!-- Prevent Jquery Conflict -->
+	<script>var $ = jQuery.noConflict();</script>
+
 	<!-- drop Google Analytics Here -->
 	<!-- end analytics -->
 

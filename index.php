@@ -6,13 +6,39 @@
 
 		<div class="col-md-12">
 
-			<h1>Who are we?</h1>
+			<?php 
+				$date = date('d, m, y');
 
-			<p class="intro light">
-				<!-- Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers. Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us. -->
-				The Degree Show is <span class="italic">the</span> student showcase to be at this summer. Ravensbourne's immense talent gathers for one week to celebrate the class of 2014 in an action packed event, with courses from Animation to Web Media exhibiting their very best work.
-				TDS has been a starting block for many of our students’ careers - Our alumni is extensive, which includes various producers and directors such as academy award winners Gareth Unwin and Simon Egan, producers of ‘The Kings Speech’, to the likes of Stella McCartney, fashion designer. Join us from the 16th - 20th June 2014 from 4pm until 10pm each day, and celebrate our work with us.
-			</p>
+				$monday = ('16, 06, 14');
+				$tuesday = ('17, 06, 14');
+				$wednesday = ('18, 06, 14');
+				$thursday = ('19, 06, 14');
+				$friday = ('20, 06, 14');
+
+				if($date === $monday) {?>
+					<h1>Monday: Today's Schedule</h1>
+					<p class="intro light">Today is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building, as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.</p>
+				<?php } else if($date === $tuesday) {?>
+					<h1>Tuesday: Today's Schedule</h1>
+					<p class="intro light">Today is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course.</p>
+				<?php } else if($date === $wedneaday) {?>
+					<h1>Wednesday: Today's Schedule</h1>
+					<p class="intro light">Today is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.</p>
+				<?php } else if($date === $thursday) {?>
+					<h1>Thursday: Today's Schedule</h1>
+					<p class="intro light">Today, The Degree Show transforms again to focus more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building, but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.</p>
+				<?php } else if($date === $friday) {?>
+					<h1>Friday: Today's Schedule</h1>
+					<p class="intro light">Today sees The Degree Show draw to a close, as well as being the wrap party for everyone that has helped with the show. There are also the Animation, Architecture, Digital Photography and IDEAs private view -this is your last chance to see all the students’ who are exhibiting this year.</p>
+				<?php } else {?>
+					<h1>Who are we?</h1>
+
+					<p class="intro light">
+						<!-- Every June, The Degree Show transforms Ravensbourne into one of the most exciting and innovative exhibitions that focuses on showing students’ work in the most unique way possible. Our alumni is extensive, which includes various award winning producers and directors such as academy award winner Gareth Unwin, producer of ‘The Kings Speech’. The Degree Show has been a starting block for many of our students’ careers. Join us from the 16th - 20th June 2014, from 4pm until 10pm each day, and celebrate our work with us. -->
+						The Degree Show is <span class="italic">the</span> student showcase to be at this summer. Ravensbourne's immense talent gathers for one week to celebrate the class of 2014 in an action packed event, with courses from Animation to Web Media exhibiting their very best work.
+						TDS has been a starting block for many of our students’ careers - Our alumni is extensive, which includes various producers and directors such as academy award winners Gareth Unwin and Simon Egan, producers of ‘The Kings Speech’, to the likes of Stella McCartney, fashion designer. Join us from the 16th - 20th June 2014 from 4pm until 10pm each day, and celebrate our work with us.
+					</p>
+				<?php }?>
 
 			<hr>
 
