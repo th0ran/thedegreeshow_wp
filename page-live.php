@@ -14,7 +14,11 @@ Template Name: Live Template
 <div id='playerDFQjhyvHZjum'></div>
 <script type='text/javascript'>
     jwplayer('playerDFQjhyvHZjum').setup({
-        file: 'rtmp://195.195.131.195:80/raveLive/webcast.flv',
+ 			sources: [{ 
+            file: "rtmp://195.195.131.195/raveLive/FashionHD.flv"
+        },{
+            file: "http://195.195.131.222/rave/FashionHD/player.m3u8"
+        }]
         image: 'http://live.seanmehmet.com/tds/FashionSlate.png',
         width: '100%',
         aspectratio: '16:9',
