@@ -38,6 +38,9 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+	<script type="text/javascript" src="http://live.seanmehmet.com/jwplayer/jwplayer.js"></script>
+	
+
 	<!-- wordpress head functions -->
 	<?php wp_head(); ?>
 	<!-- end of wordpress head -->
