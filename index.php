@@ -41,21 +41,89 @@
 					<div class="row left">
 						<div class="col-md-6">
 							<h2>Be apart of the show!</h2>
-							<p>Tag yourself in a picture using the hashtag #tds14 holding <a href="">this postcard</a> and you could be on our live broadcast. <i>(Make sure to print out the postcard in A5)</i></p>
+							<p>Tag yourself in a picture using the hashtag #tds14 holding <a href="http://thedegreeshow.com/wp-content/uploads/2014/06/postcard.pdf" target="_blank">this postcard</a> and you could be on our live broadcast. <i>(Make sure to print out the postcard in A5)</i></p>
 						</div>
 					</div>
 				<?php } else if($date === $tuesday) {?>
 					<h1>Tuesday: Today's Schedule</h1>
 					<p class="intro light">Today is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course.</p>
-				<?php } else if($date === $wedneaday) {?>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>4pm - Broadcast Technology Private View</h2>
+							<p>The Broadcast Technology course offers aspiring engineers a way of extending their skills in systems, outside broadcast, audio and computing within television.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>6pm - Sound Design Private View</h2>
+							<p>The course develops skills in recording, editing, mixing and mastering sound in everything from TV to video games to live events.</p>
+						</div>
+					</div>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>7pm - Broadcast Operations and Production Private View</h2>
+							<p>Broadcast Operations and Production extends students knowledge and skills in both operational and production roles in single camera and multicamera productions.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>8pm - Digital Film Production Private View</h2>
+							<p>This is your chance to see the incredible talent of Digital Film Production. The screening will consist of a range of short films made as part of their Final Major Projects.</p>
+						</div>
+					</div>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>Be apart of the show!</h2>
+							<p>Tag yourself in a picture using the hashtag #tds14 holding <a href="http://thedegreeshow.com/wp-content/uploads/2014/06/postcard.pdf" target="_blank">this postcard</a> and you could be on our live broadcast. <i>(Make sure to print out the postcard in A5)</i></p>
+						</div>
+					</div>
+				<?php } else if($date === $wednesday) {?>
 					<h1>Wednesday: Today's Schedule</h1>
 					<p class="intro light">Today is our schools day, where we invite our main feeder schools down and any students who are looking to study at Ravensbourne. It is also the private view for our Foundation Courses, where we invite all friends and family of our FE students down to view their work as part of the wider exhibition. We also have the Fashion Private view, which is a invite-only event.</p>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>4pm - Foundation Courses Private View</h2>
+							<p>Friends and family of Foundation students are invited to see the work that the students have created as part of their final projects.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>7pm - Fashion Private View</h2>
+							<p>This private event is a chance to relive The Fashion Show from the 12th June, as well as getting a chance to meet the students who created the pieces on the catwalk.</p>
+						</div>
+					</div>
 				<?php } else if($date === $thursday) {?>
 					<h1>Thursday: Today's Schedule</h1>
 					<p class="intro light">Today, The Degree Show transforms again to focus more on our design cluster courses. Not only will you be able to browse through some amazing installations around the building, but you will also be able to attend the Graphics, Motion Graphics and Product Design and Design Interaction private views.</p>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>6pm - Motion Graphics Private View</h2>
+							<p>This course is recognised within the media and broadcasting industry as the premier course in the UK for developing creative thinkers with strong technical expertise in motion graphics.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>7pm - Graphic Design Private View</h2>
+							<p>The Graphic Design course incorporates various aspects of print and digital design, including publishing, branding and wayfinding.</p>
+						</div>
+					</div>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>8pm - Design Product and Design Interaction Private View</h2>
+							<p>This course cluster brings product and interaction design closer together to create creative thinkers with a high level of technical skill in everything from rapid prototyping to concept generation.</p>
+						</div>
+					</div>
 				<?php } else if($date === $friday) {?>
 					<h1>Friday: Today's Schedule</h1>
 					<p class="intro light">Today sees The Degree Show draw to a close, as well as being the wrap party for everyone that has helped with the show. There are also the Animation, Architecture, Digital Photography and IDEAs private view -this is your last chance to see all the students’ who are exhibiting this year.</p>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>5pm - Digital Photography Private View</h2>
+							<p>This AOP accreditated course provides graduates with knowledge in various areas including narrative, documentary and promotional photography.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>6pm - Animation Private View</h2>
+							<p>The Animation course provides graduates with skills in various areas including digital environments, game design and visual effects.</p>
+						</div>
+					</div>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>7pm - Architechure and IDEAs Private Views</h2>
+							<p>These courses provide graduates with the skills required in both architecture and interior design. These include parametric and computer generated design as well as rapid prototyping.</p>
+						</div>
+					</div>
 				<?php } else {?>
 					<h1>Who are we?</h1>
 
