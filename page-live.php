@@ -7,18 +7,34 @@ Template Name: Live Template
 <?php get_header(); ?>
 
 <style type="text/css">
+	.video-wrap {
+		width: 950px;
+		margin: 0 auto;
+		margin-top: 40px;
+		height: 400px;
+	}
+
+	.video-wrap > div object {
+		height: 400px;
+	}
+
+	html body .header-intro {
+		margin-top: 70px;
+	}
 	
 </style>
 
 <script>jwplayer.key='5XXb+w0txH2+cnkwOtAOWXU39zFQbZ6VT9mOA6R83tk='</script>
-<div id='playerDFQjhyvHZjum'></div>
+<div class="video-wrap">
+	<div id='playerDFQjhyvHZjum' class="video"></div>
+</div>
 <script type='text/javascript'>
     jwplayer('playerDFQjhyvHZjum').setup({
- 			sources: [{ 
+ 		sources: [{ 
             file: "rtmp://195.195.131.195/raveLive/FashionHD.flv"
         },{
             file: "http://195.195.131.222/rave/FashionHD/player.m3u8"
-        }]
+        }],
         image: 'http://live.seanmehmet.com/tds/FashionSlate.png',
         width: '950px',
         aspectratio: '16:9',
