@@ -99,6 +99,7 @@
 				<p class="header-place"><a id="rave">Ravensbourne</a></p>
 			</div>
 			<a id="bookit" href="http://tickets.thedegreeshow.com/?utm_source=website&utm_campaign=navbar" class="cta lg-cta bold">book your place</a>
+			<a id="bookit" href="http://thedegreeshow.com/live" class="cta lg-cta bold">Watch Live</a>
 
 		<?php }; // end homepage only ?>
 

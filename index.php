@@ -18,6 +18,32 @@
 				if($date === $monday) {?>
 					<h1>Monday: Today's Schedule</h1>
 					<p class="intro light">Today is the first day of our live broadcast on digital terrestrial and online. There will be live shows around the building, as well as private views for Editing and Post Production, Music Production for Media and Web Media. We kick off the show with our annual awards ceremony, which is a privately ticketed event, where we celebrate the best of our graduates’ work.</p>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>4pm - Music Production for Media Private View</h2>
+							<p>Supported by the Ertegun Foundation, the course offers composers a chance to extend their skills in composition and production skills for producing music for film, television and other media.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>5pm - Web Media Private View</h2>
+							<p>Web Media provides students with a chance to gain skills in both creation of web content and services as well as a practical understanding of the web industry.</p>
+						</div>
+					</div>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>6pm - Editing and Post Production Private View</h2>
+							<p>This course provides students with post production training in many industry standard pieces of software, including FCP, Avid, Adobe Master Collection and Nuke.</p>
+						</div>
+						<div class="col-md-6">
+							<h2>7pm - The Degree Show Awards Ceremony</h2>
+							<p>The Degree Show Awards honors the best in each cluster of courses at Ravensbourne. The event is private with an invited audience and is a great way to meet the students who at the top of their class.</p>
+						</div>
+					</div>
+					<div class="row left">
+						<div class="col-md-6">
+							<h2>Be apart of the show!</h2>
+							<p>Tag yourself in a picture using the hashtag #tds14 holding <a href="">this postcard</a> and you could be on our live broadcast. <i>(Make sure to print out the postcard in A5)</i></p>
+						</div>
+					</div>
 				<?php } else if($date === $tuesday) {?>
 					<h1>Tuesday: Today's Schedule</h1>
 					<p class="intro light">Today is our second day of live broadcasting, with even more live programmes being transmitted straight out of our building. You will also be able to attend the Broadcast Engineering, Broadcast Operations and Production and Sound Design private views. This will also be your chance to attend the private screenings of work from our Digital Film Production course.</p>
