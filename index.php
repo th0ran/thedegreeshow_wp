@@ -353,6 +353,11 @@
 					</a>
 				</li>
 				<li>
+					<a href="http://www.tyrellcct.com/" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/Tyrell_Red.png" alt="Tyrell Red">
+					</a>
+				</li>
+				<li>
 					<a href="http://ravesu.co.uk/" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/library/images/rsu.png" alt="RSU">
 					</a>
