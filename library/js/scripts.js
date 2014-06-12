@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
 	navManager.calculateHeight();
 
-	window.onscroll = navManager.onScroll;
+	// window.onscroll = navManager.onScroll;
 	// 
 	// function(){
 	// 	if (window.pageYOffset > 526) {
