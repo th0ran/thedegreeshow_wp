@@ -11,23 +11,150 @@ Template Name: Live Template
 		width: 950px;
 		margin: 0 auto;
 		margin-top: 40px;
-		height: 400px;
+		/*height: 400px;*/
+		margin-bottom: 100px;
+		padding-top: 30px;
+	}
+
+	@media all and (max-width: 950px) {
+		.video-wrap {
+			width: 100%;
+		}
+
+		html body .thirds, html body .social {
+			width: 90% !important;
+			padding: 0 5% 0 5%;
+		}
+
+		html body .live-intro {
+			width: 90% !important;
+			padding: 0 5% 0 5%;
+			margin: 0 auto;
+		}
 	}
 
 	.video-wrap > div object {
-		height: 400px;
+		border: 1px solid #DDD; 
+	}
+
+	html body h3, html body h2 {
+		text-align: center;
+		font-family: "interfacelight";
+	}
+
+	html body h2 {
+		margin-top: 30px;
+	}
+
+	html body h3 {
+		margin-top: -0px;
+		margin-bottom: 10px;
 	}
 
 	html body .header-intro {
 		margin-top: 70px;
 	}
+
+	html body .header-intro h1 {
+		content: "Degree Show";
+		display: none;
+	}
+
+	html body .hero {
+		padding-bottom: 120px;
+	}
+
+	html body .thirds {
+		width: 950px;
+		margin: auto;
+		text-align: center;
+		font-family: "interfacelight";
+	}
+
+	.thirds .one, .thirds .two, .thirds .three {
+		width: 50%;
+		float: left;
+		height: 100px;
+
+		text-align: center;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	html body div.spacer {
+		display: inline;
+		width: 1px;
+		height: 10px;
+		background: #66cccc;
+	}
+
+	#header-nav .logo img {
+		height: 70px;
+	}
+
+	html body .social {
+		width: 950px;
+		margin: 0 auto;
+
+	}
+
+	html body .social ul {
+		padding: 0;
+		list-style: none;
+		margin-bottom: 30px;
+	}
+
+	html body .social ul li {
+		display: inline-block;
+	}
+
+	html body .social ul li a {
+		padding: 8px 13px 8px 13px;
+		background: #cc6699;
+		color: white;
+		font-family: "interfacelight";
+		display: block;
+		width: 280px;
+		margin: auto;
+		display: none;
+	}
 	
 </style>
 
-<script>jwplayer.key='5XXb+w0txH2+cnkwOtAOWXU39zFQbZ6VT9mOA6R83tk='</script>
+
+
+
+<div class="live-intro">
+	<h2>Ravensbourne Graduate Fashion Show</h2>
+	<h3>2014</h3>
+</div>
+<div class="thirds">
+	<p>
+		This is a showcase of the year's best graduate collections; an insight into the work of tomorrow's designers. 
+	</p>
+	<div class="clear"></div>
+</div>
+
+
+
 <div class="video-wrap">
 	<div id='playerDFQjhyvHZjum' class="video"></div>
 </div>
+
+<div class="social">
+	<ul>
+		<li>
+			<a href="http://2014.thedegreeshow.com/course/10">View 2014 Fashion Design Graduates</a>
+		</li>
+	</ul>
+</div>
+
+
+
+<script>jwplayer.key='5XXb+w0txH2+cnkwOtAOWXU39zFQbZ6VT9mOA6R83tk='</script>
+
 <script type='text/javascript'>
     jwplayer('playerDFQjhyvHZjum').setup({
  		sources: [{ 
@@ -36,7 +163,7 @@ Template Name: Live Template
             file: "http://195.195.131.222/rave/FashionHD/player.m3u8"
         }],
         image: 'http://live.seanmehmet.com/tds/FashionSlate.png',
-        width: '950px',
+        width: '100%',
         aspectratio: '16:9',
        	aboutlink: 'http://www.seanmehmet.com',
         skin: "five",
@@ -45,74 +172,16 @@ Template Name: Live Template
     });
   
     jwplayer().onError(function(event) {
-_gaq.push(['_trackEvent', 'Errors', 'Error Encountered']);
-});
+		_gaq.push(['_trackEvent', 'Errors', 'Error Encountered']);
+	});
 
-jwplayer().onFullscreen(function(event) {
-_gaq.push(['_trackEvent', 'FullScreen', 'User is Watching Fullscreen']);
-});
+	jwplayer().onFullscreen(function(event) {
+		_gaq.push(['_trackEvent', 'FullScreen', 'User is Watching Fullscreen']);
+	});
 
-jwplayer().onSetupError(function(event) {
-_gaq.push(['_trackEvent', 'Setup Error', 'User has an error loading player']);
-});
+	jwplayer().onSetupError(function(event) {
+		_gaq.push(['_trackEvent', 'Setup Error', 'User has an error loading player']);
+	});
 </script>
-
-<section class="article content-pad container-fluid">
-
-	<div class="row">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-		<div class="col-md-12">
-
-			<article id="post-<?php the_ID(); ?>">
-
-				<?php #the_content(); ?>
-
-				<?php // comments_template(); ?>
-
-			</article>
-
-			<footer class="article-footer">
-				<ul class="social-buttons-sm">
-
-				<?php 
-					$instagram = get_post_meta($post->ID, "instagram", true);
-					$twitter = get_post_meta($post->ID, "twitter", true);
-					$linkedin = get_post_meta($post->ID, "linkedin", true);
-				?>
-
-				<?php if ($twitter != ""){ ?>
-
-					<li><a href="<?php echo $twitter; ?>" class="ico-tw" target="blank" title="<?php the_title(); ?>'s Twitter">Twitter</a></li>
-
-				<?php }; if ($instagram != ""){ ?>
-
-					<li><a href="<?php echo $instagram; ?>" class="ico-in" target="blank" title="<?php the_title(); ?>'s Instagram">instagram</a></li>
-
-				<?php }; if ($linkedin != ""){ ?>
-
-					<li><a href="<?php echo $linkedin; ?>" class="ico-li" target="blank" title="<?php the_title(); ?>'s LinkedIn">linkedin</a></li>
-
-				<?php }; ?>
-
-				</ul>
-			</footer>
-
-		</div>
-
-		<?php endwhile; ?>
-
-		<?php else : ?>
-
-		<div class="col-md-12">
-			404 - Post not found
-		</div>
-
-		<?php endif; ?>
-			
-
-	</div>
-
-</section><!-- article -->
 
 <?php get_footer(); ?>
