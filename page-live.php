@@ -35,7 +35,7 @@ Template Name: Live Template
         },{
             file: "http://195.195.131.222/rave/FashionHD/player.m3u8"
         }],
-        image: 'http://live.seanmehmet.com/tds/FashionSlate.png',
+        image: 'http://live.seanmehmet.com/tds/background.png',
         width: '950px',
         aspectratio: '16:9',
        	aboutlink: 'http://www.seanmehmet.com',
