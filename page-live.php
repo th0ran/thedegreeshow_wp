@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /*
 Template Name: Live Template
