@@ -55,10 +55,36 @@ Template Name: Live Template
 		margin-top: 70px;
 	}
 
+<<<<<<< HEAD
 	html body .header-intro h1 {
 		content: "Degree Show";
 		display: none;
 	}
+=======
+<script>jwplayer.key='5XXb+w0txH2+cnkwOtAOWXU39zFQbZ6VT9mOA6R83tk='</script>
+<div class="video-wrap">
+	<div id='playerDFQjhyvHZjum' class="video"></div>
+</div>
+<script type='text/javascript'>
+    jwplayer('playerDFQjhyvHZjum').setup({
+ 		sources: [{ 
+            file: "rtmp://195.195.131.195/raveLive/FashionHD.flv"
+        },{
+            file: "http://195.195.131.222/rave/FashionHD/player.m3u8"
+        }],
+        image: 'http://live.seanmehmet.com/tds/background.png',
+        width: '950px',
+        aspectratio: '16:9',
+       	aboutlink: 'http://www.seanmehmet.com',
+        skin: "five",
+        ga: {},
+        primary: 'flash'
+    });
+  
+    jwplayer().onError(function(event) {
+_gaq.push(['_trackEvent', 'Errors', 'Error Encountered']);
+});
+>>>>>>> 04950e03077ba2f2ab78d19da96c76277c41eaae
 
 	html body .hero {
 		padding-bottom: 120px;
