@@ -70,7 +70,7 @@
 					<div class="row left">
 						<div class="col-md-6">
 							<h2>Be apart of the show!</h2>
-							<p>Tag yourself in a picture using the hashtag #tds14 holding <a href="http://thedegreeshow.com/wp-content/uploads/2014/06/postcard.pdf" target="_blank">this postcard</a> and you could be on our live broadcast. <i>(Make sure to print out the postcard in A5)</i></p>
+							<p>Tag yourself in a picture using the hashtag #tds2014 holding <a href="http://thedegreeshow.com/wp-content/uploads/2014/06/postcard.pdf" target="_blank">this postcard</a> and you could be on our live broadcast. <i>(Make sure to print out the postcard in A5)</i></p>
 						</div>
 					</div>
 				<?php } else if($date === $wednesday) {?>
